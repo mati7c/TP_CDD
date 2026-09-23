@@ -1,0 +1,328 @@
+﻿fecha,nombre,tipo,subtipo,fecha_original,es_trasladado,ambito,fuente,verificacion
+2009-10-12,Día de la Raza,feriado_nacional,general,2009-10-12,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2009-12-08,Inmaculada Concepción de María,feriado_nacional,general,2009-12-08,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2009-12-25,Navidad,feriado_nacional,general,2009-12-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2010-01-01,Año Nuevo,feriado_nacional,general,2010-01-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2010-03-24,Día Nacional de la Memoria por la Verdad y la Justicia,feriado_nacional,general,2010-03-24,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2010-04-01,Jueves Santo,dia_no_laborable,jueves_santo,2010-04-01,0,nacional,https://biblioteca.afip.gob.ar/dcp/LEY_C_021329_1976_06_09,regla_contrastada_fecha_calculada
+2010-04-02,Día del Veterano y de los Caidos en la Guerra de Malvinas,feriado_nacional,general,2010-04-02,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2010-04-02,Viernes Santo,feriado_nacional,general,2010-04-02,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2010-05-01,Día del Trabajo,feriado_nacional,general,2010-05-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2010-05-24,Bicentenario de la Revolución de Mayo,feriado_nacional,general,2010-05-24,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2010-05-25,Día de la Revolución de Mayo,feriado_nacional,general,2010-05-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2010-06-21,Paso a la Inmortalidad del General Don Manuel Belgrano,feriado_nacional,general,2010-06-21,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2010-07-09,Día de la Independencia,feriado_nacional,general,2010-07-09,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2010-08-16,Paso a la Inmortalidad del General Don José de San Martín,feriado_nacional,general,2010-08-16,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2010-10-11,Día del Respeto a la Diversidad Cultural,feriado_nacional,general,2010-10-11,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2010-10-27,Censo Nacional 2010,feriado_nacional,general,2010-10-27,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2010-11-22,Día de la Soberanía Nacional,feriado_nacional,general,2010-11-22,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2010-12-08,Inmaculada Concepción de María,feriado_nacional,general,2010-12-08,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2010-12-25,Navidad,feriado_nacional,general,2010-12-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2011-01-01,Año Nuevo,feriado_nacional,general,2011-01-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2011-03-07,Lunes de Carnaval,feriado_nacional,general,2011-03-07,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2011-03-08,Martes de Carnaval,feriado_nacional,general,2011-03-08,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2011-03-24,Día Nacional de la Memoria por la Verdad y la Justicia,feriado_nacional,general,2011-03-24,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2011-03-25,Feriado con fines turísticos,feriado_nacional,turistico,2011-12-09,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2011-04-02,Día del Veterano y de los Caidos en la Guerra de Malvinas,feriado_nacional,general,2011-04-02,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2011-04-21,Jueves Santo,dia_no_laborable,jueves_santo,2011-04-21,0,nacional,https://www.argentina.gob.ar/normativa/nacional/ley-27399-281835/texto,clasificacion_contrastada
+2011-04-22,Viernes Santo,feriado_nacional,general,2011-04-22,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2011-05-01,Día del Trabajo,feriado_nacional,general,2011-05-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2011-05-25,Día de la Revolución de Mayo,feriado_nacional,general,2011-05-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2011-06-20,Paso a la Inmortalidad del General Don Manuel Belgrano,feriado_nacional,general,2011-06-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2011-07-09,Día de la Independencia,feriado_nacional,general,2011-07-09,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2011-08-22,Paso a la Inmortalidad del General Don José de San Martín,feriado_nacional,general,2011-08-22,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2011-10-10,Día del Respeto a la Diversidad Cultural,feriado_nacional,general,2011-10-10,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2011-11-28,Día de la Soberanía Nacional,feriado_nacional,general,2011-11-28,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2011-12-08,Inmaculada Concepción de María,feriado_nacional,general,2011-12-08,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2011-12-09,Feriado con fines turísticos,feriado_nacional,turistico,2011-12-09,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2011-12-25,Navidad,feriado_nacional,general,2011-12-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2012-01-01,Año Nuevo,feriado_nacional,general,2012-01-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2012-02-20,Lunes de Carnaval,feriado_nacional,general,2012-02-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2012-02-21,Martes de Carnaval,feriado_nacional,general,2012-02-21,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2012-02-27,Bicentenario de la creación y primera jura de la bandera nacional,feriado_nacional,general,2012-02-27,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2012-03-24,Día Nacional de la Memoria por la Verdad y la Justicia,feriado_nacional,general,2012-03-24,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2012-04-02,Día del Veterano y de los Caidos en la Guerra de Malvinas,feriado_nacional,general,2012-04-02,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2012-04-05,Jueves Santo,dia_no_laborable,jueves_santo,2012-04-05,0,nacional,https://www.argentina.gob.ar/normativa/nacional/ley-27399-281835/texto,clasificacion_contrastada
+2012-04-06,Viernes Santo,feriado_nacional,general,2012-04-06,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2012-04-30,Feriado con fines turísticos,feriado_nacional,turistico,2012-12-24,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2012-05-01,Día del Trabajo,feriado_nacional,general,2012-05-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2012-05-25,Día de la Revolución de Mayo,feriado_nacional,general,2012-05-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2012-06-20,Paso a la Inmortalidad del General Don Manuel Belgrano,feriado_nacional,general,2012-06-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2012-07-09,Día de la Independencia,feriado_nacional,general,2012-07-09,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2012-08-20,Paso a la Inmortalidad del General Don José de San Martín,feriado_nacional,general,2012-08-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2012-09-24,Bicentenario de la Batalla de Tucumán,feriado_nacional,general,2012-09-24,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2012-10-08,Día del Respeto a la Diversidad Cultural,feriado_nacional,general,2012-10-08,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2012-11-26,Día de la Soberanía Nacional,feriado_nacional,general,2012-11-26,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2012-12-08,Inmaculada Concepción de María,feriado_nacional,general,2012-12-08,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2012-12-24,Feriado con fines turísticos,feriado_nacional,turistico,2012-12-24,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2012-12-25,Navidad,feriado_nacional,general,2012-12-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2013-01-01,Año Nuevo,feriado_nacional,general,2013-01-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2013-01-31,Bicentenario de la sesión inaugural de la Asamblea Nacional Constituyente del año 1813,feriado_nacional,general,2013-01-31,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2013-02-11,Lunes de Carnaval,feriado_nacional,general,2013-02-11,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2013-02-12,Martes de Carnaval,feriado_nacional,general,2013-02-12,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2013-02-20,Bicentenario de la Batalla de Salta,feriado_nacional,general,2013-02-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2013-03-24,Día Nacional de la Memoria por la Verdad y la Justicia,feriado_nacional,general,2013-03-24,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2013-03-28,Jueves Santo,dia_no_laborable,jueves_santo,2013-03-28,0,nacional,https://www.argentina.gob.ar/normativa/nacional/ley-27399-281835/texto,clasificacion_contrastada
+2013-03-29,Viernes Santo,feriado_nacional,general,2013-03-29,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2013-04-01,Feriado con fines turísticos,feriado_nacional,turistico,2013-06-21,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2013-04-02,Día del Veterano y de los Caidos en la Guerra de Malvinas,feriado_nacional,general,2013-04-02,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2013-05-01,Día del Trabajo,feriado_nacional,general,2013-05-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2013-05-25,Día de la Revolución de Mayo,feriado_nacional,general,2013-05-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2013-06-20,Paso a la Inmortalidad del General Don Manuel Belgrano,feriado_nacional,general,2013-06-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2013-06-21,Feriado con fines turísticos,feriado_nacional,turistico,2013-06-21,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2013-07-09,Día de la Independencia,feriado_nacional,general,2013-07-09,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2013-08-19,Paso a la Inmortalidad del General Don José de San Martín,feriado_nacional,general,2013-08-19,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2013-10-14,Día del Respeto a la Diversidad Cultural,feriado_nacional,general,2013-10-14,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2013-11-25,Día de la Soberanía Nacional,feriado_nacional,general,2013-11-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2013-12-08,Inmaculada Concepción de María,feriado_nacional,general,2013-12-08,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2013-12-25,Navidad,feriado_nacional,general,2013-12-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2014-01-01,Año Nuevo,feriado_nacional,general,2014-01-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2014-03-03,Lunes de Carnaval,feriado_nacional,general,2014-03-03,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2014-03-04,Martes de Carnaval,feriado_nacional,general,2014-03-04,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2014-03-24,Día Nacional de la Memoria por la Verdad y la Justicia,feriado_nacional,general,2014-03-24,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2014-04-02,Día del Veterano y de los Caidos en la Guerra de Malvinas,feriado_nacional,general,2014-04-02,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2014-04-17,Jueves Santo,dia_no_laborable,jueves_santo,2014-04-17,0,nacional,https://www.argentina.gob.ar/normativa/nacional/ley-27399-281835/texto,clasificacion_contrastada
+2014-04-18,Viernes Santo,feriado_nacional,general,2014-04-18,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2014-05-01,Día del Trabajo,feriado_nacional,general,2014-05-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2014-05-02,Feriado con fines turísticos,feriado_nacional,turistico,2014-12-26,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2014-05-25,Día de la Revolución de Mayo,feriado_nacional,general,2014-05-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2014-06-20,Paso a la Inmortalidad del General Don Manuel Belgrano,feriado_nacional,general,2014-06-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2014-07-09,Día de la Independencia,feriado_nacional,general,2014-07-09,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2014-08-18,Paso a la Inmortalidad del General Don José de San Martín,feriado_nacional,general,2014-08-18,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2014-10-13,Día del Respeto a la Diversidad Cultural,feriado_nacional,general,2014-10-13,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2014-11-24,Día de la Soberanía Nacional,feriado_nacional,general,2014-11-24,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2014-12-08,Inmaculada Concepción de María,feriado_nacional,general,2014-12-08,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2014-12-25,Navidad,feriado_nacional,general,2014-12-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2014-12-26,Feriado con fines turísticos,feriado_nacional,turistico,2014-12-26,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2015-01-01,Año Nuevo,feriado_nacional,general,2015-01-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2015-02-16,Lunes de Carnaval,feriado_nacional,general,2015-02-16,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2015-02-17,Martes de Carnaval,feriado_nacional,general,2015-02-17,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2015-03-23,Feriado con fines turísticos,feriado_nacional,turistico,2015-12-07,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2015-03-24,Día Nacional de la Memoria por la Verdad y la Justicia,feriado_nacional,general,2015-03-24,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2015-04-02,Jueves Santo,dia_no_laborable,jueves_santo,2015-04-02,0,nacional,https://www.argentina.gob.ar/normativa/nacional/ley-27399-281835/texto,clasificacion_contrastada
+2015-04-02,Día del Veterano y de los Caidos en la Guerra de Malvinas,feriado_nacional,general,2015-04-02,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2015-04-03,Viernes Santo,feriado_nacional,general,2015-04-03,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2015-05-01,Día del Trabajo,feriado_nacional,general,2015-05-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2015-05-25,Día de la Revolución de Mayo,feriado_nacional,general,2015-05-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2015-06-20,Paso a la Inmortalidad del General Don Manuel Belgrano,feriado_nacional,general,2015-06-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2015-07-09,Día de la Independencia,feriado_nacional,general,2015-07-09,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2015-08-17,Paso a la Inmortalidad del General Don José de San Martín,feriado_nacional,general,2015-08-17,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2015-10-12,Día del Respeto a la Diversidad Cultural,feriado_nacional,general,2015-10-12,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2015-11-27,Día de la Soberanía Nacional,feriado_nacional,general,2015-11-27,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2015-12-07,Feriado con fines turísticos,feriado_nacional,turistico,2015-12-07,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2015-12-08,Inmaculada Concepción de María,feriado_nacional,general,2015-12-08,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2015-12-25,Navidad,feriado_nacional,general,2015-12-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2016-01-01,Año Nuevo,feriado_nacional,general,2016-01-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2016-02-08,Lunes de Carnaval,feriado_nacional,general,2016-02-08,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2016-02-09,Martes de Carnaval,feriado_nacional,general,2016-02-09,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2016-03-24,Jueves Santo,dia_no_laborable,jueves_santo,2016-03-24,0,nacional,https://www.argentina.gob.ar/normativa/nacional/ley-27399-281835/texto,clasificacion_contrastada
+2016-03-24,Día Nacional de la Memoria por la Verdad y la Justicia,feriado_nacional,general,2016-03-24,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2016-03-25,Viernes Santo,feriado_nacional,general,2016-03-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2016-04-02,Día del Veterano y de los Caidos en la Guerra de Malvinas,feriado_nacional,general,2016-04-02,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2016-05-01,Día del Trabajo,feriado_nacional,general,2016-05-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2016-05-25,Día de la Revolución de Mayo,feriado_nacional,general,2016-05-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2016-06-17,Paso a la Inmortalidad del General Don Martín Miguel de Güemes,feriado_nacional,general,2016-06-17,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2016-06-20,Paso a la Inmortalidad del General Don Manuel Belgrano,feriado_nacional,general,2016-06-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2016-07-08,Feriado con fines turísticos,feriado_nacional,turistico,2016-12-09,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2016-07-09,Día de la Independencia,feriado_nacional,general,2016-07-09,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2016-08-15,Paso a la Inmortalidad del General Don José de San Martín,feriado_nacional,general,2016-08-15,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2016-10-10,Día del Respeto a la Diversidad Cultural,feriado_nacional,general,2016-10-10,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2016-11-28,Día de la Soberanía Nacional,feriado_nacional,general,2016-11-28,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2016-12-08,Inmaculada Concepción de María,feriado_nacional,general,2016-12-08,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2016-12-09,Feriado con fines turísticos,feriado_nacional,turistico,2016-12-09,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2016-12-25,Navidad,feriado_nacional,general,2016-12-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2017-01-01,Año Nuevo,feriado_nacional,general,2017-01-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2017-02-27,Lunes de Carnaval,feriado_nacional,general,2017-02-27,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2017-02-28,Martes de Carnaval,feriado_nacional,general,2017-02-28,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2017-03-24,Día Nacional de la Memoria por la Verdad y la Justicia,feriado_nacional,general,2017-03-24,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2017-04-02,Día del Veterano y de los Caidos en la Guerra de Malvinas,feriado_nacional,general,2017-04-02,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2017-04-13,Jueves Santo,dia_no_laborable,jueves_santo,2017-04-13,0,nacional,https://www.argentina.gob.ar/normativa/nacional/ley-27399-281835/texto,clasificacion_contrastada
+2017-04-14,Viernes Santo,feriado_nacional,general,2017-04-14,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2017-05-01,Día del Trabajo,feriado_nacional,general,2017-05-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2017-05-25,Día de la Revolución de Mayo,feriado_nacional,general,2017-05-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2017-06-17,Paso a la Inmortalidad del General Don Martín Miguel de Güemes,feriado_nacional,general,2017-06-17,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2017-06-20,Paso a la Inmortalidad del General Don Manuel Belgrano,feriado_nacional,general,2017-06-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2017-07-09,Día de la Independencia,feriado_nacional,general,2017-07-09,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2017-08-21,Paso a la Inmortalidad del General Don José de San Martín,feriado_nacional,general,2017-08-17,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2017-10-16,Día del Respeto a la Diversidad Cultural,feriado_nacional,general,2017-10-12,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2017-11-20,Día de la Soberanía Nacional,feriado_nacional,general,2017-11-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2017-12-08,Inmaculada Concepción de María,feriado_nacional,general,2017-12-08,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2017-12-25,Navidad,feriado_nacional,general,2017-12-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2018-01-01,Año Nuevo,feriado_nacional,general,2018-01-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2018-02-12,Lunes de Carnaval,feriado_nacional,general,2018-02-12,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2018-02-13,Martes de Carnaval,feriado_nacional,general,2018-02-13,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2018-03-24,Día Nacional de la Memoria por la Verdad y la Justicia,feriado_nacional,general,2018-03-24,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2018-03-29,Jueves Santo,dia_no_laborable,jueves_santo,2018-03-29,0,nacional,https://www.argentina.gob.ar/normativa/nacional/ley-27399-281835/texto,clasificacion_contrastada
+2018-03-30,Viernes Santo,feriado_nacional,general,2018-03-30,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2018-04-02,Día del Veterano y de los Caidos en la Guerra de Malvinas,feriado_nacional,general,2018-04-02,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2018-04-30,Día no laborable con fines turísticos,dia_no_laborable,turistico,2018-12-31,1,nacional,https://www.argentina.gob.ar/normativa/nacional/decreto-923-2017-287145/texto,fecha_y_tipo_contrastados
+2018-05-01,Día del Trabajo,feriado_nacional,general,2018-05-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2018-05-25,Día de la Revolución de Mayo,feriado_nacional,general,2018-05-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2018-06-17,Paso a la Inmortalidad del General Don Martín Miguel de Güemes,feriado_nacional,general,2018-06-17,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2018-06-20,Paso a la Inmortalidad del General Don Manuel Belgrano,feriado_nacional,general,2018-06-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2018-07-09,Día de la Independencia,feriado_nacional,general,2018-07-09,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2018-08-20,Paso a la Inmortalidad del General Don José de San Martín,feriado_nacional,general,2018-08-17,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2018-10-15,Día del Respeto a la Diversidad Cultural,feriado_nacional,general,2018-10-12,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2018-11-19,Día de la Soberanía Nacional,feriado_nacional,general,2018-11-20,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2018-12-08,Inmaculada Concepción de María,feriado_nacional,general,2018-12-08,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2018-12-24,Día no laborable con fines turísticos,dia_no_laborable,turistico,2018-12-31,1,nacional,https://www.argentina.gob.ar/normativa/nacional/decreto-923-2017-287145/texto,fecha_y_tipo_contrastados
+2018-12-25,Navidad,feriado_nacional,general,2018-12-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2018-12-31,Día no laborable con fines turísticos,dia_no_laborable,turistico,2018-12-31,0,nacional,https://www.argentina.gob.ar/normativa/nacional/decreto-923-2017-287145/texto,fecha_y_tipo_contrastados
+2019-01-01,Año Nuevo,feriado_nacional,general,2019-01-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2019-03-04,Lunes de Carnaval,feriado_nacional,general,2019-03-04,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2019-03-05,Martes de Carnaval,feriado_nacional,general,2019-03-05,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2019-03-24,Día Nacional de la Memoria por la Verdad y la Justicia,feriado_nacional,general,2019-03-24,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2019-04-02,Día del Veterano y de los Caidos en la Guerra de Malvinas,feriado_nacional,general,2019-04-02,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2019-04-18,Jueves Santo,dia_no_laborable,jueves_santo,2019-04-18,0,nacional,https://www.argentina.gob.ar/normativa/nacional/ley-27399-281835/texto,clasificacion_contrastada
+2019-04-19,Viernes Santo,feriado_nacional,general,2019-04-19,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2019-05-01,Día del Trabajo,feriado_nacional,general,2019-05-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2019-05-25,Día de la Revolución de Mayo,feriado_nacional,general,2019-05-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2019-06-17,Paso a la Inmortalidad del General Don Martín Miguel de Güemes,feriado_nacional,general,2019-06-17,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2019-06-20,Paso a la Inmortalidad del General Don Manuel Belgrano,feriado_nacional,general,2019-06-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2019-07-08,Día no laborable con fines turísticos,dia_no_laborable,turistico,2019-10-14,1,nacional,https://www.argentina.gob.ar/normativa/nacional/decreto-923-2017-287145/texto,fecha_y_tipo_contrastados
+2019-07-09,Día de la Independencia,feriado_nacional,general,2019-07-09,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2019-08-17,Paso a la Inmortalidad del General Don José de San Martín,feriado_nacional,general,2019-08-17,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2019-08-19,Día no laborable con fines turísticos,dia_no_laborable,turistico,2019-10-14,1,nacional,https://www.argentina.gob.ar/normativa/nacional/decreto-923-2017-287145/texto,fecha_y_tipo_contrastados
+2019-10-12,Día del Respeto a la Diversidad Cultural,feriado_nacional,general,2019-10-12,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2019-10-14,Día no laborable con fines turísticos,dia_no_laborable,turistico,2019-10-14,0,nacional,https://www.argentina.gob.ar/normativa/nacional/decreto-923-2017-287145/texto,fecha_y_tipo_contrastados
+2019-11-18,Día de la Soberanía Nacional,feriado_nacional,general,2019-11-20,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2019-12-08,Inmaculada Concepción de María,feriado_nacional,general,2019-12-08,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2019-12-25,Navidad,feriado_nacional,general,2019-12-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2020-01-01,Año Nuevo,feriado_nacional,general,2020-01-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2020-02-24,Lunes de Carnaval,feriado_nacional,general,2020-02-24,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2020-02-25,Martes de Carnaval,feriado_nacional,general,2020-02-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2020-03-23,Feriado con fines turísticos,feriado_nacional,turistico,2020-12-07,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2020-03-24,Día Nacional de la Memoria por la Verdad y la Justicia,feriado_nacional,general,2020-03-24,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2020-03-31,Día del Veterano y de los Caidos en la Guerra de Malvinas,feriado_nacional,general,2020-03-31,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2020-04-09,Jueves Santo,dia_no_laborable,jueves_santo,2020-04-09,0,nacional,https://www.argentina.gob.ar/normativa/nacional/ley-27399-281835/texto,clasificacion_contrastada
+2020-04-10,Viernes Santo,feriado_nacional,general,2020-04-10,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2020-05-01,Día del Trabajo,feriado_nacional,general,2020-05-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2020-05-25,Día de la Revolución de Mayo,feriado_nacional,general,2020-05-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2020-06-15,Paso a la Inmortalidad del General Don Martín Miguel de Güemes,feriado_nacional,general,2020-06-17,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2020-06-20,Paso a la Inmortalidad del General Don Manuel Belgrano,feriado_nacional,general,2020-06-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2020-07-09,Día de la Independencia,feriado_nacional,general,2020-07-09,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2020-07-10,Feriado con fines turísticos,feriado_nacional,turistico,2020-12-07,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2020-08-17,Paso a la Inmortalidad del General Don José de San Martín,feriado_nacional,general,2020-08-17,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2020-10-12,Día del Respeto a la Diversidad Cultural,feriado_nacional,general,2020-10-12,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2020-11-23,Día de la Soberanía Nacional,feriado_nacional,general,2020-11-20,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2020-12-07,Feriado con fines turísticos,feriado_nacional,turistico,2020-12-07,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2020-12-08,Inmaculada Concepción de María,feriado_nacional,general,2020-12-08,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2020-12-25,Navidad,feriado_nacional,general,2020-12-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2021-01-01,Año Nuevo,feriado_nacional,general,2021-01-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2021-02-15,Lunes de Carnaval,feriado_nacional,general,2021-02-15,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2021-02-16,Martes de Carnaval,feriado_nacional,general,2021-02-16,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2021-03-24,Día Nacional de la Memoria por la Verdad y la Justicia,feriado_nacional,general,2021-03-24,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2021-04-01,Jueves Santo,dia_no_laborable,jueves_santo,2021-04-01,0,nacional,https://www.argentina.gob.ar/normativa/nacional/ley-27399-281835/texto,clasificacion_contrastada
+2021-04-02,Día del Veterano y de los Caidos en la Guerra de Malvinas,feriado_nacional,general,2021-04-02,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2021-04-02,Viernes Santo,feriado_nacional,general,2021-04-02,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2021-05-01,Día del Trabajo,feriado_nacional,general,2021-05-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2021-05-24,Feriado con fines turísticos,feriado_nacional,turistico,2021-11-22,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2021-05-25,Día de la Revolución de Mayo,feriado_nacional,general,2021-05-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2021-06-20,Paso a la Inmortalidad del General Don Manuel Belgrano,feriado_nacional,general,2021-06-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2021-06-21,Paso a la Inmortalidad del General Don Martín Miguel de Güemes,feriado_nacional,general,2021-06-17,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2021-07-09,Día de la Independencia,feriado_nacional,general,2021-07-09,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2021-08-16,Paso a la Inmortalidad del General Don José de San Martín,feriado_nacional,general,2021-08-17,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2021-10-08,Feriado con fines turísticos,feriado_nacional,turistico,2021-11-22,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2021-10-11,Día del Respeto a la Diversidad Cultural,feriado_nacional,general,2021-10-12,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2021-11-20,Día de la Soberanía Nacional,feriado_nacional,general,2021-11-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2021-11-22,Feriado con fines turísticos,feriado_nacional,turistico,2021-11-22,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2021-12-08,Inmaculada Concepción de María,feriado_nacional,general,2021-12-08,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2021-12-25,Navidad,feriado_nacional,general,2021-12-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2022-01-01,Año Nuevo,feriado_nacional,general,2022-01-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2022-02-28,Lunes de Carnaval,feriado_nacional,general,2022-02-28,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2022-03-01,Martes de Carnaval,feriado_nacional,general,2022-03-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2022-03-24,Día Nacional de la Memoria por la Verdad y la Justicia,feriado_nacional,general,2022-03-24,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2022-04-02,Día del Veterano y de los Caidos en la Guerra de Malvinas,feriado_nacional,general,2022-04-02,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2022-04-14,Jueves Santo,dia_no_laborable,jueves_santo,2022-04-14,0,nacional,https://www.argentina.gob.ar/normativa/nacional/ley-27399-281835/texto,clasificacion_contrastada
+2022-04-15,Viernes Santo,feriado_nacional,general,2022-04-15,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2022-05-01,Día del Trabajo,feriado_nacional,general,2022-05-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2022-05-18,Censo Nacional 2022,feriado_nacional,general,2022-05-18,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2022-05-25,Día de la Revolución de Mayo,feriado_nacional,general,2022-05-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2022-06-17,Paso a la Inmortalidad del General Don Martín Miguel de Güemes,feriado_nacional,general,2022-06-17,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2022-06-20,Paso a la Inmortalidad del General Don Manuel Belgrano,feriado_nacional,general,2022-06-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2022-07-09,Día de la Independencia,feriado_nacional,general,2022-07-09,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2022-08-15,Paso a la Inmortalidad del General Don José de San Martín,feriado_nacional,general,2022-08-17,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2022-09-02,Feriado extraordinario - Decreto 573/2022,feriado_nacional,extraordinario,2022-09-02,0,nacional,https://www.argentina.gob.ar/normativa/nacional/decreto-573-2022-370795/texto,fecha_y_tipo_contrastados
+2022-10-07,Feriado con fines turísticos,feriado_nacional,turistico,2022-12-09,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2022-10-10,Día del Respeto a la Diversidad Cultural,feriado_nacional,general,2022-10-12,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2022-11-20,Día de la Soberanía Nacional,feriado_nacional,general,2022-11-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2022-11-21,Feriado con fines turísticos,feriado_nacional,turistico,2022-12-09,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2022-12-08,Inmaculada Concepción de María,feriado_nacional,general,2022-12-08,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2022-12-09,Feriado con fines turísticos,feriado_nacional,turistico,2022-12-09,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2022-12-20,Día de la Victoria de la Copa Mundial de la FIFA 2022,feriado_nacional,general,2022-12-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2022-12-25,Navidad,feriado_nacional,general,2022-12-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2023-01-01,Año Nuevo,feriado_nacional,general,2023-01-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2023-02-20,Lunes de Carnaval,feriado_nacional,general,2023-02-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2023-02-21,Martes de Carnaval,feriado_nacional,general,2023-02-21,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2023-03-24,Día Nacional de la Memoria por la Verdad y la Justicia,feriado_nacional,general,2023-03-24,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2023-04-02,Día del Veterano y de los Caidos en la Guerra de Malvinas,feriado_nacional,general,2023-04-02,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2023-04-06,Jueves Santo,dia_no_laborable,jueves_santo,2023-04-06,0,nacional,https://www.argentina.gob.ar/normativa/nacional/ley-27399-281835/texto,clasificacion_contrastada
+2023-04-07,Viernes Santo,feriado_nacional,general,2023-04-07,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2023-05-01,Día del Trabajo,feriado_nacional,general,2023-05-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2023-05-25,Día de la Revolución de Mayo,feriado_nacional,general,2023-05-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2023-05-26,Feriado con fines turísticos,feriado_nacional,turistico,2023-10-13,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2023-06-17,Paso a la Inmortalidad del General Don Martín Miguel de Güemes,feriado_nacional,general,2023-06-17,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2023-06-19,Feriado con fines turísticos,feriado_nacional,turistico,2023-10-13,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2023-06-20,Paso a la Inmortalidad del General Don Manuel Belgrano,feriado_nacional,general,2023-06-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2023-07-09,Día de la Independencia,feriado_nacional,general,2023-07-09,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2023-08-21,Paso a la Inmortalidad del General Don José de San Martín,feriado_nacional,general,2023-08-17,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2023-10-13,Feriado con fines turísticos,feriado_nacional,turistico,2023-10-13,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2023-10-16,Día del Respeto a la Diversidad Cultural,feriado_nacional,general,2023-10-12,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2023-11-20,Día de la Soberanía Nacional,feriado_nacional,general,2023-11-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2023-12-08,Inmaculada Concepción de María,feriado_nacional,general,2023-12-08,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2023-12-25,Navidad,feriado_nacional,general,2023-12-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2024-01-01,Año Nuevo,feriado_nacional,general,2024-01-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2024-02-12,Lunes de Carnaval,feriado_nacional,general,2024-02-12,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2024-02-13,Martes de Carnaval,feriado_nacional,general,2024-02-13,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2024-03-24,Día Nacional de la Memoria por la Verdad y la Justicia,feriado_nacional,general,2024-03-24,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2024-03-28,Jueves Santo,dia_no_laborable,jueves_santo,2024-03-28,0,nacional,https://www.argentina.gob.ar/normativa/nacional/ley-27399-281835/texto,clasificacion_contrastada
+2024-03-29,Viernes Santo,feriado_nacional,general,2024-03-29,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2024-04-01,Feriado con fines turísticos,feriado_nacional,turistico,2024-10-11,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2024-04-02,Día del Veterano y de los Caidos en la Guerra de Malvinas,feriado_nacional,general,2024-04-02,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2024-05-01,Día del Trabajo,feriado_nacional,general,2024-05-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2024-05-25,Día de la Revolución de Mayo,feriado_nacional,general,2024-05-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2024-06-17,Paso a la Inmortalidad del General Don Martín Miguel de Güemes,feriado_nacional,general,2024-06-17,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2024-06-20,Paso a la Inmortalidad del General Don Manuel Belgrano,feriado_nacional,general,2024-06-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2024-06-21,Feriado con fines turísticos,feriado_nacional,turistico,2024-10-11,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2024-07-09,Día de la Independencia,feriado_nacional,general,2024-07-09,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2024-08-17,Paso a la Inmortalidad del General Don José de San Martín,feriado_nacional,general,2024-08-17,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2024-10-11,Feriado con fines turísticos,feriado_nacional,turistico,2024-10-11,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2024-10-12,Día del Respeto a la Diversidad Cultural,feriado_nacional,general,2024-10-12,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2024-11-18,Día de la Soberanía Nacional,feriado_nacional,general,2024-11-20,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2024-12-08,Inmaculada Concepción de María,feriado_nacional,general,2024-12-08,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2024-12-25,Navidad,feriado_nacional,general,2024-12-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2025-01-01,Año Nuevo,feriado_nacional,general,2025-01-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2025-03-03,Lunes de Carnaval,feriado_nacional,general,2025-03-03,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2025-03-04,Martes de Carnaval,feriado_nacional,general,2025-03-04,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2025-03-24,Día Nacional de la Memoria por la Verdad y la Justicia,feriado_nacional,general,2025-03-24,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2025-04-02,Día del Veterano y de los Caidos en la Guerra de Malvinas,feriado_nacional,general,2025-04-02,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2025-04-17,Jueves Santo,dia_no_laborable,jueves_santo,2025-04-17,0,nacional,https://www.argentina.gob.ar/normativa/nacional/ley-27399-281835/texto,clasificacion_contrastada
+2025-04-18,Viernes Santo,feriado_nacional,general,2025-04-18,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2025-05-01,Día del Trabajo,feriado_nacional,general,2025-05-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2025-05-02,Día no laborable con fines turísticos,dia_no_laborable,turistico,2025-11-21,1,nacional,https://www.argentina.gob.ar/normativa/nacional/decreto-1027-2024-406417/texto,fecha_y_tipo_contrastados
+2025-05-25,Día de la Revolución de Mayo,feriado_nacional,general,2025-05-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2025-06-16,Paso a la Inmortalidad del General Don Martín Miguel de Güemes,feriado_nacional,general,2025-06-17,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2025-06-20,Paso a la Inmortalidad del General Don Manuel Belgrano,feriado_nacional,general,2025-06-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2025-07-09,Día de la Independencia,feriado_nacional,general,2025-07-09,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2025-08-15,Día no laborable con fines turísticos,dia_no_laborable,turistico,2025-11-21,1,nacional,https://www.argentina.gob.ar/normativa/nacional/decreto-1027-2024-406417/texto,fecha_y_tipo_contrastados
+2025-08-17,Paso a la Inmortalidad del General Don José de San Martín,feriado_nacional,general,2025-08-17,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2025-10-10,Día del Respeto a la Diversidad Cultural,feriado_nacional,general,2025-10-12,1,nacional,https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-139-2025-417061/texto,fecha_y_tipo_contrastados
+2025-11-21,Día no laborable con fines turísticos,dia_no_laborable,turistico,2025-11-21,0,nacional,https://www.argentina.gob.ar/normativa/nacional/decreto-1027-2024-406417/texto,fecha_y_tipo_contrastados
+2025-11-24,Día de la Soberanía Nacional,feriado_nacional,general,2025-11-20,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2025-12-08,Inmaculada Concepción de María,feriado_nacional,general,2025-12-08,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2025-12-25,Navidad,feriado_nacional,general,2025-12-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2026-01-01,Año Nuevo,feriado_nacional,general,2026-01-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2026-02-16,Lunes de Carnaval,feriado_nacional,general,2026-02-16,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2026-02-17,Martes de Carnaval,feriado_nacional,general,2026-02-17,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2026-03-23,Día no laborable con fines turísticos,dia_no_laborable,turistico,2026-12-07,1,nacional,https://www.argentina.gob.ar/normativa/nacional/norma-421799/texto,fecha_y_tipo_contrastados
+2026-03-24,Día Nacional de la Memoria por la Verdad y la Justicia,feriado_nacional,general,2026-03-24,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2026-04-02,Jueves Santo,dia_no_laborable,jueves_santo,2026-04-02,0,nacional,https://www.argentina.gob.ar/normativa/nacional/ley-27399-281835/texto,clasificacion_contrastada
+2026-04-02,Día del Veterano y de los Caidos en la Guerra de Malvinas,feriado_nacional,general,2026-04-02,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2026-04-03,Viernes Santo,feriado_nacional,general,2026-04-03,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2026-05-01,Día del Trabajo,feriado_nacional,general,2026-05-01,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2026-05-25,Día de la Revolución de Mayo,feriado_nacional,general,2026-05-25,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2026-06-15,Paso a la Inmortalidad del General Don Martín Miguel de Güemes,feriado_nacional,general,2026-06-17,1,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2026-06-20,Paso a la Inmortalidad del General Don Manuel Belgrano,feriado_nacional,general,2026-06-20,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2026-07-09,Día de la Independencia,feriado_nacional,general,2026-07-09,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca
+2026-07-10,Día no laborable con fines turísticos,dia_no_laborable,turistico,2026-12-07,1,nacional,https://www.argentina.gob.ar/normativa/nacional/norma-421799/texto,fecha_y_tipo_contrastados
+2026-08-17,Paso a la Inmortalidad del General Don José de San Martín,feriado_nacional,general,2026-08-17,0,nacional,https://pypi.org/project/holidays/0.105/,reconstruido_biblioteca

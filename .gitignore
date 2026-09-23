@@ -1,0 +1,16 @@
+__pycache__/
+.venv/
+*.egg-info/
+data/raw/
+data/state/
+data/reports/
+data/exports/
+data/derived/
+!data/
+!data/exports/
+!data/exports/*.csv
+!data/raw/
+!data/raw/air/
+!data/raw/air/*/
+!data/raw/air/*/*.csv
+tmp/

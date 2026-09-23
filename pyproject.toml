@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "calidad-aire-caba"
+version = "0.1.0"
+description = "Extracción reproducible de meteorología para calidad del aire en CABA"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+calendar = ["holidays==0.105", "python-dateutil==2.9.0.post0", "six==1.17.0"]
+
+[project.scripts]
+aire-caba = "aire_caba.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["aire_caba*"]

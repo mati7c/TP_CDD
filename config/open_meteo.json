@@ -1,0 +1,282 @@
+{
+  "start_date": "2009-10-01",
+  "end_date": "2026-08-24",
+  "model": "era5",
+  "timezone": "America/Argentina/Buenos_Aires",
+  "hourly": [
+    "temperature_2m",
+    "relative_humidity_2m",
+    "surface_pressure",
+    "wind_speed_10m",
+    "wind_direction_10m",
+    "precipitation",
+    "cloud_cover",
+    "shortwave_radiation"
+  ],
+  "stations_source": "https://data.buenosaires.gob.ar/dataset/calidad-aire/resource/juqdkmgo-295-resource",
+  "stations_verified_on": "2026-09-22",
+  "stations": [
+    {
+      "id": "centenario",
+      "name": "CENTENARIO",
+      "latitude": -34.6066080998154,
+      "longitude": -58.4320717652753
+    },
+    {
+      "id": "cordoba",
+      "name": "CORDOBA",
+      "latitude": -34.5995643433432,
+      "longitude": -58.391552893462
+    },
+    {
+      "id": "la_boca",
+      "name": "LA BOCA",
+      "latitude": -34.6252584813295,
+      "longitude": -58.3663735070165
+    },
+    {
+      "id": "palermo",
+      "name": "PALERMO",
+      "latitude": -34.5834529467442,
+      "longitude": -58.4053598727298
+    }
+  ],
+  "air_source": {
+    "path": "..\\data\\raw\\air\\2e7f655c2bbe802e53c9b0fe9428150cf0ff71435ee8e9b0a75e29832fd513f9\\calidad-aire.csv",
+    "sha256": "2e7f655c2bbe802e53c9b0fe9428150cf0ff71435ee8e9b0a75e29832fd513f9"
+  },
+  "station_periods": {
+    "centenario": [
+      {
+        "start_date": "2009-10-01",
+        "end_date": "2009-12-30"
+      },
+      {
+        "start_date": "2010-01-18",
+        "end_date": "2010-12-31"
+      },
+      {
+        "start_date": "2011-01-01",
+        "end_date": "2011-12-31"
+      },
+      {
+        "start_date": "2012-01-02",
+        "end_date": "2012-12-31"
+      },
+      {
+        "start_date": "2013-01-01",
+        "end_date": "2013-12-31"
+      },
+      {
+        "start_date": "2014-01-01",
+        "end_date": "2014-12-31"
+      },
+      {
+        "start_date": "2015-01-01",
+        "end_date": "2015-12-31"
+      },
+      {
+        "start_date": "2016-01-01",
+        "end_date": "2016-12-31"
+      },
+      {
+        "start_date": "2017-01-01",
+        "end_date": "2017-12-31"
+      },
+      {
+        "start_date": "2018-01-01",
+        "end_date": "2018-12-31"
+      },
+      {
+        "start_date": "2019-01-01",
+        "end_date": "2019-12-31"
+      },
+      {
+        "start_date": "2020-01-01",
+        "end_date": "2020-12-31"
+      },
+      {
+        "start_date": "2021-01-01",
+        "end_date": "2021-12-31"
+      },
+      {
+        "start_date": "2022-01-01",
+        "end_date": "2022-12-31"
+      },
+      {
+        "start_date": "2023-01-02",
+        "end_date": "2023-12-31"
+      },
+      {
+        "start_date": "2024-01-01",
+        "end_date": "2024-12-31"
+      },
+      {
+        "start_date": "2025-01-01",
+        "end_date": "2025-12-31"
+      },
+      {
+        "start_date": "2026-01-01",
+        "end_date": "2026-08-24"
+      }
+    ],
+    "cordoba": [
+      {
+        "start_date": "2009-10-01",
+        "end_date": "2009-12-31"
+      },
+      {
+        "start_date": "2010-01-01",
+        "end_date": "2010-12-31"
+      },
+      {
+        "start_date": "2011-01-01",
+        "end_date": "2011-12-31"
+      },
+      {
+        "start_date": "2012-01-01",
+        "end_date": "2012-12-31"
+      },
+      {
+        "start_date": "2013-01-01",
+        "end_date": "2013-07-19"
+      },
+      {
+        "start_date": "2014-01-29",
+        "end_date": "2014-12-31"
+      },
+      {
+        "start_date": "2015-01-01",
+        "end_date": "2015-12-31"
+      },
+      {
+        "start_date": "2016-01-01",
+        "end_date": "2016-12-31"
+      },
+      {
+        "start_date": "2017-01-01",
+        "end_date": "2017-12-31"
+      },
+      {
+        "start_date": "2018-01-01",
+        "end_date": "2018-12-31"
+      },
+      {
+        "start_date": "2019-01-01",
+        "end_date": "2019-12-31"
+      },
+      {
+        "start_date": "2020-01-01",
+        "end_date": "2020-12-31"
+      },
+      {
+        "start_date": "2021-01-01",
+        "end_date": "2021-12-31"
+      },
+      {
+        "start_date": "2022-01-01",
+        "end_date": "2022-04-05"
+      },
+      {
+        "start_date": "2023-03-11",
+        "end_date": "2023-12-31"
+      },
+      {
+        "start_date": "2024-01-01",
+        "end_date": "2024-12-31"
+      },
+      {
+        "start_date": "2025-01-01",
+        "end_date": "2025-12-31"
+      },
+      {
+        "start_date": "2026-01-01",
+        "end_date": "2026-08-24"
+      }
+    ],
+    "la_boca": [
+      {
+        "start_date": "2009-10-01",
+        "end_date": "2009-12-31"
+      },
+      {
+        "start_date": "2010-01-01",
+        "end_date": "2010-12-31"
+      },
+      {
+        "start_date": "2011-01-01",
+        "end_date": "2011-12-31"
+      },
+      {
+        "start_date": "2012-01-01",
+        "end_date": "2012-12-31"
+      },
+      {
+        "start_date": "2013-01-01",
+        "end_date": "2013-12-31"
+      },
+      {
+        "start_date": "2014-01-01",
+        "end_date": "2014-12-31"
+      },
+      {
+        "start_date": "2015-01-01",
+        "end_date": "2015-12-31"
+      },
+      {
+        "start_date": "2016-01-01",
+        "end_date": "2016-12-31"
+      },
+      {
+        "start_date": "2017-01-01",
+        "end_date": "2017-12-31"
+      },
+      {
+        "start_date": "2018-01-01",
+        "end_date": "2018-12-31"
+      },
+      {
+        "start_date": "2019-01-01",
+        "end_date": "2019-12-31"
+      },
+      {
+        "start_date": "2020-01-01",
+        "end_date": "2020-12-31"
+      },
+      {
+        "start_date": "2021-01-01",
+        "end_date": "2021-12-31"
+      },
+      {
+        "start_date": "2022-01-01",
+        "end_date": "2022-12-31"
+      },
+      {
+        "start_date": "2023-01-02",
+        "end_date": "2023-12-31"
+      },
+      {
+        "start_date": "2024-01-01",
+        "end_date": "2024-12-31"
+      },
+      {
+        "start_date": "2025-01-01",
+        "end_date": "2025-12-31"
+      },
+      {
+        "start_date": "2026-01-01",
+        "end_date": "2026-08-24"
+      }
+    ],
+    "palermo": [
+      {
+        "start_date": "2009-10-01",
+        "end_date": "2009-12-31"
+      },
+      {
+        "start_date": "2010-01-01",
+        "end_date": "2010-09-19"
+      }
+    ]
+  }
+}
