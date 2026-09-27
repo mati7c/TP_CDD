@@ -1,0 +1,45 @@
+{
+  "created_at_utc": "2026-09-23T00:39:04.806447+00:00",
+  "source_csv": {
+    "path": "..\\data\\raw\\air\\2e7f655c2bbe802e53c9b0fe9428150cf0ff71435ee8e9b0a75e29832fd513f9\\calidad-aire.csv",
+    "sha256": "2e7f655c2bbe802e53c9b0fe9428150cf0ff71435ee8e9b0a75e29832fd513f9"
+  },
+  "start_date": "2009-10-01",
+  "end_date": "2026-08-24",
+  "outputs": {
+    "calendario.csv": {
+      "path": "C:\\Users\\matic\\OneDrive\\Documentos\\ChatGPT\\Trabajo Practico CDD\\data\\exports\\calendario.csv",
+      "sha256": "925ed425bc7c5b7d942cb9070d7504b895f05d59fa9d73e8d3d3aae09f7c8863",
+      "rows": 6172
+    },
+    "feriados.csv": {
+      "path": "C:\\Users\\matic\\OneDrive\\Documentos\\ChatGPT\\Trabajo Practico CDD\\data\\exports\\feriados.csv",
+      "sha256": "ff5484e26ac821ebaf9cad73b74b19f5befdb80dbd91202a5aac37c6700e0678",
+      "rows": 327
+    }
+  },
+  "event_types": {
+    "feriado_nacional": 299,
+    "dia_no_laborable": 28
+  },
+  "days_public_holiday": 297,
+  "days_non_working": 28,
+  "method": "Reconstrucción local, no descarga de un calendario oficial completo. Revisión focalizada de clasificaciones y excepciones.",
+  "sources": {
+    "library": "https://pypi.org/project/holidays/0.105/",
+    "jueves_historico": "https://biblioteca.afip.gob.ar/dcp/LEY_C_021329_1976_06_09",
+    "ley_actual": "https://www.argentina.gob.ar/normativa/nacional/ley-27399-281835/texto",
+    "puentes_2018_2019": "https://www.argentina.gob.ar/normativa/nacional/decreto-923-2017-287145/texto",
+    "puentes_2025": "https://www.argentina.gob.ar/normativa/nacional/decreto-1027-2024-406417/texto",
+    "puentes_2026": "https://www.argentina.gob.ar/normativa/nacional/norma-421799/texto",
+    "extraordinario_2022": "https://www.argentina.gob.ar/normativa/nacional/decreto-573-2022-370795/texto",
+    "traslado_2025": "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-139-2025-417061/texto"
+  },
+  "excluded": [
+    "Feriados provinciales/locales, incluido G20 de CABA",
+    "Asuetos administrativos y bancarios",
+    "Días restringidos a comunidades religiosas o sectores laborales"
+  ],
+  "future_information": "Calendario retrospectivo: no prueba disponibilidad del dato antes de cada predicción. Excepcionales requieren fecha de anuncio para evaluación prospectiva.",
+  "time_policy": "Una fila por fecha civil. No modifica las etiquetas horarias 00/24 ni une datos meteorológicos."
+}

@@ -1,0 +1,339 @@
+{
+  "output": "C:\\Users\\matic\\OneDrive\\Documentos\\ChatGPT\\Trabajo Practico CDD\\data\\exports\\meteorologia.csv",
+  "sha256": "27795ce0704609092bed55d396e20b28732be52a651cc5753ebed07e9f954bee",
+  "created_at_utc": "2026-09-23T00:24:13.285831+00:00",
+  "air_source": {
+    "path": "..\\data\\raw\\air\\2e7f655c2bbe802e53c9b0fe9428150cf0ff71435ee8e9b0a75e29832fd513f9\\calidad-aire.csv",
+    "sha256": "2e7f655c2bbe802e53c9b0fe9428150cf0ff71435ee8e9b0a75e29832fd513f9"
+  },
+  "timezone": "America/Argentina/Buenos_Aires",
+  "model": "era5",
+  "units": {
+    "temperature_2m": "°C",
+    "relative_humidity_2m": "%",
+    "surface_pressure": "hPa",
+    "wind_speed_10m": "m/s",
+    "wind_direction_10m": "°",
+    "precipitation": "mm",
+    "cloud_cover": "%",
+    "shortwave_radiation": "W/m²"
+  },
+  "counts": {
+    "rows": 457925,
+    "hora_original": 439608,
+    "disponible": 457921,
+    "alias_24_provisional": 18317,
+    "sin_hora_siguiente_descargada": 4
+  },
+  "rows_per_station": {
+    "centenario": 153800,
+    "cordoba": 141000,
+    "la_boca": 154275,
+    "palermo": 8850
+  },
+  "null_counts": {
+    "temperature_2m": 4,
+    "relative_humidity_2m": 4,
+    "surface_pressure": 4,
+    "wind_speed_10m": 4,
+    "wind_direction_10m": 4,
+    "precipitation": 4,
+    "cloud_cover": 4,
+    "shortwave_radiation": 4
+  },
+  "raw_blocks_sha256": {
+    "centenario/2009/2009-10-01_2009-12-31_d6029802500f7725": "333c5e35ca1556f2f8e20af9a9af14da0fea1c4fcb4f3756399cf8d36adf78f6",
+    "centenario/2010/2010-01-01_2010-12-31_f4f3905164672f3d": "ab61b63245443ebd4c4033a56dbbbea2c81f9e31d0bd55eb30317c67b9216b9f",
+    "centenario/2011/2011-01-01_2011-12-31_e4af9dddd99a627b": "296a7c03d48139d6430d1a8092fb2047fbbfbc4598506b7472777d5769ffb954",
+    "centenario/2012/2012-01-01_2012-12-31_53ade1a8af4ce9b6": "b5d761cd955c784248a1854fff9430cfe16968ac9c6417ecdce52ae4e02f5b89",
+    "centenario/2013/2013-01-01_2013-12-31_40e7faf50a221270": "ea66ee18178b3e545725cba20892674280102966421d053f9c0451e3ad81396f",
+    "centenario/2014/2014-01-01_2014-12-31_a545dbd401bc6305": "18b717331fb6dd30d2ffc903f67b96dee3cc69997713c52913db3e45dfc8d291",
+    "centenario/2015/2015-01-01_2015-12-31_bcb9f64ab776d67a": "b039c933df0e04d8d35ca682768d08823bdaf2530cf8618b8cfb5dfaf9b01c7c",
+    "centenario/2016/2016-01-01_2016-12-31_6d7e0cc277c63c40": "c16c72dd74b0d6fecb95530a8635488dc60c4bb01c2d7a84b943403b0783f742",
+    "centenario/2017/2017-01-01_2017-12-31_f48eca33a344ab62": "6183a0b08ae413eaaa5b4818555163bbbb3255427b009929a132ce69f5c2a4e5",
+    "centenario/2018/2018-01-01_2018-12-31_2b7db951d4ef1693": "1440ec32cccc0ce8ca27e9601232fa4be0567b344d9196a003cbfe1b2e4b1f00",
+    "centenario/2019/2019-01-01_2019-12-31_d6b8550254c08b83": "94c6efabb9d0ee7120f559f82a619cc921b2d4bb717da8d61a7f58ef816c25dc",
+    "centenario/2020/2020-01-01_2020-12-31_f4d9ca593963533c": "3a47771b6e333b4f128551d809e419709b4cef76563a92f0e96f0d73a3a8b1d8",
+    "centenario/2021/2021-01-01_2021-12-31_f5ce4e675e2e9d76": "dbf252ae24df774b9af66b6d9c9345f567bd27d6d9e7d6b0989efcab3697b50c",
+    "centenario/2022/2022-01-01_2022-12-31_2e875b6d48854dff": "7a74f43343f515eaf534c18afcc579af8f3571924dc2b7d091201d63c8634eb7",
+    "centenario/2023/2023-01-01_2023-12-31_1407d4dc80ccd2c6": "a0fa45db5ebfc4131174c4582395459d3795270977b8f0e7ca652d375d571df6",
+    "centenario/2024/2024-01-01_2024-12-31_a9e2005fb2d5f27e": "ab42c85f4329733d7886a91f356c0c3078aea5e3386bd5131b224e075af702d1",
+    "centenario/2025/2025-01-01_2025-12-31_ac33210ed77b8432": "12c1104d1516a05a7478950cc9b5366cb2c40c2cd86da522abac8a187280debf",
+    "centenario/2026/2026-01-01_2026-08-24_75ce713e6e5bc816": "87009cd6fb2fbcbb12c9c00e01e9adf636c559bf3b66c4d3c16b6b4063937e90",
+    "cordoba/2009/2009-10-01_2009-12-31_9b2ba39a3af75714": "d0a49e1e17ae22a3f6f546c0aa68d4fced523de0e8750d78bdf5984c82f0bf48",
+    "cordoba/2010/2010-01-01_2010-12-31_3de9b1567a0511b2": "f3cf4a1d064a1bf7b00c5b3d13c39edabe1a0c568bc1f3c37fc903bb721921da",
+    "cordoba/2011/2011-01-01_2011-12-31_576c732650e83012": "682e45703c3bbcb73df780d1af75d9f62c6f2159397c4610f4bebb7fa0cbe5ce",
+    "cordoba/2012/2012-01-01_2012-12-31_f337c9fce71a8db7": "b02af70052d86ff982dffe75af4f6b17209cd1263cd58fb2b83393ce11276285",
+    "cordoba/2013/2013-01-01_2013-12-31_a3990a26ce8b7aa3": "49801946b2ca87fcd7948d2032ac730bec9eed5db3312e2a6ed3964b39311b52",
+    "cordoba/2014/2014-01-01_2014-12-31_3c6a8167f2127b54": "eb39abbe76e16fb609fa6a6140619350aa8ff61b0c70e27c5c8a3beda35c1a18",
+    "cordoba/2015/2015-01-01_2015-12-31_ba40f236fb98c38e": "f10e7aae8ec5bc431de8406297fb0163986e365d240d2c1e4ba6a8eec76e656b",
+    "cordoba/2016/2016-01-01_2016-12-31_3a2fefca1490f284": "36b71039bc3aa83daefc37bdcf9ea00e510076f0e0b91d1888934592f8f96728",
+    "cordoba/2017/2017-01-01_2017-12-31_24423a65f2bed24b": "3b8edb35ab063b906294c6e288c7a49b4f5d5645a6870365f838fb62fb95afa5",
+    "cordoba/2018/2018-01-01_2018-12-31_683738e930474403": "badb28c11c5832858ec697c05ae5f223aa08bd42f5d33b10c7b2d43394c5fb29",
+    "cordoba/2019/2019-01-01_2019-12-31_f3f81832931a7f45": "042b49cb9e63f72613ccd95c582945d98e96ac0df394484c566a0dd73b50068e",
+    "cordoba/2020/2020-01-01_2020-12-31_aea174569573160e": "b84f68a60d7648915fcc5c56afe6ed9169edf0eff4a8d778ca05acab2ce621f0",
+    "cordoba/2021/2021-01-01_2021-12-31_ca6545a308b9d71a": "0d08466dae483471350fbaf3bea6eedb9c31ef7be4747561df1162c6220d8131",
+    "cordoba/2022/2022-01-01_2022-12-31_6039b40fe2fc242d": "3a6b045a513c3534b769e86e9667b6218b624ea17004bde9e928bf7500af915e",
+    "cordoba/2023/2023-01-01_2023-12-31_6e71f2779c8fbbb5": "070eccb2719d9b614807ac71766f2e1b4c5eb5ddefda5eae4168572f8fb49e38",
+    "cordoba/2024/2024-01-01_2024-12-31_ec42bf154261c9e0": "7ffd49f2b4b2183c136458372c203eb7ddc59f19a4d4c641e41a570366bf0134",
+    "cordoba/2025/2025-01-01_2025-12-31_2904c57e3c216639": "e7918467762946d799b04d5ff7b33129a1632f90b356d6fbb015cd1397966677",
+    "cordoba/2026/2026-01-01_2026-08-24_631444c2cfa68978": "b8590bff43090ad524196071c0e910f68459d556b534292e2b6b61f62d1df5c8",
+    "la_boca/2009/2009-10-01_2009-12-31_f108e5238b765864": "bc444933586febd6216922879fcfaf413a15437b51a43de4b903b94eda7ac7c5",
+    "la_boca/2010/2010-01-01_2010-12-31_0a201319d7fcff29": "03938e47af329f2c6efc4d05f6c102c6e9f4eedab9b836c0865f84d5031ecf91",
+    "la_boca/2011/2011-01-01_2011-12-31_63904fcd1ce6d49e": "71d90b12eb4d05439cebcfb5fbfdf15585e68528af0e2b6b519a610d9880e39d",
+    "la_boca/2012/2012-01-01_2012-12-31_27a5da268259941c": "a93ff173f64c3f134e2e4eb255d7a95ad3f8f3608fb3cf5c72333cb626d3f68c",
+    "la_boca/2013/2013-01-01_2013-12-31_56c39685409a1583": "ab75c1d978158949de3103a12cda87a2f2d48feb4964d3ac463218cf16b41c78",
+    "la_boca/2014/2014-01-01_2014-12-31_b719b80ac43db53f": "5b926bcb335dd8e335bccb1ac4a3eb278e08dccbab4ae9df217329f0e463b4ed",
+    "la_boca/2015/2015-01-01_2015-12-31_738d190550b9a729": "967d34ca5b18def0a74c206f389172c27d809a894c236c3105ebd4116112cc29",
+    "la_boca/2016/2016-01-01_2016-12-31_c892a8abb70261df": "75bcbd6f80ce7fdf0f41e2ba3d6d10473c1a13ef0ca272b1269d5255ae4b785c",
+    "la_boca/2017/2017-01-01_2017-12-31_a5b9c54db6c9f716": "fc562810b01ae31cc4939f4e86adb8f329ca22f65079de70e0d453519742f147",
+    "la_boca/2018/2018-01-01_2018-12-31_a34829e8b50c8ec6": "289e53102b2046ce84c48a8df888e13d1dd63bb0f21c6d0d858b9f26e2f68e5a",
+    "la_boca/2019/2019-01-01_2019-12-31_6496db7d1911ca83": "24cecd908255a33fbd59f8d7f8a40e8c941f4229b2d1133fbc0cd3964ff5ac72",
+    "la_boca/2020/2020-01-01_2020-12-31_2ad450b16e447349": "37ec6e23b518d133d18a9da0d8b56b659698186fd20b5f6ed9c7cbfe63e89581",
+    "la_boca/2021/2021-01-01_2021-12-31_9a64bf2f9bf0456e": "909a58a3c5ff4038816bf21ca703a13ee4c03fd22e867a312dae2d6fa70d15ae",
+    "la_boca/2022/2022-01-01_2022-12-31_d62bdfe06ee0b6c4": "577fdb78c509c673e2e2e9ebb78dd4362997e697769dcdcf9f6ffe8539bf4436",
+    "la_boca/2023/2023-01-01_2023-12-31_d7a68ea83ba18c79": "02b35e30d6ae00094dba86852767065470d0532d0f705e1e00f7f2ce8813d2ed",
+    "la_boca/2024/2024-01-01_2024-12-31_19fc1bf62959a6fb": "7b43784f2bc2881113f96cffe5737e6cd157eaa3f9b36f39d2ae39b77cfd778a",
+    "la_boca/2025/2025-01-01_2025-12-31_5c9798651819bce5": "9bd07b812bfd56a5ded78a265f20d099af5c7047ecd65ccfd8de25a7e11e3bc2",
+    "la_boca/2026/2026-01-01_2026-08-24_e80bb174bc32f9e8": "8c2e355f4d080f4f4153610b45f03afa1591e2e3ceec77c63a24f4c05b9c1017",
+    "palermo/2009/2009-10-01_2009-12-31_e3b2fc9b33329adf": "a4e51a26f6ae5426a551d8f924f5b4bccd239fed70492e4293bad67d4f0ee402",
+    "palermo/2010/2010-01-01_2010-09-19_0260511c560fc504": "7fcb693e5112c5cec001069268f3d3416cb067a056edf7dc207df53a9d824fcf"
+  },
+  "station_periods": {
+    "centenario": [
+      {
+        "start_date": "2009-10-01",
+        "end_date": "2009-12-30"
+      },
+      {
+        "start_date": "2010-01-18",
+        "end_date": "2010-12-31"
+      },
+      {
+        "start_date": "2011-01-01",
+        "end_date": "2011-12-31"
+      },
+      {
+        "start_date": "2012-01-02",
+        "end_date": "2012-12-31"
+      },
+      {
+        "start_date": "2013-01-01",
+        "end_date": "2013-12-31"
+      },
+      {
+        "start_date": "2014-01-01",
+        "end_date": "2014-12-31"
+      },
+      {
+        "start_date": "2015-01-01",
+        "end_date": "2015-12-31"
+      },
+      {
+        "start_date": "2016-01-01",
+        "end_date": "2016-12-31"
+      },
+      {
+        "start_date": "2017-01-01",
+        "end_date": "2017-12-31"
+      },
+      {
+        "start_date": "2018-01-01",
+        "end_date": "2018-12-31"
+      },
+      {
+        "start_date": "2019-01-01",
+        "end_date": "2019-12-31"
+      },
+      {
+        "start_date": "2020-01-01",
+        "end_date": "2020-12-31"
+      },
+      {
+        "start_date": "2021-01-01",
+        "end_date": "2021-12-31"
+      },
+      {
+        "start_date": "2022-01-01",
+        "end_date": "2022-12-31"
+      },
+      {
+        "start_date": "2023-01-02",
+        "end_date": "2023-12-31"
+      },
+      {
+        "start_date": "2024-01-01",
+        "end_date": "2024-12-31"
+      },
+      {
+        "start_date": "2025-01-01",
+        "end_date": "2025-12-31"
+      },
+      {
+        "start_date": "2026-01-01",
+        "end_date": "2026-08-24"
+      }
+    ],
+    "cordoba": [
+      {
+        "start_date": "2009-10-01",
+        "end_date": "2009-12-31"
+      },
+      {
+        "start_date": "2010-01-01",
+        "end_date": "2010-12-31"
+      },
+      {
+        "start_date": "2011-01-01",
+        "end_date": "2011-12-31"
+      },
+      {
+        "start_date": "2012-01-01",
+        "end_date": "2012-12-31"
+      },
+      {
+        "start_date": "2013-01-01",
+        "end_date": "2013-07-19"
+      },
+      {
+        "start_date": "2014-01-29",
+        "end_date": "2014-12-31"
+      },
+      {
+        "start_date": "2015-01-01",
+        "end_date": "2015-12-31"
+      },
+      {
+        "start_date": "2016-01-01",
+        "end_date": "2016-12-31"
+      },
+      {
+        "start_date": "2017-01-01",
+        "end_date": "2017-12-31"
+      },
+      {
+        "start_date": "2018-01-01",
+        "end_date": "2018-12-31"
+      },
+      {
+        "start_date": "2019-01-01",
+        "end_date": "2019-12-31"
+      },
+      {
+        "start_date": "2020-01-01",
+        "end_date": "2020-12-31"
+      },
+      {
+        "start_date": "2021-01-01",
+        "end_date": "2021-12-31"
+      },
+      {
+        "start_date": "2022-01-01",
+        "end_date": "2022-04-05"
+      },
+      {
+        "start_date": "2023-03-11",
+        "end_date": "2023-12-31"
+      },
+      {
+        "start_date": "2024-01-01",
+        "end_date": "2024-12-31"
+      },
+      {
+        "start_date": "2025-01-01",
+        "end_date": "2025-12-31"
+      },
+      {
+        "start_date": "2026-01-01",
+        "end_date": "2026-08-24"
+      }
+    ],
+    "la_boca": [
+      {
+        "start_date": "2009-10-01",
+        "end_date": "2009-12-31"
+      },
+      {
+        "start_date": "2010-01-01",
+        "end_date": "2010-12-31"
+      },
+      {
+        "start_date": "2011-01-01",
+        "end_date": "2011-12-31"
+      },
+      {
+        "start_date": "2012-01-01",
+        "end_date": "2012-12-31"
+      },
+      {
+        "start_date": "2013-01-01",
+        "end_date": "2013-12-31"
+      },
+      {
+        "start_date": "2014-01-01",
+        "end_date": "2014-12-31"
+      },
+      {
+        "start_date": "2015-01-01",
+        "end_date": "2015-12-31"
+      },
+      {
+        "start_date": "2016-01-01",
+        "end_date": "2016-12-31"
+      },
+      {
+        "start_date": "2017-01-01",
+        "end_date": "2017-12-31"
+      },
+      {
+        "start_date": "2018-01-01",
+        "end_date": "2018-12-31"
+      },
+      {
+        "start_date": "2019-01-01",
+        "end_date": "2019-12-31"
+      },
+      {
+        "start_date": "2020-01-01",
+        "end_date": "2020-12-31"
+      },
+      {
+        "start_date": "2021-01-01",
+        "end_date": "2021-12-31"
+      },
+      {
+        "start_date": "2022-01-01",
+        "end_date": "2022-12-31"
+      },
+      {
+        "start_date": "2023-01-02",
+        "end_date": "2023-12-31"
+      },
+      {
+        "start_date": "2024-01-01",
+        "end_date": "2024-12-31"
+      },
+      {
+        "start_date": "2025-01-01",
+        "end_date": "2025-12-31"
+      },
+      {
+        "start_date": "2026-01-01",
+        "end_date": "2026-08-24"
+      }
+    ],
+    "palermo": [
+      {
+        "start_date": "2009-10-01",
+        "end_date": "2009-12-31"
+      },
+      {
+        "start_date": "2010-01-01",
+        "end_date": "2010-09-19"
+      }
+    ]
+  },
+  "format": "UTF-8 BOM, separador coma, decimal punto; HORA texto de dos dígitos 00–24",
+  "hour_policy": "00–23 son horas originales. FECHA D/HORA 24 es alias provisional de D+1/00; ambas filas se conservan. Si no está descargada esa hora, los valores quedan vacíos. No confirma la convención horaria del CSV de aire.",
+  "scope": "Intervalos meteorológicos por estación/año derivados del CSV. Incluye días sin contaminación dentro de cada intervalo. No es una unión con las filas de contaminación."
+}

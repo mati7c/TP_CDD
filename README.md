@@ -22,6 +22,9 @@ Desde esta carpeta en PowerShell:
 # Exportar los JSON descargados a un CSV meteorológico (sin usar la API).
 .\run.ps1 export-weather
 
+# Unir los CSV existentes para entrada de transformación.
+.\run.ps1 join
+
 # Ver progreso y verificar integridad de los archivos descargados.
 .\run.ps1 status
 ```

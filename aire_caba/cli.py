@@ -13,7 +13,7 @@ PROJECT = Path(__file__).resolve().parent.parent
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Extracción de meteorología horaria para CABA")
-    parser.add_argument("command", choices=["import-air", "plan", "download", "status", "export-weather", "calendar"])
+    parser.add_argument("command", choices=["import-air", "plan", "download", "status", "export-weather", "calendar", "join"])
     parser.add_argument("--csv", type=Path, help="CSV original para import-air")
     parser.add_argument("--config", type=Path, default=PROJECT / "config/open_meteo.json")
     parser.add_argument("--data-dir", type=Path, default=PROJECT / "data")
@@ -36,6 +36,14 @@ def main(argv=None):
             return 0
         config = load_config(args.config)
         verify_source(config, args.config)
+        if args.command == "join":
+            from .join_datasets import join_datasets
+            if args.start or args.end or args.stations or args.max_requests or args.csv:
+                raise ValueError("join usa los CSV existentes completos; no admite filtros.")
+            with download_lock(args.data_dir):
+                report = join_datasets(config, args.config, args.data_dir)
+            print(json.dumps({k: report[k] for k in ("output", "rows", "columns", "weather_unmatched", "calendar_unmatched")}, indent=2))
+            return 0
         if args.command == "calendar":
             from .calendar_source import export_calendar
             if args.start or args.end or args.stations or args.max_requests or args.csv:

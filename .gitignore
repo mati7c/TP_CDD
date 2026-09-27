@@ -13,4 +13,5 @@ data/derived/
 !data/raw/air/
 !data/raw/air/*/
 !data/raw/air/*/*.csv
+data/raw/open_meteo/
 tmp/

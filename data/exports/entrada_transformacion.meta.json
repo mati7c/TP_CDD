@@ -1,0 +1,69 @@
+{
+  "output": "C:\\Users\\matic\\OneDrive\\Documentos\\ChatGPT\\Trabajo Practico CDD\\data\\exports\\entrada_transformacion.csv",
+  "output_sha256": "491da34f1382031957de728ebbb979bbeca35a562672e619bb85eed68c9d5552",
+  "rows": 145980,
+  "columns": 89,
+  "original_columns_preserved": [
+    "FECHA",
+    "HORA",
+    "CO_CENTENARIO",
+    "NO2_CENTENARIO",
+    "PM10_CENTENARIO",
+    "CO_CORDOBA",
+    "NO2_CORDOBA",
+    "PM10_CORDOBA",
+    "CO_LA_BOCA",
+    "NO2_LA_BOCA",
+    "PM10_LA_BOCA",
+    "CO_PALERMO",
+    "NO2_PALERMO",
+    "PM10_PALERMO"
+  ],
+  "inputs": {
+    "aire": {
+      "path": "C:\\Users\\matic\\OneDrive\\Documentos\\ChatGPT\\Trabajo Practico CDD\\data\\raw\\air\\2e7f655c2bbe802e53c9b0fe9428150cf0ff71435ee8e9b0a75e29832fd513f9\\calidad-aire.csv",
+      "sha256": "2e7f655c2bbe802e53c9b0fe9428150cf0ff71435ee8e9b0a75e29832fd513f9"
+    },
+    "meteorologia": {
+      "path": "C:\\Users\\matic\\OneDrive\\Documentos\\ChatGPT\\Trabajo Practico CDD\\data\\exports\\meteorologia.csv",
+      "sha256": "27795ce0704609092bed55d396e20b28732be52a651cc5753ebed07e9f954bee"
+    },
+    "calendario": {
+      "path": "C:\\Users\\matic\\OneDrive\\Documentos\\ChatGPT\\Trabajo Practico CDD\\data\\exports\\calendario.csv",
+      "sha256": "3d38d645cbb489e5e4725fcdfd953b03f79e3a39b004b4d5e4f28cf02317eedd"
+    },
+    "feriados": {
+      "path": "C:\\Users\\matic\\OneDrive\\Documentos\\ChatGPT\\Trabajo Practico CDD\\data\\exports\\feriados.csv",
+      "sha256": "ff5484e26ac821ebaf9cad73b74b19f5befdb80dbd91202a5aac37c6700e0678"
+    }
+  },
+  "input_warnings": [
+    {
+      "path": "C:\\Users\\matic\\OneDrive\\Documentos\\ChatGPT\\Trabajo Practico CDD\\data\\exports\\calendario.csv",
+      "line": 13,
+      "absent_trailing_fields": [
+        "metodo"
+      ]
+    }
+  ],
+  "weather_matches": {
+    "centenario": 145387,
+    "cordoba": 133397,
+    "la_boca": 145845,
+    "palermo": 7777
+  },
+  "weather_unmatched": {
+    "centenario": 593,
+    "cordoba": 12583,
+    "la_boca": 135,
+    "palermo": 138203
+  },
+  "calendar_unmatched": 0,
+  "max_holiday_events_per_date": 2,
+  "counts": {
+    "calendar_matched": 145980,
+    "rows_with_holiday_events": 7553
+  },
+  "join_policy": "Left join desde aire. Mismo número/orden de filas y textos originales. Claves auxiliares: FECHA SAS a ISO, HORA rellenada con cero a la izquierda. 00 y 24 no se fusionan. Calendario por fecha etiquetada. Detalles de feriados en columnas numeradas conservando su orden en el CSV.",
+  "missing_policy": "Sin correspondencia: campos anexados vacíos. No imputación, limpieza, deduplicación, agregación, escalado ni nuevas variables calculadas."
+}
