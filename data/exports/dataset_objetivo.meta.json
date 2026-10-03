@@ -1,0 +1,319 @@
+{
+  "input": {
+    "path": "C:\\Users\\admin\\TP_CDD\\data\\exports\\entrada_transformacion.csv",
+    "sha256": "491da34f1382031957de728ebbb979bbeca35a562672e619bb85eed68c9d5552"
+  },
+  "output": {
+    "path": "C:\\Users\\admin\\TP_CDD\\data\\exports\\dataset_objetivo.csv",
+    "sha256": "7a65c46d5ea62bcb6ecd99e3a7eecc67c0f11b227d8b689f0d111d6c208cf6ef",
+    "rows": 398961,
+    "columns": [
+      "estacion",
+      "fecha_hora",
+      "fecha",
+      "hora_original",
+      "anio",
+      "mes",
+      "dia_semana",
+      "hora_dia",
+      "estacion_anio",
+      "es_fin_de_semana",
+      "es_feriado_nacional",
+      "es_dia_no_laborable",
+      "CO",
+      "CO_estado",
+      "NO2",
+      "NO2_estado",
+      "PM10",
+      "PM10_estado",
+      "temperature_2m",
+      "relative_humidity_2m",
+      "surface_pressure",
+      "wind_speed_10m",
+      "precipitation",
+      "cloud_cover",
+      "shortwave_radiation",
+      "viento_u",
+      "viento_v"
+    ]
+  },
+  "unidades": {
+    "CO": "ppm",
+    "NO2": "ppb",
+    "PM10": "µg/m³"
+  },
+  "decisiones": {
+    "hora": "HORA 1-24 se interpreta como hora de cierre del promedio: fecha_hora = FECHA + HORA. Coincide con la unión meteorológica (HORA 24 = 00 del día siguiente).",
+    "horas_invalidas": "HORA 0 y > 24 no contienen mediciones: se descartan.",
+    "marcadores": "s/d, x/d, vacíos y #REF! se convierten en faltantes, con su motivo en *_estado.",
+    "censurados": "Valores '<LD' se reemplazan por LD/2.",
+    "rangos": {
+      "CO": {
+        "min": 0.0,
+        "max": 10.0
+      },
+      "NO2": {
+        "min": 0.0,
+        "max": 400.0
+      },
+      "PM10": {
+        "min": 0.0,
+        "max": 600.0
+      },
+      "PM10_cero": "inválido"
+    },
+    "congelados": "24 h o más con el mismo valor medido se invalidan.",
+    "imputacion": "Interpolación lineal sólo en huecos internos de hasta 3 h; huecos mayores quedan vacíos.",
+    "filas": "Se conservan estación-horas con al menos un contaminante y meteorología completa.",
+    "columnas": "Se descartan procedencia meteorológica, detalle de feriados y wind_direction_10m (reemplazada por viento_u/viento_v)."
+  },
+  "reporte": {
+    "filas_entrada": 145980,
+    "filas_hora_invalida_descartadas": 282,
+    "horas_grilla": 148100,
+    "horas_ausentes_en_csv": 2402,
+    "estaciones": {
+      "centenario": {
+        "CO": {
+          "inicial": {
+            "medido": 115975,
+            "sin_dato": 29643,
+            "error": 48,
+            "censurado": 21,
+            "vacio": 11
+          },
+          "fuera_rango": 103,
+          "congelado": 111,
+          "interpolado": 6
+        },
+        "NO2": {
+          "inicial": {
+            "medido": 116233,
+            "sin_dato": 29431,
+            "error": 24,
+            "vacio": 10
+          },
+          "fuera_rango": 1,
+          "congelado": 48,
+          "interpolado": 1494
+        },
+        "PM10": {
+          "inicial": {
+            "medido": 118337,
+            "sin_dato": 17022,
+            "vacio": 10315,
+            "error": 24
+          },
+          "fuera_rango": 80,
+          "congelado": 409,
+          "interpolado": 18
+        },
+        "filas_csv": 145698,
+        "filas_sin_contaminantes_descartadas": 9236,
+        "filas_sin_meteorologia_descartadas": 0,
+        "meteorologia": {
+          "temperature_2m": {
+            "fuera_rango": 0,
+            "interpolado": 0
+          },
+          "relative_humidity_2m": {
+            "fuera_rango": 0,
+            "interpolado": 0
+          },
+          "surface_pressure": {
+            "fuera_rango": 0,
+            "interpolado": 0
+          },
+          "wind_speed_10m": {
+            "fuera_rango": 0,
+            "interpolado": 0
+          },
+          "wind_direction_10m": {
+            "fuera_rango": 0,
+            "interpolado": 0
+          },
+          "precipitation": {
+            "fuera_rango": 0,
+            "interpolado": 0
+          },
+          "cloud_cover": {
+            "fuera_rango": 0,
+            "interpolado": 0
+          },
+          "shortwave_radiation": {
+            "fuera_rango": 0,
+            "interpolado": 0
+          }
+        },
+        "filas_finales": 136462,
+        "faltantes_finales": {
+          "CO": 20674,
+          "NO2": 18784,
+          "PM10": 18596
+        }
+      },
+      "cordoba": {
+        "CO": {
+          "inicial": {
+            "medido": 110542,
+            "sin_dato": 33323,
+            "censurado": 1774,
+            "error": 48,
+            "vacio": 11
+          },
+          "fuera_rango": 96,
+          "congelado": 116,
+          "interpolado": 11
+        },
+        "NO2": {
+          "inicial": {
+            "medido": 97127,
+            "sin_dato": 48536,
+            "error": 24,
+            "vacio": 11
+          },
+          "fuera_rango": 0,
+          "congelado": 48,
+          "interpolado": 576
+        },
+        "PM10": {
+          "inicial": {
+            "medido": 99586,
+            "sin_dato": 35773,
+            "vacio": 10315,
+            "error": 24
+          },
+          "fuera_rango": 121,
+          "congelado": 322,
+          "interpolado": 5
+        },
+        "filas_csv": 145698,
+        "filas_sin_contaminantes_descartadas": 17878,
+        "filas_sin_meteorologia_descartadas": 0,
+        "meteorologia": {
+          "temperature_2m": {
+            "fuera_rango": 0,
+            "interpolado": 0
+          },
+          "relative_humidity_2m": {
+            "fuera_rango": 0,
+            "interpolado": 0
+          },
+          "surface_pressure": {
+            "fuera_rango": 0,
+            "interpolado": 0
+          },
+          "wind_speed_10m": {
+            "fuera_rango": 0,
+            "interpolado": 0
+          },
+          "wind_direction_10m": {
+            "fuera_rango": 0,
+            "interpolado": 0
+          },
+          "precipitation": {
+            "fuera_rango": 0,
+            "interpolado": 0
+          },
+          "cloud_cover": {
+            "fuera_rango": 0,
+            "interpolado": 0
+          },
+          "shortwave_radiation": {
+            "fuera_rango": 0,
+            "interpolado": 0
+          }
+        },
+        "filas_finales": 127820,
+        "faltantes_finales": {
+          "CO": 15705,
+          "NO2": 30165,
+          "PM10": 28672
+        }
+      },
+      "la_boca": {
+        "CO": {
+          "inicial": {
+            "medido": 102338,
+            "sin_dato": 34639,
+            "censurado": 8664,
+            "error": 48,
+            "vacio": 9
+          },
+          "fuera_rango": 122,
+          "congelado": 74,
+          "interpolado": 43
+        },
+        "NO2": {
+          "inicial": {
+            "medido": 119842,
+            "sin_dato": 25822,
+            "error": 24,
+            "vacio": 10
+          },
+          "fuera_rango": 0,
+          "congelado": 72,
+          "interpolado": 677
+        },
+        "PM10": {
+          "inicial": {
+            "medido": 114736,
+            "sin_dato": 20626,
+            "vacio": 10312,
+            "error": 24
+          },
+          "fuera_rango": 104,
+          "congelado": 374,
+          "interpolado": 9
+        },
+        "filas_csv": 145698,
+        "filas_sin_contaminantes_descartadas": 11019,
+        "filas_sin_meteorologia_descartadas": 0,
+        "meteorologia": {
+          "temperature_2m": {
+            "fuera_rango": 0,
+            "interpolado": 0
+          },
+          "relative_humidity_2m": {
+            "fuera_rango": 0,
+            "interpolado": 0
+          },
+          "surface_pressure": {
+            "fuera_rango": 0,
+            "interpolado": 0
+          },
+          "wind_speed_10m": {
+            "fuera_rango": 0,
+            "interpolado": 0
+          },
+          "wind_direction_10m": {
+            "fuera_rango": 0,
+            "interpolado": 0
+          },
+          "precipitation": {
+            "fuera_rango": 0,
+            "interpolado": 0
+          },
+          "cloud_cover": {
+            "fuera_rango": 0,
+            "interpolado": 0
+          },
+          "shortwave_radiation": {
+            "fuera_rango": 0,
+            "interpolado": 0
+          }
+        },
+        "filas_finales": 134679,
+        "faltantes_finales": {
+          "CO": 23830,
+          "NO2": 14232,
+          "PM10": 20412
+        }
+      }
+    },
+    "estaciones_excluidas": {
+      "PALERMO": "Sólo CO entre 10/2009 y 09/2010 (4% de las filas); NO2 y PM10 vacíos; desactivada según el catálogo oficial."
+    },
+    "filas_salida": 398961
+  }
+}

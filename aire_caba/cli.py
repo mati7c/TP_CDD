@@ -13,7 +13,7 @@ PROJECT = Path(__file__).resolve().parent.parent
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Extracción de meteorología horaria para CABA")
-    parser.add_argument("command", choices=["import-air", "plan", "download", "status", "export-weather", "calendar", "join"])
+    parser.add_argument("command", choices=["import-air", "plan", "download", "status", "export-weather", "calendar", "join", "transform"])
     parser.add_argument("--csv", type=Path, help="CSV original para import-air")
     parser.add_argument("--config", type=Path, default=PROJECT / "config/open_meteo.json")
     parser.add_argument("--data-dir", type=Path, default=PROJECT / "data")
@@ -33,6 +33,15 @@ def main(argv=None):
             overview = {k: report[k] for k in ("sha256", "rows", "date_min", "date_max", "rows_hour_zero", "rows_invalid_hour")}
             overview["stations"] = {sid: {k: v for k, v in info.items() if k != "extraction_periods"} for sid, info in report["stations"].items()}
             print(json.dumps(overview, indent=2))
+            return 0
+        if args.command == "transform":
+            from .transform import transform_dataset
+            if args.start or args.end or args.stations or args.max_requests or args.csv:
+                raise ValueError("transform usa entrada_transformacion.csv completo; no admite filtros.")
+            with download_lock(args.data_dir):
+                meta = transform_dataset(args.data_dir)
+            print(json.dumps({"output": meta["output"]["path"], "rows": meta["output"]["rows"],
+                              "rows_per_station": {k: v["filas_finales"] for k, v in meta["reporte"]["estaciones"].items()}}, indent=2))
             return 0
         config = load_config(args.config)
         verify_source(config, args.config)

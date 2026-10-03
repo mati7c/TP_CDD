@@ -25,6 +25,9 @@ Desde esta carpeta en PowerShell:
 # Unir los CSV existentes para entrada de transformación.
 .\run.ps1 join
 
+# Limpiar y generar el dataset objetivo estación-hora (requiere requirements-etl.txt).
+.\run.ps1 transform
+
 # Ver progreso y verificar integridad de los archivos descargados.
 .\run.ps1 status
 ```
@@ -116,6 +119,10 @@ La reanudación comprueba hash y estructura antes de omitir bloques. Una caché 
 ```
 
 Las pruebas cubren cortes por año, años bisiestos, cuotas persistentes, 429, reintentos, reanudación sin red, corrupción y rechazo de horas duplicadas. Las verificaciones estructurales no reemplazan la auditoría científica posterior.
+
+## Segunda entrega: ETL y dataset objetivo
+
+`notebooks/segunda_entrega_etl.ipynb` (y su exportación `.html`) contiene el análisis de calidad, las visualizaciones, la estrategia por caso y la descripción del dataset final. La lógica de limpieza está en `aire_caba/transform.py` y genera `data/exports/dataset_objetivo.csv` + `.meta.json` (una fila por estación-hora; Palermo excluida). Instalar dependencias: `.\.venv\Scripts\python.exe -m pip install -r requirements-etl.txt`.
 
 ## Uso posterior
 
