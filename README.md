@@ -28,6 +28,9 @@ Desde esta carpeta en PowerShell:
 # Limpiar y generar el dataset objetivo estación-hora (requiere requirements-etl.txt).
 .\run.ps1 transform
 
+# Generar el CSV con one-hot para modelado futuro.
+.\run.ps1 prepare-model
+
 # Ver progreso y verificar integridad de los archivos descargados.
 .\run.ps1 status
 ```
@@ -123,6 +126,10 @@ Las pruebas cubren cortes por año, años bisiestos, cuotas persistentes, 429, r
 ## Segunda entrega: ETL y dataset objetivo
 
 `notebooks/segunda_entrega_etl.ipynb` (y su exportación `.html`) contiene el análisis de calidad, las visualizaciones, la estrategia por caso y la descripción del dataset final. La lógica de limpieza está en `aire_caba/transform.py` y genera `data/exports/dataset_objetivo.csv` + `.meta.json` (una fila por estación-hora; Palermo excluida). Instalar dependencias: `.\.venv\Scripts\python.exe -m pip install -r requirements-etl.txt`.
+
+`prepare-model` genera `data/exports/dataset_objetivo_listo_modelar.csv` desde ese dataset, con una fila por estación-hora. Codifica con one-hot las tres estaciones, los siete días de semana y las 24 horas (`00`–`23`); mantiene año, mes, banderas de calendario y meteorología numérica. `fecha_hora` y `fecha` identifican filas y períodos, pero no son predictores directos. `CO`, `NO2` y `PM10` son posibles salidas: sus faltantes permanecen vacíos y se filtran por separado al entrenar cada modelo. Los estados de medición, la estación del año y `hora_original` quedan en `dataset_objetivo.csv` para auditoría; no se usan como entradas. Ninguna otra columna de contaminante de la misma hora debe entrar como predictor. El archivo `.meta.json` registra el esquema, los conteos de faltantes y la procedencia.
+
+La convención temporal sigue siendo la de la transformación previa: `fecha_hora` expresa la hora de cierre. La hora `00` procede de `HORA=24` de la fecha anterior; `fecha`, `anio`, `mes`, día de semana y banderas de calendario conservan esa **fecha de medición**. En una predicción operativa hay que construir esas entradas con la misma regla. La meteorología del CSV es ERA5 histórico; al predecir se utilizará un pronóstico meteorológico con las mismas variables y unidades. La evaluación con ERA5 refleja un escenario con meteorología histórica conocida y no mide directamente el error adicional del pronóstico.
 
 ## Uso posterior
 

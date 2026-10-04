@@ -9,6 +9,7 @@ data/derived/
 !data/
 !data/exports/
 !data/exports/*.csv
+!data/exports/dataset_objetivo_listo_modelar.meta.json
 !data/raw/
 !data/raw/air/
 !data/raw/air/*/
