@@ -12,8 +12,8 @@ class ModelDatasetTests(unittest.TestCase):
     def sample(self):
         row = {column: "1" for column in INPUT_COLUMNS}
         row.update({
-            "estacion": "la_boca", "fecha_hora": "2021-01-02 00:00",
-            "fecha": "2021-01-01", "dia_semana": "5", "hora_dia": "0",
+            "estacion": "la_boca", "fecha_hora": "2022-01-01 00:00",
+            "fecha": "2021-12-31", "dia_semana": "5", "mes": "12", "hora_dia": "0",
             "CO": "", "NO2": "12.5", "PM10": "30",
         })
         return row
@@ -38,9 +38,12 @@ class ModelDatasetTests(unittest.TestCase):
                 self.assertEqual([row[target] for target in TARGETS], ["", "12.5", "30"])
                 self.assertEqual(row["estacion_la_boca"], "1")
                 self.assertEqual(row["dia_semana_5"], "1")
+                self.assertEqual(row["mes_12"], "1")
+                self.assertEqual(row["mes_01"], "0")
                 self.assertEqual(row["hora_dia_00"], "1")
-                self.assertEqual(row["fecha"], "2021-01-01")
-                self.assertEqual(sum(int(row[col]) for col in ONE_HOT_COLUMNS), 3)
+                self.assertEqual(row["fecha"], "2021-12-31")
+                self.assertNotIn("mes", row)
+                self.assertEqual(sum(int(row[col]) for col in ONE_HOT_COLUMNS), 4)
                 self.assertEqual(meta["missing_targets"], {"CO": 1, "NO2": 0, "PM10": 0})
                 self.assertEqual(meta["missing_predictors"], 0)
 

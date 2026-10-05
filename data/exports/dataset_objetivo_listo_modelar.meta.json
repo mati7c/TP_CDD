@@ -5,13 +5,12 @@
   },
   "output": {
     "path": "C:\\Users\\matic\\OneDrive\\Documentos\\ChatGPT\\Trabajo Practico CDD\\data\\exports\\dataset_objetivo_listo_modelar.csv",
-    "sha256": "7b0849dc439af980a1aca3f8f93e52901b68685bfabc45ffffa05b0e0cb4b370",
+    "sha256": "ddd818250e62df81bd80bb1711ff1eda7e06a0c9b304086b2c407e1f1a88e11d",
     "rows": 398961,
     "columns": [
       "fecha_hora",
       "fecha",
       "anio",
-      "mes",
       "es_fin_de_semana",
       "es_feriado_nacional",
       "es_dia_no_laborable",
@@ -34,6 +33,18 @@
       "dia_semana_5",
       "dia_semana_6",
       "dia_semana_7",
+      "mes_01",
+      "mes_02",
+      "mes_03",
+      "mes_04",
+      "mes_05",
+      "mes_06",
+      "mes_07",
+      "mes_08",
+      "mes_09",
+      "mes_10",
+      "mes_11",
+      "mes_12",
       "hora_dia_00",
       "hora_dia_01",
       "hora_dia_02",
@@ -84,6 +95,20 @@
       6,
       7
     ],
+    "mes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
     "hora_dia": [
       0,
       1,
@@ -120,6 +145,6 @@
     "NO2",
     "PM10"
   ],
-  "time_note": "La hora 00 corresponde a HORA 24 del día de medición anterior; fecha, anio, mes y los indicadores de calendario conservan ese día de medición.",
+  "time_note": "La hora 00 corresponde a HORA 24 del día de medición anterior; fecha, anio, mes codificado y los indicadores de calendario conservan ese día de medición.",
   "weather_note": "Las variables meteorológicas históricas provienen de ERA5; en uso operativo deberán tener el mismo esquema y proceder de pronósticos disponibles antes de la hora estimada."
 }
