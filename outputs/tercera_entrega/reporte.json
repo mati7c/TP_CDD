@@ -1,0 +1,417 @@
+{
+  "config": {
+    "seed": 42,
+    "threads": 4,
+    "validation_start": "2024-01-01",
+    "test_start": "2025-01-01",
+    "gap_days": 2,
+    "minimum_daily_hours": 18,
+    "daily_predictor_hours": 24,
+    "regression_forest": {
+      "n_estimators": 200,
+      "max_depth": 16,
+      "min_samples_leaf": 10,
+      "max_features": 0.8
+    },
+    "regression_xgboost_candidates": [
+      {
+        "n_estimators": 400,
+        "max_depth": 3,
+        "learning_rate": 0.05
+      },
+      {
+        "n_estimators": 600,
+        "max_depth": 5,
+        "learning_rate": 0.05
+      }
+    ],
+    "classification_forest": {
+      "n_estimators": 300,
+      "max_depth": 12,
+      "min_samples_leaf": 5,
+      "max_features": 0.8,
+      "class_weight": "balanced_subsample"
+    },
+    "classification_xgboost_candidates": [
+      {
+        "n_estimators": 300,
+        "max_depth": 3,
+        "learning_rate": 0.05
+      },
+      {
+        "n_estimators": 500,
+        "max_depth": 4,
+        "learning_rate": 0.05
+      }
+    ],
+    "xgboost_common": {
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 5.0,
+      "tree_method": "hist"
+    }
+  },
+  "parameters": {
+    "regression": {
+      "CO_Referencia": {
+        "strategy": "median_per_station"
+      },
+      "CO_RandomForest": {
+        "n_estimators": 200,
+        "max_depth": 16,
+        "min_samples_leaf": 10,
+        "max_features": 0.8
+      },
+      "CO_XGBoost": {
+        "n_estimators": 600,
+        "max_depth": 5,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 5.0,
+        "tree_method": "hist"
+      },
+      "NO2_Referencia": {
+        "strategy": "median_per_station"
+      },
+      "NO2_RandomForest": {
+        "n_estimators": 200,
+        "max_depth": 16,
+        "min_samples_leaf": 10,
+        "max_features": 0.8
+      },
+      "NO2_XGBoost": {
+        "n_estimators": 600,
+        "max_depth": 5,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 5.0,
+        "tree_method": "hist"
+      },
+      "PM10_Referencia": {
+        "strategy": "median_per_station"
+      },
+      "PM10_RandomForest": {
+        "n_estimators": 200,
+        "max_depth": 16,
+        "min_samples_leaf": 10,
+        "max_features": 0.8
+      },
+      "PM10_XGBoost": {
+        "n_estimators": 400,
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 5.0,
+        "tree_method": "hist"
+      }
+    },
+    "daily": {
+      "Referencia": {
+        "strategy": "most_frequent"
+      },
+      "RandomForest": {
+        "n_estimators": 300,
+        "max_depth": 12,
+        "min_samples_leaf": 5,
+        "max_features": 0.8,
+        "class_weight": "balanced_subsample"
+      },
+      "XGBoost": {
+        "n_estimators": 500,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 5.0,
+        "tree_method": "hist",
+        "sample_weight": "balanced_train"
+      }
+    }
+  },
+  "selected_by_validation": {
+    "regression": {
+      "CO": "XGBoost",
+      "NO2": "XGBoost",
+      "PM10": "Referencia"
+    },
+    "daily": "XGBoost"
+  },
+  "tuning_trials": [
+    {
+      "task": "CO",
+      "candidate": 0,
+      "validation_mae": 0.1687892269801376,
+      "parameters": {
+        "n_estimators": 400,
+        "max_depth": 3,
+        "learning_rate": 0.05
+      }
+    },
+    {
+      "task": "CO",
+      "candidate": 1,
+      "validation_mae": 0.16546937127123437,
+      "parameters": {
+        "n_estimators": 600,
+        "max_depth": 5,
+        "learning_rate": 0.05
+      }
+    },
+    {
+      "task": "NO2",
+      "candidate": 0,
+      "validation_mae": 6.330191308995893,
+      "parameters": {
+        "n_estimators": 400,
+        "max_depth": 3,
+        "learning_rate": 0.05
+      }
+    },
+    {
+      "task": "NO2",
+      "candidate": 1,
+      "validation_mae": 5.40637803823458,
+      "parameters": {
+        "n_estimators": 600,
+        "max_depth": 5,
+        "learning_rate": 0.05
+      }
+    },
+    {
+      "task": "PM10",
+      "candidate": 0,
+      "validation_mae": 8.552640169745132,
+      "parameters": {
+        "n_estimators": 400,
+        "max_depth": 3,
+        "learning_rate": 0.05
+      }
+    },
+    {
+      "task": "PM10",
+      "candidate": 1,
+      "validation_mae": 8.658601139464267,
+      "parameters": {
+        "n_estimators": 600,
+        "max_depth": 5,
+        "learning_rate": 0.05
+      }
+    },
+    {
+      "task": "daily",
+      "candidate": 0,
+      "validation_f1_macro": 0.42326667716370125,
+      "parameters": {
+        "n_estimators": 300,
+        "max_depth": 3,
+        "learning_rate": 0.05
+      }
+    },
+    {
+      "task": "daily",
+      "candidate": 1,
+      "validation_f1_macro": 0.45511326022508136,
+      "parameters": {
+        "n_estimators": 500,
+        "max_depth": 4,
+        "learning_rate": 0.05
+      }
+    }
+  ],
+  "coverage": {
+    "station_days_available": 17108,
+    "eligible_station_days": 10085,
+    "excluded_station_days": 7023,
+    "minimum_hours_per_pollutant": 18,
+    "required_predictor_hours": 24
+  },
+  "features": {
+    "hourly": [
+      "anio",
+      "es_fin_de_semana",
+      "es_feriado_nacional",
+      "es_dia_no_laborable",
+      "temperature_2m",
+      "relative_humidity_2m",
+      "surface_pressure",
+      "wind_speed_10m",
+      "precipitation",
+      "cloud_cover",
+      "shortwave_radiation",
+      "viento_u",
+      "viento_v",
+      "estacion_centenario",
+      "estacion_cordoba",
+      "estacion_la_boca",
+      "dia_semana_1",
+      "dia_semana_2",
+      "dia_semana_3",
+      "dia_semana_4",
+      "dia_semana_5",
+      "dia_semana_6",
+      "dia_semana_7",
+      "mes_01",
+      "mes_02",
+      "mes_03",
+      "mes_04",
+      "mes_05",
+      "mes_06",
+      "mes_07",
+      "mes_08",
+      "mes_09",
+      "mes_10",
+      "mes_11",
+      "mes_12",
+      "hora_dia_00",
+      "hora_dia_01",
+      "hora_dia_02",
+      "hora_dia_03",
+      "hora_dia_04",
+      "hora_dia_05",
+      "hora_dia_06",
+      "hora_dia_07",
+      "hora_dia_08",
+      "hora_dia_09",
+      "hora_dia_10",
+      "hora_dia_11",
+      "hora_dia_12",
+      "hora_dia_13",
+      "hora_dia_14",
+      "hora_dia_15",
+      "hora_dia_16",
+      "hora_dia_17",
+      "hora_dia_18",
+      "hora_dia_19",
+      "hora_dia_20",
+      "hora_dia_21",
+      "hora_dia_22",
+      "hora_dia_23"
+    ],
+    "daily": [
+      "estacion_centenario",
+      "estacion_cordoba",
+      "estacion_la_boca",
+      "dia_semana_1",
+      "dia_semana_2",
+      "dia_semana_3",
+      "dia_semana_4",
+      "dia_semana_5",
+      "dia_semana_6",
+      "dia_semana_7",
+      "mes_01",
+      "mes_02",
+      "mes_03",
+      "mes_04",
+      "mes_05",
+      "mes_06",
+      "mes_07",
+      "mes_08",
+      "mes_09",
+      "mes_10",
+      "mes_11",
+      "mes_12",
+      "anio",
+      "es_fin_de_semana",
+      "es_feriado_nacional",
+      "es_dia_no_laborable",
+      "temperature_2m_mean",
+      "temperature_2m_min",
+      "temperature_2m_max",
+      "relative_humidity_2m_mean",
+      "relative_humidity_2m_min",
+      "relative_humidity_2m_max",
+      "surface_pressure_mean",
+      "surface_pressure_min",
+      "surface_pressure_max",
+      "wind_speed_10m_mean",
+      "wind_speed_10m_min",
+      "wind_speed_10m_max",
+      "precipitation_mean",
+      "precipitation_min",
+      "precipitation_max",
+      "cloud_cover_mean",
+      "cloud_cover_min",
+      "cloud_cover_max",
+      "shortwave_radiation_mean",
+      "shortwave_radiation_min",
+      "shortwave_radiation_max",
+      "viento_u_mean",
+      "viento_u_min",
+      "viento_u_max",
+      "viento_v_mean",
+      "viento_v_min",
+      "viento_v_max",
+      "precipitation_sum"
+    ]
+  },
+  "splits_hourly": {
+    "train": 332365,
+    "test": 41606,
+    "validation": 24702,
+    "purga": 288
+  },
+  "splits_daily": {
+    "train": 8052,
+    "test": 1502,
+    "validation": 525,
+    "purga": 6
+  },
+  "input_sha256": "ddd818250e62df81bd80bb1711ff1eda7e06a0c9b304086b2c407e1f1a88e11d",
+  "quality_sha256": "7a65c46d5ea62bcb6ecd99e3a7eecc67c0f11b227d8b689f0d111d6c208cf6ef",
+  "code_sha256": "a1968ae0b7e3d3b1830e87574eefea931f0317676a21bf038dd5e5609a98c0cb",
+  "source": "https://document.airnow.gov/technical-assistance-document-for-the-reporting-of-daily-air-quailty.pdf",
+  "category_names": [
+    "Buena",
+    "Moderada",
+    "Desfavorable"
+  ],
+  "breakpoints": {
+    "CO": [
+      4.5,
+      9.5
+    ],
+    "NO2": [
+      54.0,
+      101.0
+    ],
+    "PM10": [
+      55.0,
+      155.0
+    ]
+  },
+  "plausibility_limits": {
+    "CO": [
+      0.0,
+      10.0
+    ],
+    "NO2": [
+      0.0,
+      400.0
+    ],
+    "PM10": [
+      0.0,
+      600.0
+    ]
+  },
+  "outliers_original": 321,
+  "versions": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0"
+  },
+  "elapsed_seconds": 380.6039579999999,
+  "limitations": [
+    "Etiquetas del proyecto: máximo diario de categorías por registro entre CO, NO2 y PM10; no es el AQI diario oficial EPA.",
+    "Meteorología ERA5 conocida a posteriori: no mide por sí sola el error operativo a 24/48 h con pronósticos meteorológicos.",
+    "Los objetivos interpolados se excluyen; los censurados se conservan como LD/2 según la segunda entrega.",
+    "Buena se refiere sólo a los tres contaminantes disponibles; no se evalúan PM2.5, ozono ni SO2.",
+    "Los máximos de plausibilidad son reglas del proyecto, no límites universales físicos ni sanitarios.",
+    "F1 macro usa las tres etiquetas fijas; las clases sin soporte se muestran también como no evaluables en el detalle."
+  ]
+}

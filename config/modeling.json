@@ -1,0 +1,36 @@
+{
+  "seed": 42,
+  "threads": 4,
+  "validation_start": "2024-01-01",
+  "test_start": "2025-01-01",
+  "gap_days": 2,
+  "minimum_daily_hours": 18,
+  "daily_predictor_hours": 24,
+  "regression_forest": {
+    "n_estimators": 200,
+    "max_depth": 16,
+    "min_samples_leaf": 10,
+    "max_features": 0.8
+  },
+  "regression_xgboost_candidates": [
+    {"n_estimators": 400, "max_depth": 3, "learning_rate": 0.05},
+    {"n_estimators": 600, "max_depth": 5, "learning_rate": 0.05}
+  ],
+  "classification_forest": {
+    "n_estimators": 300,
+    "max_depth": 12,
+    "min_samples_leaf": 5,
+    "max_features": 0.8,
+    "class_weight": "balanced_subsample"
+  },
+  "classification_xgboost_candidates": [
+    {"n_estimators": 300, "max_depth": 3, "learning_rate": 0.05},
+    {"n_estimators": 500, "max_depth": 4, "learning_rate": 0.05}
+  ],
+  "xgboost_common": {
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_lambda": 5.0,
+    "tree_method": "hist"
+  }
+}

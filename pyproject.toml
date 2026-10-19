@@ -5,13 +5,14 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "calidad-aire-caba"
 version = "0.1.0"
-description = "Extracción reproducible de meteorología para calidad del aire en CABA"
+description = "Extracción, ETL y modelado reproducible de calidad del aire en CABA"
 requires-python = ">=3.10"
 dependencies = []
 
 [project.optional-dependencies]
 calendar = ["holidays==0.105", "python-dateutil==2.9.0.post0", "six==1.17.0"]
 etl = ["numpy==2.5.3", "pandas==3.0.6", "matplotlib==3.11.2", "seaborn==0.13.2"]
+modeling = ["pandas==3.0.6", "scikit-learn==1.9.1", "xgboost==3.4.1", "matplotlib==3.11.2", "joblib==1.6.0", "nbformat==5.11.1", "nbconvert==7.17.2", "ipykernel==7.4.0"]
 
 [project.scripts]
 aire-caba = "aire_caba.cli:main"

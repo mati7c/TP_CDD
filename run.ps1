@@ -1,5 +1,5 @@
 # Ejecutar desde PowerShell: .\run.ps1 plan
-# No requiere activar un entorno virtual ni instalar paquetes.
+# No requiere activar el entorno; ETL y modelado necesitan sus archivos requirements.
 $ErrorActionPreference = 'Stop'
 $projectPython = Join-Path $PSScriptRoot '.venv/Scripts/python.exe'
 $bundledPython = Join-Path $env:USERPROFILE '.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe'
@@ -14,7 +14,7 @@ if (Test-Path -LiteralPath $projectPython) {
 }
 Push-Location $PSScriptRoot
 try {
-    & $runtimePython -m aire_caba @args
+    & $runtimePython -X utf8 -m aire_caba @args
     $resultCode = $LASTEXITCODE
 } finally {
     Pop-Location

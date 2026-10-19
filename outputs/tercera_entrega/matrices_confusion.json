@@ -1,0 +1,2306 @@
+[
+  {
+    "task": "CO",
+    "model": "Referencia",
+    "split": "validation",
+    "station": "todas",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        20137,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "CO",
+    "model": "Referencia",
+    "split": "validation",
+    "station": "centenario",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        6845,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "CO",
+    "model": "Referencia",
+    "split": "validation",
+    "station": "cordoba",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        5542,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "CO",
+    "model": "Referencia",
+    "split": "validation",
+    "station": "la_boca",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        7750,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "CO",
+    "model": "Referencia",
+    "split": "test",
+    "station": "todas",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        41189,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "CO",
+    "model": "Referencia",
+    "split": "test",
+    "station": "centenario",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        13845,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "CO",
+    "model": "Referencia",
+    "split": "test",
+    "station": "cordoba",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        13818,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "CO",
+    "model": "Referencia",
+    "split": "test",
+    "station": "la_boca",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        13526,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "CO",
+    "model": "RandomForest",
+    "split": "validation",
+    "station": "todas",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        20137,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "CO",
+    "model": "RandomForest",
+    "split": "validation",
+    "station": "centenario",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        6845,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "CO",
+    "model": "RandomForest",
+    "split": "validation",
+    "station": "cordoba",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        5542,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "CO",
+    "model": "RandomForest",
+    "split": "validation",
+    "station": "la_boca",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        7750,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "CO",
+    "model": "RandomForest",
+    "split": "test",
+    "station": "todas",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        41189,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "CO",
+    "model": "RandomForest",
+    "split": "test",
+    "station": "centenario",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        13845,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "CO",
+    "model": "RandomForest",
+    "split": "test",
+    "station": "cordoba",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        13818,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "CO",
+    "model": "RandomForest",
+    "split": "test",
+    "station": "la_boca",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        13526,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "CO",
+    "model": "XGBoost",
+    "split": "validation",
+    "station": "todas",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        20137,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "CO",
+    "model": "XGBoost",
+    "split": "validation",
+    "station": "centenario",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        6845,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "CO",
+    "model": "XGBoost",
+    "split": "validation",
+    "station": "cordoba",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        5542,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "CO",
+    "model": "XGBoost",
+    "split": "validation",
+    "station": "la_boca",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        7750,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "CO",
+    "model": "XGBoost",
+    "split": "test",
+    "station": "todas",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        41189,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "CO",
+    "model": "XGBoost",
+    "split": "test",
+    "station": "centenario",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        13845,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "CO",
+    "model": "XGBoost",
+    "split": "test",
+    "station": "cordoba",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        13818,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "CO",
+    "model": "XGBoost",
+    "split": "test",
+    "station": "la_boca",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        13526,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "NO2",
+    "model": "Referencia",
+    "split": "validation",
+    "station": "todas",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        16658,
+        0,
+        0
+      ],
+      [
+        318,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "NO2",
+    "model": "Referencia",
+    "split": "validation",
+    "station": "centenario",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        1636,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "NO2",
+    "model": "Referencia",
+    "split": "validation",
+    "station": "cordoba",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        7136,
+        0,
+        0
+      ],
+      [
+        37,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "NO2",
+    "model": "Referencia",
+    "split": "validation",
+    "station": "la_boca",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        7886,
+        0,
+        0
+      ],
+      [
+        276,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "NO2",
+    "model": "Referencia",
+    "split": "test",
+    "station": "todas",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        40502,
+        0,
+        0
+      ],
+      [
+        217,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "NO2",
+    "model": "Referencia",
+    "split": "test",
+    "station": "centenario",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        13871,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "NO2",
+    "model": "Referencia",
+    "split": "test",
+    "station": "cordoba",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        13280,
+        0,
+        0
+      ],
+      [
+        45,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "NO2",
+    "model": "Referencia",
+    "split": "test",
+    "station": "la_boca",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        13351,
+        0,
+        0
+      ],
+      [
+        169,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "NO2",
+    "model": "RandomForest",
+    "split": "validation",
+    "station": "todas",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        16653,
+        5,
+        0
+      ],
+      [
+        308,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "NO2",
+    "model": "RandomForest",
+    "split": "validation",
+    "station": "centenario",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        1636,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "NO2",
+    "model": "RandomForest",
+    "split": "validation",
+    "station": "cordoba",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        7131,
+        5,
+        0
+      ],
+      [
+        27,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "NO2",
+    "model": "RandomForest",
+    "split": "validation",
+    "station": "la_boca",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        7886,
+        0,
+        0
+      ],
+      [
+        276,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "NO2",
+    "model": "RandomForest",
+    "split": "test",
+    "station": "todas",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        40502,
+        0,
+        0
+      ],
+      [
+        217,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "NO2",
+    "model": "RandomForest",
+    "split": "test",
+    "station": "centenario",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        13871,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "NO2",
+    "model": "RandomForest",
+    "split": "test",
+    "station": "cordoba",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        13280,
+        0,
+        0
+      ],
+      [
+        45,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "NO2",
+    "model": "RandomForest",
+    "split": "test",
+    "station": "la_boca",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        13351,
+        0,
+        0
+      ],
+      [
+        169,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "NO2",
+    "model": "XGBoost",
+    "split": "validation",
+    "station": "todas",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        16658,
+        0,
+        0
+      ],
+      [
+        317,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "NO2",
+    "model": "XGBoost",
+    "split": "validation",
+    "station": "centenario",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        1636,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "NO2",
+    "model": "XGBoost",
+    "split": "validation",
+    "station": "cordoba",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        7136,
+        0,
+        0
+      ],
+      [
+        37,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "NO2",
+    "model": "XGBoost",
+    "split": "validation",
+    "station": "la_boca",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        7886,
+        0,
+        0
+      ],
+      [
+        275,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "NO2",
+    "model": "XGBoost",
+    "split": "test",
+    "station": "todas",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        40502,
+        0,
+        0
+      ],
+      [
+        217,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "NO2",
+    "model": "XGBoost",
+    "split": "test",
+    "station": "centenario",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        13871,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "NO2",
+    "model": "XGBoost",
+    "split": "test",
+    "station": "cordoba",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        13280,
+        0,
+        0
+      ],
+      [
+        45,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "NO2",
+    "model": "XGBoost",
+    "split": "test",
+    "station": "la_boca",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        13351,
+        0,
+        0
+      ],
+      [
+        169,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "PM10",
+    "model": "Referencia",
+    "split": "validation",
+    "station": "todas",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        22087,
+        0,
+        0
+      ],
+      [
+        435,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "PM10",
+    "model": "Referencia",
+    "split": "validation",
+    "station": "centenario",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        7460,
+        0,
+        0
+      ],
+      [
+        133,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "PM10",
+    "model": "Referencia",
+    "split": "validation",
+    "station": "cordoba",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        7838,
+        0,
+        0
+      ],
+      [
+        125,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "PM10",
+    "model": "Referencia",
+    "split": "validation",
+    "station": "la_boca",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        6789,
+        0,
+        0
+      ],
+      [
+        177,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "PM10",
+    "model": "Referencia",
+    "split": "test",
+    "station": "todas",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        37600,
+        0,
+        0
+      ],
+      [
+        401,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "PM10",
+    "model": "Referencia",
+    "split": "test",
+    "station": "centenario",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        13255,
+        0,
+        0
+      ],
+      [
+        74,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "PM10",
+    "model": "Referencia",
+    "split": "test",
+    "station": "cordoba",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        12493,
+        0,
+        0
+      ],
+      [
+        117,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "PM10",
+    "model": "Referencia",
+    "split": "test",
+    "station": "la_boca",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        11852,
+        0,
+        0
+      ],
+      [
+        210,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "PM10",
+    "model": "RandomForest",
+    "split": "validation",
+    "station": "todas",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        22052,
+        35,
+        0
+      ],
+      [
+        435,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "PM10",
+    "model": "RandomForest",
+    "split": "validation",
+    "station": "centenario",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        7460,
+        0,
+        0
+      ],
+      [
+        133,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "PM10",
+    "model": "RandomForest",
+    "split": "validation",
+    "station": "cordoba",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        7838,
+        0,
+        0
+      ],
+      [
+        125,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "PM10",
+    "model": "RandomForest",
+    "split": "validation",
+    "station": "la_boca",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        6754,
+        35,
+        0
+      ],
+      [
+        177,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "PM10",
+    "model": "RandomForest",
+    "split": "test",
+    "station": "todas",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        37507,
+        93,
+        0
+      ],
+      [
+        398,
+        3,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "PM10",
+    "model": "RandomForest",
+    "split": "test",
+    "station": "centenario",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        13255,
+        0,
+        0
+      ],
+      [
+        74,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "PM10",
+    "model": "RandomForest",
+    "split": "test",
+    "station": "cordoba",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        12493,
+        0,
+        0
+      ],
+      [
+        117,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "PM10",
+    "model": "RandomForest",
+    "split": "test",
+    "station": "la_boca",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        11759,
+        93,
+        0
+      ],
+      [
+        207,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "PM10",
+    "model": "XGBoost",
+    "split": "validation",
+    "station": "todas",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        22087,
+        0,
+        0
+      ],
+      [
+        435,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "PM10",
+    "model": "XGBoost",
+    "split": "validation",
+    "station": "centenario",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        7460,
+        0,
+        0
+      ],
+      [
+        133,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "PM10",
+    "model": "XGBoost",
+    "split": "validation",
+    "station": "cordoba",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        7838,
+        0,
+        0
+      ],
+      [
+        125,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "PM10",
+    "model": "XGBoost",
+    "split": "validation",
+    "station": "la_boca",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        6789,
+        0,
+        0
+      ],
+      [
+        177,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "PM10",
+    "model": "XGBoost",
+    "split": "test",
+    "station": "todas",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        37600,
+        0,
+        0
+      ],
+      [
+        401,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "PM10",
+    "model": "XGBoost",
+    "split": "test",
+    "station": "centenario",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        13255,
+        0,
+        0
+      ],
+      [
+        74,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "PM10",
+    "model": "XGBoost",
+    "split": "test",
+    "station": "cordoba",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        12493,
+        0,
+        0
+      ],
+      [
+        117,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "PM10",
+    "model": "XGBoost",
+    "split": "test",
+    "station": "la_boca",
+    "level": "hourly_from_regression",
+    "matrix": [
+      [
+        11852,
+        0,
+        0
+      ],
+      [
+        210,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "daily",
+    "model": "Referencia",
+    "split": "validation",
+    "station": "todas",
+    "level": "daily_classifier",
+    "matrix": [
+      [
+        472,
+        0,
+        0
+      ],
+      [
+        53,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "daily",
+    "model": "Referencia",
+    "split": "validation",
+    "station": "centenario",
+    "level": "daily_classifier",
+    "matrix": [
+      [
+        59,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "daily",
+    "model": "Referencia",
+    "split": "validation",
+    "station": "cordoba",
+    "level": "daily_classifier",
+    "matrix": [
+      [
+        190,
+        0,
+        0
+      ],
+      [
+        12,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "daily",
+    "model": "Referencia",
+    "split": "validation",
+    "station": "la_boca",
+    "level": "daily_classifier",
+    "matrix": [
+      [
+        223,
+        0,
+        0
+      ],
+      [
+        39,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "daily",
+    "model": "Referencia",
+    "split": "test",
+    "station": "todas",
+    "level": "daily_classifier",
+    "matrix": [
+      [
+        1419,
+        0,
+        0
+      ],
+      [
+        83,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "daily",
+    "model": "Referencia",
+    "split": "test",
+    "station": "centenario",
+    "level": "daily_classifier",
+    "matrix": [
+      [
+        527,
+        0,
+        0
+      ],
+      [
+        8,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "daily",
+    "model": "Referencia",
+    "split": "test",
+    "station": "cordoba",
+    "level": "daily_classifier",
+    "matrix": [
+      [
+        468,
+        0,
+        0
+      ],
+      [
+        21,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "daily",
+    "model": "Referencia",
+    "split": "test",
+    "station": "la_boca",
+    "level": "daily_classifier",
+    "matrix": [
+      [
+        424,
+        0,
+        0
+      ],
+      [
+        54,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "daily",
+    "model": "RandomForest",
+    "split": "validation",
+    "station": "todas",
+    "level": "daily_classifier",
+    "matrix": [
+      [
+        462,
+        10,
+        0
+      ],
+      [
+        38,
+        15,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "daily",
+    "model": "RandomForest",
+    "split": "validation",
+    "station": "centenario",
+    "level": "daily_classifier",
+    "matrix": [
+      [
+        59,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "daily",
+    "model": "RandomForest",
+    "split": "validation",
+    "station": "cordoba",
+    "level": "daily_classifier",
+    "matrix": [
+      [
+        187,
+        3,
+        0
+      ],
+      [
+        8,
+        4,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "daily",
+    "model": "RandomForest",
+    "split": "validation",
+    "station": "la_boca",
+    "level": "daily_classifier",
+    "matrix": [
+      [
+        216,
+        7,
+        0
+      ],
+      [
+        28,
+        11,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "daily",
+    "model": "RandomForest",
+    "split": "test",
+    "station": "todas",
+    "level": "daily_classifier",
+    "matrix": [
+      [
+        1349,
+        70,
+        0
+      ],
+      [
+        64,
+        19,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "daily",
+    "model": "RandomForest",
+    "split": "test",
+    "station": "centenario",
+    "level": "daily_classifier",
+    "matrix": [
+      [
+        521,
+        6,
+        0
+      ],
+      [
+        7,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "daily",
+    "model": "RandomForest",
+    "split": "test",
+    "station": "cordoba",
+    "level": "daily_classifier",
+    "matrix": [
+      [
+        449,
+        19,
+        0
+      ],
+      [
+        20,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "daily",
+    "model": "RandomForest",
+    "split": "test",
+    "station": "la_boca",
+    "level": "daily_classifier",
+    "matrix": [
+      [
+        379,
+        45,
+        0
+      ],
+      [
+        37,
+        17,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "daily",
+    "model": "XGBoost",
+    "split": "validation",
+    "station": "todas",
+    "level": "daily_classifier",
+    "matrix": [
+      [
+        438,
+        34,
+        0
+      ],
+      [
+        29,
+        24,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "daily",
+    "model": "XGBoost",
+    "split": "validation",
+    "station": "centenario",
+    "level": "daily_classifier",
+    "matrix": [
+      [
+        59,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "daily",
+    "model": "XGBoost",
+    "split": "validation",
+    "station": "cordoba",
+    "level": "daily_classifier",
+    "matrix": [
+      [
+        181,
+        9,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "daily",
+    "model": "XGBoost",
+    "split": "validation",
+    "station": "la_boca",
+    "level": "daily_classifier",
+    "matrix": [
+      [
+        198,
+        25,
+        0
+      ],
+      [
+        21,
+        18,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "daily",
+    "model": "XGBoost",
+    "split": "test",
+    "station": "todas",
+    "level": "daily_classifier",
+    "matrix": [
+      [
+        1303,
+        116,
+        0
+      ],
+      [
+        57,
+        26,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "daily",
+    "model": "XGBoost",
+    "split": "test",
+    "station": "centenario",
+    "level": "daily_classifier",
+    "matrix": [
+      [
+        510,
+        17,
+        0
+      ],
+      [
+        7,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "daily",
+    "model": "XGBoost",
+    "split": "test",
+    "station": "cordoba",
+    "level": "daily_classifier",
+    "matrix": [
+      [
+        432,
+        36,
+        0
+      ],
+      [
+        18,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "task": "daily",
+    "model": "XGBoost",
+    "split": "test",
+    "station": "la_boca",
+    "level": "daily_classifier",
+    "matrix": [
+      [
+        361,
+        63,
+        0
+      ],
+      [
+        32,
+        22,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  }
+]

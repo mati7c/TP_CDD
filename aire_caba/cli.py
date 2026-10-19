@@ -13,7 +13,7 @@ PROJECT = Path(__file__).resolve().parent.parent
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Extracción de meteorología horaria para CABA")
-    parser.add_argument("command", choices=["import-air", "plan", "download", "status", "export-weather", "calendar", "join", "transform", "prepare-model"])
+    parser.add_argument("command", choices=["import-air", "plan", "download", "status", "export-weather", "calendar", "join", "transform", "prepare-model", "model", "model-report"])
     parser.add_argument("--csv", type=Path, help="CSV original para import-air")
     parser.add_argument("--config", type=Path, default=PROJECT / "config/open_meteo.json")
     parser.add_argument("--data-dir", type=Path, default=PROJECT / "data")
@@ -21,10 +21,31 @@ def main(argv=None):
     parser.add_argument("--end", help="Fecha final inclusiva YYYY-MM-DD")
     parser.add_argument("--stations", nargs="+", help="centenario cordoba la_boca palermo")
     parser.add_argument("--max-requests", type=int, help="Máximo de bloques nuevos en esta ejecución")
+    parser.add_argument("--model-config", type=Path, help="Configuración del modelado (config/modeling.json por defecto)")
+    parser.add_argument("--output-dir", type=Path, help="Carpeta de resultados del modelado")
     args = parser.parse_args(argv)
     try:
         if args.max_requests is not None and args.max_requests < 1:
             raise ValueError("--max-requests debe ser positivo")
+        if args.command == "model-report":
+            from .model_report import build_report
+            if args.start or args.end or args.stations or args.max_requests or args.csv or args.model_config:
+                raise ValueError("model-report lee los resultados existentes; sólo admite --output-dir.")
+            path = build_report(args.output_dir)
+            print(f"Notebook e informe HTML: {path}")
+            return 0
+        if args.command == "model":
+            from .modeling import run_modeling
+            if args.start or args.end or args.stations or args.max_requests or args.csv:
+                raise ValueError("model utiliza cortes por fecha en --model-config; no admite filtros de extracción.")
+            with download_lock(args.data_dir):
+                run_modeling(args.data_dir, args.model_config, args.output_dir)
+            from .model_report import build_report
+            path = build_report(args.output_dir)
+            print(f"Notebook e informe HTML: {path}")
+            return 0
+        if args.model_config or args.output_dir:
+            raise ValueError("--model-config y --output-dir se usan solamente con model")
         if args.command == "import-air":
             if not args.csv:
                 raise ValueError("import-air requiere --csv RUTA")

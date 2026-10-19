@@ -1,6 +1,6 @@
 # Calidad del aire en CABA
 
-Proyecto de Ciencia de Datos, UTN FRC, Grupo 12. Primera etapa: **extracción de meteorología horaria basada en el CSV original de contaminación**. El archivo `calidad-aire.csv` ya fue incorporado: 145.980 filas, 14 columnas, del 01/10/2009 al 24/08/2026. Incluye Centenario, Av. Córdoba, La Boca y Palermo (esta última sólo en 2009–2010). No limpia, imputa ni construye todavía la tabla de entrenamiento.
+Proyecto de Ciencia de Datos, UTN FRC, Grupo 12. Incluye extracción meteorológica y de calendario, ETL, preparación con one-hot y modelado con evaluación temporal. El archivo original de contaminación contiene 145.980 filas y 14 columnas, del 01/10/2009 al 24/08/2026. Incluye Centenario, Av. Córdoba, La Boca y Palermo (esta última sólo en 2009–2010); la tabla de modelado utiliza las tres primeras estaciones.
 
 ## Ejecutar en Windows
 
@@ -30,6 +30,13 @@ Desde esta carpeta en PowerShell:
 
 # Generar el CSV con one-hot para modelado futuro.
 .\run.ps1 prepare-model
+
+# Entrenar y evaluar; generar notebook y HTML de tercera entrega.
+# Instalar antes: .\.venv\Scripts\python.exe -m pip install -r requirements-modeling.txt
+.\run.ps1 model
+
+# Reconstruir las figuras y el notebook desde las métricas guardadas, sin reentrenar.
+.\run.ps1 model-report
 
 # Ver progreso y verificar integridad de los archivos descargados.
 .\run.ps1 status
@@ -133,9 +140,17 @@ La convención temporal sigue siendo la de la transformación previa: `fecha_hor
 
 ## Uso posterior
 
-1. Resolver la convención temporal del CSV y auditar sus valores anómalos.
+La tercera entrega se ejecuta con el comando model y la configuración de config/modeling.json.
+Compara referencia, Random Forest y XGBoost para las tres concentraciones, y agrega
+clasificación diaria conjunta por estación en Buena, Moderada y Desfavorable con cortes
+EPA adaptados. Los resultados, predicciones, matrices y modelos quedan en
+outputs/tercera_entrega; el notebook ejecutado y su HTML están en notebooks/.
+La metodología y las métricas se detallan en [docs/tercera_entrega.md](docs/tercera_entrega.md).
+Los modelos binarios se conservan localmente y se regeneran con model.
+
+1. Revisar los errores por estación, contaminante y categoría a partir de los resultados de tercera entrega.
 2. Revisar el calendario reconstruido y las fechas de anuncio antes de usarlo en pronósticos históricos.
-3. Construir la tabla por estación/hora en una etapa de transformación separada.
+3. Evaluar el sistema con pronósticos meteorológicos emitidos y construir la aplicación futura.
 
 Para pronósticos, no usar el tiempo meteorológico observado del futuro como entrada. El reanálisis tampoco reproduce exactamente la información disponible en tiempo real. Las predicciones operativas requerirán verificar disponibilidad y pronósticos históricos emitidos previamente.
 
