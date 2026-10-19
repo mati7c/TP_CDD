@@ -1,0 +1,351 @@
+<!doctype html><html lang='es'><meta charset='utf-8'><title>Clasificación directa NO₂</title>
+<style>body{font:16px system-ui;max-width:1400px;margin:35px auto;padding:0 20px;color:#193049}table{border-collapse:collapse;font-size:13px}td,th{padding:8px;border:1px solid #ccd5df}th{background:#edf3f8}section{overflow-x:auto}img{max-width:100%}li{margin:10px 0}</style>
+<h1>Piloto: clasificación directa de NO₂</h1>
+<p>El clasificador elegido por validación fue XGBoost. En prueba, su F1 macro sobre clases presentes es 0.4548, frente a 0.4816 del método de regresión convertido (diferencia -0.0268). Accuracy 86.33% y balanced accuracy 53.36%.</p><h2>Método y límites</h2><ul>
+<li>Un clasificador de NO2 compartido entre estaciones; la estación es una entrada. La salida es el nivel británico, no una concentración ni una categoría diaria conjunta.</li>
+<li>Se reutilizan las mismas 59 entradas, objetivos medidos/censurados y filtros de plausibilidad. NO2 y los otros contaminantes no son predictores. Las concentraciones originales se conservan.</li>
+<li>Entrenamiento anterior a 2024; validación en 2024; prueba desde 2025, con la misma purga de dos días. Pesos y codificación de clases se calculan sólo con entrenamiento. Los modelos y el exponente de ponderación se eligen únicamente por F1 macro de validación; no se retocan después de ver el test.</li>
+<li>Se prueban pesos sin balancear, raíz de frecuencia inversa y frecuencia inversa completa. Todos se normalizan a media uno. No se crean ejemplos sintéticos ni se balancean validación y prueba.</li>
+<li>Las clases ausentes de entrenamiento no pueden aprenderse: conservan probabilidad cero y se indican en el manifiesto. Se codifican las presentes y se decodifican para no desplazar los niveles DAQI.</li>
+<li>Validación y prueba sólo contienen niveles 1, 2 y 3, todos de contaminación baja. No puede concluirse que el piloto detecte episodios moderados, altos o muy altos. El nivel 3 sólo tiene 19 ejemplos en test: sus métricas son inestables.</li>
+<li>F1/precision/recall macro promedian los diez niveles fijos y usan cero para clases no evaluables. Las variantes macro_supported consideran sólo niveles reales presentes. Se muestran ambas. FPR se calcula por clase contra el resto; cero FPR no garantiza detección.</li>
+<li>Se mantiene la conversión NO2 ppb × 1.9125 a µg/m³ y el redondeo único DAQI. Las cuatro bandas se evalúan aparte; en test todos los objetivos pertenecen a la banda baja.</li>
+<li>Los algoritmos siguen usando meteorología ERA5 histórica. No se evalúa aún el error adicional de pronósticos meteorológicos a 24/48 h. Las probabilidades del clasificador no están calibradas.</li>
+<li>El período de prueba ya se había inspeccionado al proponer este piloto: esta comparación es exploratoria. Una confirmación independiente requiere datos posteriores o un nuevo diseño de evaluación temporal.</li>
+</ul>
+<h2>Comparación en prueba: diez niveles fijos</h2><section>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>model</th>
+      <th>n</th>
+      <th>accuracy</th>
+      <th>precision_macro</th>
+      <th>recall_macro</th>
+      <th>f1_macro</th>
+      <th>f1_macro_supported</th>
+      <th>balanced_accuracy</th>
+      <th>false_positive_rate_macro</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Regresion_XGBoost</td>
+      <td>40719</td>
+      <td>0.9192</td>
+      <td>0.1424</td>
+      <td>0.1469</td>
+      <td>0.1445</td>
+      <td>0.4816</td>
+      <td>0.4895</td>
+      <td>0.0533</td>
+    </tr>
+    <tr>
+      <td>Mayoria_train</td>
+      <td>40719</td>
+      <td>0.9251</td>
+      <td>0.0925</td>
+      <td>0.1000</td>
+      <td>0.0961</td>
+      <td>0.3204</td>
+      <td>0.3333</td>
+      <td>0.1000</td>
+    </tr>
+    <tr>
+      <td>RandomForest</td>
+      <td>40719</td>
+      <td>0.8604</td>
+      <td>0.1251</td>
+      <td>0.1472</td>
+      <td>0.1308</td>
+      <td>0.4360</td>
+      <td>0.4907</td>
+      <td>0.0530</td>
+    </tr>
+    <tr>
+      <td>XGBoost</td>
+      <td>40719</td>
+      <td>0.8633</td>
+      <td>0.1293</td>
+      <td>0.1601</td>
+      <td>0.1365</td>
+      <td>0.4548</td>
+      <td>0.5336</td>
+      <td>0.0403</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<h2>Detalle por nivel del clasificador elegido</h2><section>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>category</th>
+      <th>support</th>
+      <th>predicted_count</th>
+      <th>precision</th>
+      <th>recall</th>
+      <th>f1</th>
+      <th>false_positive_rate</th>
+      <th>tp</th>
+      <th>fp</th>
+      <th>fn</th>
+      <th>tn</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1 · Baja</td>
+      <td>37668</td>
+      <td>33799</td>
+      <td>0.9750</td>
+      <td>0.8748</td>
+      <td>0.9222</td>
+      <td>0.2773</td>
+      <td>32953</td>
+      <td>846</td>
+      <td>4715</td>
+      <td>2205</td>
+    </tr>
+    <tr>
+      <td>2 · Baja</td>
+      <td>3032</td>
+      <td>6920</td>
+      <td>0.3181</td>
+      <td>0.7259</td>
+      <td>0.4423</td>
+      <td>0.1252</td>
+      <td>2201</td>
+      <td>4719</td>
+      <td>831</td>
+      <td>32968</td>
+    </tr>
+    <tr>
+      <td>3 · Baja</td>
+      <td>19</td>
+      <td>0</td>
+      <td>no evaluable</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>19</td>
+      <td>40700</td>
+    </tr>
+    <tr>
+      <td>4 · Moderada</td>
+      <td>0</td>
+      <td>0</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>0.0000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40719</td>
+    </tr>
+    <tr>
+      <td>5 · Moderada</td>
+      <td>0</td>
+      <td>0</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>0.0000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40719</td>
+    </tr>
+    <tr>
+      <td>6 · Moderada</td>
+      <td>0</td>
+      <td>0</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>0.0000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40719</td>
+    </tr>
+    <tr>
+      <td>7 · Alta</td>
+      <td>0</td>
+      <td>0</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>0.0000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40719</td>
+    </tr>
+    <tr>
+      <td>8 · Alta</td>
+      <td>0</td>
+      <td>0</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>0.0000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40719</td>
+    </tr>
+    <tr>
+      <td>9 · Alta</td>
+      <td>0</td>
+      <td>0</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>0.0000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40719</td>
+    </tr>
+    <tr>
+      <td>10 · Muy alta</td>
+      <td>0</td>
+      <td>0</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>0.0000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40719</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<h2>Resultados por estación del clasificador elegido</h2><section>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>station</th>
+      <th>n</th>
+      <th>accuracy</th>
+      <th>precision_macro</th>
+      <th>recall_macro</th>
+      <th>f1_macro</th>
+      <th>f1_macro_supported</th>
+      <th>balanced_accuracy</th>
+      <th>false_positive_rate_macro</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>centenario</td>
+      <td>13874</td>
+      <td>0.9897</td>
+      <td>0.1010</td>
+      <td>0.1008</td>
+      <td>0.1009</td>
+      <td>0.5043</td>
+      <td>0.5038</td>
+      <td>0.0992</td>
+    </tr>
+    <tr>
+      <td>cordoba</td>
+      <td>13325</td>
+      <td>0.8875</td>
+      <td>0.1138</td>
+      <td>0.1348</td>
+      <td>0.1178</td>
+      <td>0.3926</td>
+      <td>0.4494</td>
+      <td>0.0662</td>
+    </tr>
+    <tr>
+      <td>la_boca</td>
+      <td>13520</td>
+      <td>0.7098</td>
+      <td>0.1306</td>
+      <td>0.1501</td>
+      <td>0.1297</td>
+      <td>0.4322</td>
+      <td>0.5002</td>
+      <td>0.0500</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<h2>Resultados de validación usados para comparar enfoques</h2><section>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>model</th>
+      <th>n</th>
+      <th>accuracy</th>
+      <th>precision_macro</th>
+      <th>recall_macro</th>
+      <th>f1_macro</th>
+      <th>f1_macro_supported</th>
+      <th>balanced_accuracy</th>
+      <th>false_positive_rate_macro</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Regresion_XGBoost</td>
+      <td>16976</td>
+      <td>0.8864</td>
+      <td>0.1716</td>
+      <td>0.1440</td>
+      <td>0.1525</td>
+      <td>0.5082</td>
+      <td>0.4799</td>
+      <td>0.0559</td>
+    </tr>
+    <tr>
+      <td>Mayoria_train</td>
+      <td>16976</td>
+      <td>0.8212</td>
+      <td>0.0821</td>
+      <td>0.1000</td>
+      <td>0.0902</td>
+      <td>0.3006</td>
+      <td>0.3333</td>
+      <td>0.1000</td>
+    </tr>
+    <tr>
+      <td>RandomForest</td>
+      <td>16976</td>
+      <td>0.8709</td>
+      <td>0.1556</td>
+      <td>0.1589</td>
+      <td>0.1572</td>
+      <td>0.5239</td>
+      <td>0.5298</td>
+      <td>0.0410</td>
+    </tr>
+    <tr>
+      <td>XGBoost</td>
+      <td>16976</td>
+      <td>0.8759</td>
+      <td>0.1569</td>
+      <td>0.1668</td>
+      <td>0.1610</td>
+      <td>0.5368</td>
+      <td>0.5559</td>
+      <td>0.0332</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<h2>Matrices de confusión</h2><img alt='Matrices de confusión' src='figuras/matrices_NO2.png'>
+<h2>Recall por nivel</h2><img alt='Recall por nivel' src='figuras/recall_NO2.png'>
+<h2>Fuentes</h2><ul>
+<li><a href='https://www.gov.uk/government/publications/health-effects-of-air-pollution/pollutant-concentrations-for-the-daily-air-quality-index-daqi'>uk_thresholds</a></li>
+<li><a href='https://uk-air.defra.gov.uk/reports/cat14/1304251155_Update_on_Implementation_of_the_DAQI_April_2013_Final.pdf'>uk_rounding</a></li>
+<li><a href='https://uk-air.defra.gov.uk/reports/cat06/0502160851_Conversion_Factors_Between_ppb_and.pdf'>gas_conversion</a></li>
+</ul></html>

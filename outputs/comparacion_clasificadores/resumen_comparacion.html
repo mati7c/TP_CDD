@@ -1,0 +1,1037 @@
+<!doctype html><html lang='es'><meta charset='utf-8'><title>Comparación ampliada</title>
+<style>body{font:16px system-ui;max-width:1450px;margin:35px auto;padding:0 20px;color:#193049}table{border-collapse:collapse;font-size:13px}td,th{padding:8px;border:1px solid #ccd5df}th{background:#edf3f8}section{overflow-x:auto}img{max-width:100%}li{margin:10px 0}</style>
+<h1>Comparación ampliada de clasificadores</h1><ul>
+<li>CO: elegido XGBoost, ponderación 1; F1 clases presentes test 0.4420, frente a 0.4565 de XGBoost suave; accuracy 85.32%.</li>
+<li>NO2: elegido XGBoost, ponderación 0.5; F1 clases presentes test 0.4548, frente a 0.4548 de XGBoost suave; accuracy 86.33%.</li>
+<li>PM10: elegido XGBoost, ponderación 0.5; F1 clases presentes test 0.1289, frente a 0.1289 de XGBoost suave; accuracy 61.37%.</li>
+</ul><h2>Método y alcance</h2><ul>
+<li>Se comparan Random Forest y XGBoost con pesos 0, 0.5 y 1 para CO y PM10. NO2 reutiliza su piloto previo. La configuración de árboles permanece fija; se elige técnica y ponderación por F1 macro de validación.</li>
+<li>Los XGBoost suaves ya entrenados se reutilizan después de comprobar hashes, datos, escala y parámetros. Los pesos se calculan sólo en entrenamiento. No se fabrican ejemplos ni se reequilibra test.</li>
+<li>Las selecciones por contaminante se guardan antes de calcular test. No se cambia una elección porque otra alternativa tenga mejores números de prueba. Las referencias previas y los XGBoost suaves se conservan.</li>
+<li>Macro considera todas las clases declaradas, con cero en métricas no evaluables. Macro_supported considera sólo categorías reales presentes. El FPR por clase es FP/(FP+TN), no uno menos precision.</li>
+<li>Los contaminantes usan escalas distintas: India para CO y DAQI británico para NO2/PM10. No hay un índice general de estación o CABA. En NO2 los tres niveles de test pertenecen a contaminación baja. En CO faltan las categorías superiores y en PM10 los casos elevados son escasos.</li>
+<li>Se conservan las mismas entradas, filas válidas, ventanas publicadas, conversiones y cortes temporales. ERA5 es meteorología histórica: esta experiencia no mide el error operativo del pronóstico a 24/48 h.</li>
+<li>Test ya había sido inspeccionado y motivó ampliar las pruebas: se trata de una comparación exploratoria. Una confirmación independiente requiere datos posteriores o un nuevo protocolo temporal.</li>
+</ul>
+<h2>Resumen solicitado: XGBoost suave — test</h2><section>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Contaminante</th>
+      <th>Accuracy</th>
+      <th>Precision macro</th>
+      <th>Recall macro</th>
+      <th>F1 macro</th>
+      <th>FPR macro</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CO</td>
+      <td>0.9361</td>
+      <td>0.2469</td>
+      <td>0.2177</td>
+      <td>0.2282</td>
+      <td>0.1145</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>0.8633</td>
+      <td>0.1293</td>
+      <td>0.1601</td>
+      <td>0.1365</td>
+      <td>0.0403</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>0.6137</td>
+      <td>0.1689</td>
+      <td>0.1280</td>
+      <td>0.1289</td>
+      <td>0.0906</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<h2>XGBoost suave: clases presentes y métricas adicionales</h2><section>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>pollutant</th>
+      <th>classes_present</th>
+      <th>classes_declared</th>
+      <th>precision_macro_supported</th>
+      <th>recall_macro_supported</th>
+      <th>f1_macro_supported</th>
+      <th>balanced_accuracy</th>
+      <th>f1_weighted</th>
+      <th>ordinal_mae</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CO</td>
+      <td>3</td>
+      <td>6</td>
+      <td>0.4938</td>
+      <td>0.4354</td>
+      <td>0.4565</td>
+      <td>0.4354</td>
+      <td>0.9280</td>
+      <td>0.0647</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>3</td>
+      <td>10</td>
+      <td>0.4310</td>
+      <td>0.5336</td>
+      <td>0.4548</td>
+      <td>0.5336</td>
+      <td>0.8860</td>
+      <td>0.1370</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>0.1689</td>
+      <td>0.1280</td>
+      <td>0.1289</td>
+      <td>0.1280</td>
+      <td>0.5477</td>
+      <td>0.4525</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<h2>Clasificadores elegidos por validación — test</h2><section>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>weight_power</th>
+      <th>pollutant</th>
+      <th>model</th>
+      <th>n</th>
+      <th>accuracy</th>
+      <th>precision_macro</th>
+      <th>recall_macro</th>
+      <th>f1_macro</th>
+      <th>f1_macro_supported</th>
+      <th>balanced_accuracy</th>
+      <th>false_positive_rate_macro</th>
+      <th>f1_weighted</th>
+      <th>ordinal_mae</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.0000</td>
+      <td>CO</td>
+      <td>XGBoost</td>
+      <td>41189</td>
+      <td>0.8532</td>
+      <td>0.2101</td>
+      <td>0.2705</td>
+      <td>0.2210</td>
+      <td>0.4420</td>
+      <td>0.5411</td>
+      <td>0.0606</td>
+      <td>0.8825</td>
+      <td>0.1492</td>
+    </tr>
+    <tr>
+      <td>0.5000</td>
+      <td>PM10</td>
+      <td>XGBoost</td>
+      <td>38003</td>
+      <td>0.6137</td>
+      <td>0.1689</td>
+      <td>0.1280</td>
+      <td>0.1289</td>
+      <td>0.1289</td>
+      <td>0.1280</td>
+      <td>0.0906</td>
+      <td>0.5477</td>
+      <td>0.4525</td>
+    </tr>
+    <tr>
+      <td>0.5000</td>
+      <td>NO2</td>
+      <td>XGBoost</td>
+      <td>40719</td>
+      <td>0.8633</td>
+      <td>0.1293</td>
+      <td>0.1601</td>
+      <td>0.1365</td>
+      <td>0.4548</td>
+      <td>0.5336</td>
+      <td>0.0403</td>
+      <td>0.8860</td>
+      <td>0.1370</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<h2>Comparación de todos los enfoques finalistas — test</h2><section>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>pollutant</th>
+      <th>model</th>
+      <th>n</th>
+      <th>accuracy</th>
+      <th>precision_macro</th>
+      <th>recall_macro</th>
+      <th>f1_macro</th>
+      <th>f1_macro_supported</th>
+      <th>balanced_accuracy</th>
+      <th>false_positive_rate_macro</th>
+      <th>f1_weighted</th>
+      <th>ordinal_mae</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CO</td>
+      <td>XGBoost_suave</td>
+      <td>41189</td>
+      <td>0.9361</td>
+      <td>0.2469</td>
+      <td>0.2177</td>
+      <td>0.2282</td>
+      <td>0.4565</td>
+      <td>0.4354</td>
+      <td>0.1145</td>
+      <td>0.9280</td>
+      <td>0.0647</td>
+    </tr>
+    <tr>
+      <td>CO</td>
+      <td>Regresion_previa</td>
+      <td>41189</td>
+      <td>0.9377</td>
+      <td>0.2672</td>
+      <td>0.1873</td>
+      <td>0.1969</td>
+      <td>0.3939</td>
+      <td>0.3746</td>
+      <td>0.1443</td>
+      <td>0.9168</td>
+      <td>0.0633</td>
+    </tr>
+    <tr>
+      <td>CO</td>
+      <td>Mayoria_train</td>
+      <td>41189</td>
+      <td>0.9326</td>
+      <td>0.1554</td>
+      <td>0.1667</td>
+      <td>0.1609</td>
+      <td>0.3217</td>
+      <td>0.3333</td>
+      <td>0.1667</td>
+      <td>0.9001</td>
+      <td>0.0694</td>
+    </tr>
+    <tr>
+      <td>CO</td>
+      <td>RandomForest</td>
+      <td>41189</td>
+      <td>0.8520</td>
+      <td>0.2164</td>
+      <td>0.2680</td>
+      <td>0.2235</td>
+      <td>0.4469</td>
+      <td>0.5361</td>
+      <td>0.0684</td>
+      <td>0.8806</td>
+      <td>0.1489</td>
+    </tr>
+    <tr>
+      <td>CO</td>
+      <td>XGBoost</td>
+      <td>41189</td>
+      <td>0.8532</td>
+      <td>0.2101</td>
+      <td>0.2705</td>
+      <td>0.2210</td>
+      <td>0.4420</td>
+      <td>0.5411</td>
+      <td>0.0606</td>
+      <td>0.8825</td>
+      <td>0.1492</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>XGBoost_suave</td>
+      <td>38003</td>
+      <td>0.6137</td>
+      <td>0.1689</td>
+      <td>0.1280</td>
+      <td>0.1289</td>
+      <td>0.1289</td>
+      <td>0.1280</td>
+      <td>0.0906</td>
+      <td>0.5477</td>
+      <td>0.4525</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>Regresion_previa</td>
+      <td>38003</td>
+      <td>0.6201</td>
+      <td>0.0620</td>
+      <td>0.1000</td>
+      <td>0.0766</td>
+      <td>0.0766</td>
+      <td>0.1000</td>
+      <td>0.1000</td>
+      <td>0.4747</td>
+      <td>0.4132</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>Mayoria_train</td>
+      <td>38003</td>
+      <td>0.6201</td>
+      <td>0.0620</td>
+      <td>0.1000</td>
+      <td>0.0766</td>
+      <td>0.0766</td>
+      <td>0.1000</td>
+      <td>0.1000</td>
+      <td>0.4747</td>
+      <td>0.4132</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>RandomForest</td>
+      <td>38003</td>
+      <td>0.3771</td>
+      <td>0.1258</td>
+      <td>0.1227</td>
+      <td>0.1097</td>
+      <td>0.1097</td>
+      <td>0.1227</td>
+      <td>0.0917</td>
+      <td>0.4312</td>
+      <td>1.3916</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>XGBoost</td>
+      <td>38003</td>
+      <td>0.6137</td>
+      <td>0.1689</td>
+      <td>0.1280</td>
+      <td>0.1289</td>
+      <td>0.1289</td>
+      <td>0.1280</td>
+      <td>0.0906</td>
+      <td>0.5477</td>
+      <td>0.4525</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>Regresion_previa</td>
+      <td>40719</td>
+      <td>0.9192</td>
+      <td>0.1424</td>
+      <td>0.1469</td>
+      <td>0.1445</td>
+      <td>0.4816</td>
+      <td>0.4895</td>
+      <td>0.0533</td>
+      <td>0.9209</td>
+      <td>0.0812</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>Mayoria_train</td>
+      <td>40719</td>
+      <td>0.9251</td>
+      <td>0.0925</td>
+      <td>0.1000</td>
+      <td>0.0961</td>
+      <td>0.3204</td>
+      <td>0.3333</td>
+      <td>0.1000</td>
+      <td>0.8891</td>
+      <td>0.0754</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>RandomForest</td>
+      <td>40719</td>
+      <td>0.8604</td>
+      <td>0.1251</td>
+      <td>0.1472</td>
+      <td>0.1308</td>
+      <td>0.4360</td>
+      <td>0.4907</td>
+      <td>0.0530</td>
+      <td>0.8811</td>
+      <td>0.1400</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost</td>
+      <td>40719</td>
+      <td>0.8633</td>
+      <td>0.1293</td>
+      <td>0.1601</td>
+      <td>0.1365</td>
+      <td>0.4548</td>
+      <td>0.5336</td>
+      <td>0.0403</td>
+      <td>0.8860</td>
+      <td>0.1370</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost_suave</td>
+      <td>40719</td>
+      <td>0.8633</td>
+      <td>0.1293</td>
+      <td>0.1601</td>
+      <td>0.1365</td>
+      <td>0.4548</td>
+      <td>0.5336</td>
+      <td>0.0403</td>
+      <td>0.8860</td>
+      <td>0.1370</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<h2>Las 18 variantes y sus métricas de validación</h2><section>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>pollutant</th>
+      <th>model</th>
+      <th>weight_power</th>
+      <th>validation_accuracy</th>
+      <th>validation_precision_macro</th>
+      <th>validation_recall_macro</th>
+      <th>validation_f1_macro</th>
+      <th>validation_f1_macro_supported</th>
+      <th>validation_balanced_accuracy</th>
+      <th>validation_false_positive_rate_macro</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CO</td>
+      <td>RandomForest</td>
+      <td>0.0000</td>
+      <td>0.9244</td>
+      <td>0.1988</td>
+      <td>0.1678</td>
+      <td>0.1628</td>
+      <td>0.3256</td>
+      <td>0.3355</td>
+      <td>0.1656</td>
+    </tr>
+    <tr>
+      <td>CO</td>
+      <td>RandomForest</td>
+      <td>0.5000</td>
+      <td>0.9136</td>
+      <td>0.2119</td>
+      <td>0.1915</td>
+      <td>0.1975</td>
+      <td>0.3949</td>
+      <td>0.3830</td>
+      <td>0.1414</td>
+    </tr>
+    <tr>
+      <td>CO</td>
+      <td>RandomForest</td>
+      <td>1.0000</td>
+      <td>0.8506</td>
+      <td>0.2011</td>
+      <td>0.2334</td>
+      <td>0.2089</td>
+      <td>0.4178</td>
+      <td>0.4668</td>
+      <td>0.0995</td>
+    </tr>
+    <tr>
+      <td>CO</td>
+      <td>XGBoost</td>
+      <td>0.0000</td>
+      <td>0.9250</td>
+      <td>0.1876</td>
+      <td>0.1669</td>
+      <td>0.1609</td>
+      <td>0.3217</td>
+      <td>0.3338</td>
+      <td>0.1664</td>
+    </tr>
+    <tr>
+      <td>CO</td>
+      <td>XGBoost</td>
+      <td>0.5000</td>
+      <td>0.9213</td>
+      <td>0.2284</td>
+      <td>0.1968</td>
+      <td>0.2055</td>
+      <td>0.4110</td>
+      <td>0.3937</td>
+      <td>0.1371</td>
+    </tr>
+    <tr>
+      <td>CO</td>
+      <td>XGBoost</td>
+      <td>1.0000</td>
+      <td>0.8499</td>
+      <td>0.2087</td>
+      <td>0.2443</td>
+      <td>0.2158</td>
+      <td>0.4316</td>
+      <td>0.4885</td>
+      <td>0.0912</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>RandomForest</td>
+      <td>0.0000</td>
+      <td>0.6121</td>
+      <td>0.1490</td>
+      <td>0.1060</td>
+      <td>0.0924</td>
+      <td>0.1026</td>
+      <td>0.1177</td>
+      <td>0.0978</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>RandomForest</td>
+      <td>0.5000</td>
+      <td>0.5628</td>
+      <td>0.1229</td>
+      <td>0.1024</td>
+      <td>0.0955</td>
+      <td>0.1061</td>
+      <td>0.1138</td>
+      <td>0.0973</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>RandomForest</td>
+      <td>1.0000</td>
+      <td>0.3981</td>
+      <td>0.1263</td>
+      <td>0.1075</td>
+      <td>0.1088</td>
+      <td>0.1208</td>
+      <td>0.1194</td>
+      <td>0.0913</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>XGBoost</td>
+      <td>0.0000</td>
+      <td>0.6265</td>
+      <td>0.1905</td>
+      <td>0.1020</td>
+      <td>0.0816</td>
+      <td>0.0907</td>
+      <td>0.1134</td>
+      <td>0.0991</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>XGBoost</td>
+      <td>0.5000</td>
+      <td>0.6164</td>
+      <td>0.1512</td>
+      <td>0.1166</td>
+      <td>0.1118</td>
+      <td>0.1243</td>
+      <td>0.1295</td>
+      <td>0.0926</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>XGBoost</td>
+      <td>1.0000</td>
+      <td>0.3426</td>
+      <td>0.1299</td>
+      <td>0.1117</td>
+      <td>0.1059</td>
+      <td>0.1177</td>
+      <td>0.1241</td>
+      <td>0.0896</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>RandomForest</td>
+      <td>0.0000</td>
+      <td>0.8769</td>
+      <td>0.1621</td>
+      <td>0.1459</td>
+      <td>0.1518</td>
+      <td>0.5062</td>
+      <td>0.4863</td>
+      <td>0.0540</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>RandomForest</td>
+      <td>0.5000</td>
+      <td>0.8709</td>
+      <td>0.1556</td>
+      <td>0.1589</td>
+      <td>0.1572</td>
+      <td>0.5239</td>
+      <td>0.5298</td>
+      <td>0.0410</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>RandomForest</td>
+      <td>1.0000</td>
+      <td>0.7628</td>
+      <td>0.1378</td>
+      <td>0.1600</td>
+      <td>0.1400</td>
+      <td>0.4666</td>
+      <td>0.5333</td>
+      <td>0.0400</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost</td>
+      <td>0.0000</td>
+      <td>0.8620</td>
+      <td>0.1693</td>
+      <td>0.1271</td>
+      <td>0.1344</td>
+      <td>0.4479</td>
+      <td>0.4237</td>
+      <td>0.0726</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost</td>
+      <td>0.5000</td>
+      <td>0.8759</td>
+      <td>0.1569</td>
+      <td>0.1668</td>
+      <td>0.1610</td>
+      <td>0.5368</td>
+      <td>0.5559</td>
+      <td>0.0332</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost</td>
+      <td>1.0000</td>
+      <td>0.6615</td>
+      <td>0.1325</td>
+      <td>0.1558</td>
+      <td>0.1246</td>
+      <td>0.4154</td>
+      <td>0.5192</td>
+      <td>0.0443</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<h2>Detalle por categoría del clasificador elegido — test</h2><section>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>pollutant</th>
+      <th>model</th>
+      <th>category</th>
+      <th>support</th>
+      <th>precision</th>
+      <th>recall</th>
+      <th>f1</th>
+      <th>false_positive_rate</th>
+      <th>tp</th>
+      <th>fp</th>
+      <th>fn</th>
+      <th>tn</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CO</td>
+      <td>XGBoost</td>
+      <td>Buena</td>
+      <td>38413</td>
+      <td>0.9816</td>
+      <td>0.8615</td>
+      <td>0.9176</td>
+      <td>0.2230</td>
+      <td>33092</td>
+      <td>619</td>
+      <td>5321</td>
+      <td>2157</td>
+    </tr>
+    <tr>
+      <td>CO</td>
+      <td>XGBoost</td>
+      <td>Satisfactoria</td>
+      <td>2694</td>
+      <td>0.2790</td>
+      <td>0.7617</td>
+      <td>0.4084</td>
+      <td>0.1377</td>
+      <td>2052</td>
+      <td>5302</td>
+      <td>642</td>
+      <td>33193</td>
+    </tr>
+    <tr>
+      <td>CO</td>
+      <td>XGBoost</td>
+      <td>Moderada</td>
+      <td>82</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0030</td>
+      <td>0</td>
+      <td>124</td>
+      <td>82</td>
+      <td>40983</td>
+    </tr>
+    <tr>
+      <td>CO</td>
+      <td>XGBoost</td>
+      <td>Mala</td>
+      <td>0</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>0.0000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>41189</td>
+    </tr>
+    <tr>
+      <td>CO</td>
+      <td>XGBoost</td>
+      <td>Muy mala</td>
+      <td>0</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>0.0000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>41189</td>
+    </tr>
+    <tr>
+      <td>CO</td>
+      <td>XGBoost</td>
+      <td>Severa</td>
+      <td>0</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>0.0000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>41189</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>XGBoost</td>
+      <td>1 · Baja</td>
+      <td>8938</td>
+      <td>0.6052</td>
+      <td>0.1410</td>
+      <td>0.2287</td>
+      <td>0.0283</td>
+      <td>1260</td>
+      <td>822</td>
+      <td>7678</td>
+      <td>28243</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>XGBoost</td>
+      <td>2 · Baja</td>
+      <td>23566</td>
+      <td>0.6426</td>
+      <td>0.8999</td>
+      <td>0.7498</td>
+      <td>0.8168</td>
+      <td>21206</td>
+      <td>11792</td>
+      <td>2360</td>
+      <td>2645</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>XGBoost</td>
+      <td>3 · Baja</td>
+      <td>4771</td>
+      <td>0.3201</td>
+      <td>0.1788</td>
+      <td>0.2294</td>
+      <td>0.0545</td>
+      <td>853</td>
+      <td>1812</td>
+      <td>3918</td>
+      <td>31420</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>XGBoost</td>
+      <td>4 · Moderada</td>
+      <td>468</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0004</td>
+      <td>0</td>
+      <td>14</td>
+      <td>468</td>
+      <td>37521</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>XGBoost</td>
+      <td>5 · Moderada</td>
+      <td>140</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0003</td>
+      <td>0</td>
+      <td>13</td>
+      <td>140</td>
+      <td>37850</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>XGBoost</td>
+      <td>6 · Moderada</td>
+      <td>66</td>
+      <td>0.1212</td>
+      <td>0.0606</td>
+      <td>0.0808</td>
+      <td>0.0008</td>
+      <td>4</td>
+      <td>29</td>
+      <td>62</td>
+      <td>37908</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>XGBoost</td>
+      <td>7 · Alta</td>
+      <td>9</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0015</td>
+      <td>0</td>
+      <td>57</td>
+      <td>9</td>
+      <td>37937</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>XGBoost</td>
+      <td>8 · Alta</td>
+      <td>14</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0006</td>
+      <td>0</td>
+      <td>24</td>
+      <td>14</td>
+      <td>37965</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>XGBoost</td>
+      <td>9 · Alta</td>
+      <td>5</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0031</td>
+      <td>0</td>
+      <td>116</td>
+      <td>5</td>
+      <td>37882</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>XGBoost</td>
+      <td>10 · Muy alta</td>
+      <td>26</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0</td>
+      <td>1</td>
+      <td>26</td>
+      <td>37976</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost</td>
+      <td>1 · Baja</td>
+      <td>37668</td>
+      <td>0.9750</td>
+      <td>0.8748</td>
+      <td>0.9222</td>
+      <td>0.2773</td>
+      <td>32953</td>
+      <td>846</td>
+      <td>4715</td>
+      <td>2205</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost</td>
+      <td>2 · Baja</td>
+      <td>3032</td>
+      <td>0.3181</td>
+      <td>0.7259</td>
+      <td>0.4423</td>
+      <td>0.1252</td>
+      <td>2201</td>
+      <td>4719</td>
+      <td>831</td>
+      <td>32968</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost</td>
+      <td>3 · Baja</td>
+      <td>19</td>
+      <td>no evaluable</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>19</td>
+      <td>40700</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost</td>
+      <td>4 · Moderada</td>
+      <td>0</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>0.0000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40719</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost</td>
+      <td>5 · Moderada</td>
+      <td>0</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>0.0000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40719</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost</td>
+      <td>6 · Moderada</td>
+      <td>0</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>0.0000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40719</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost</td>
+      <td>7 · Alta</td>
+      <td>0</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>0.0000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40719</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost</td>
+      <td>8 · Alta</td>
+      <td>0</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>0.0000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40719</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost</td>
+      <td>9 · Alta</td>
+      <td>0</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>0.0000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40719</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost</td>
+      <td>10 · Muy alta</td>
+      <td>0</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>no evaluable</td>
+      <td>0.0000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40719</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<h2>Matrices de los elegidos por validación</h2><img alt='Matrices de los elegidos por validación' src='figuras/matrices_nuevas_escalas.png'>
+<h2>Distribución por período</h2><img alt='Distribución por período' src='figuras/distribucion_nuevas_escalas.png'>
+<h2>Fuentes</h2><ul>
+<li><a href='https://www.gov.uk/government/publications/health-effects-of-air-pollution/pollutant-concentrations-for-the-daily-air-quality-index-daqi'>uk_thresholds</a></li>
+<li><a href='https://uk-air.defra.gov.uk/reports/cat14/1304251155_Update_on_Implementation_of_the_DAQI_April_2013_Final.pdf'>uk_rounding</a></li>
+<li><a href='https://uk-air.defra.gov.uk/reports/cat06/0502160851_Conversion_Factors_Between_ppb_and.pdf'>gas_conversion</a></li>
+<li><a href='https://www.cpcb.gov.in/displaypdf.php?id=bmF0aW9uYWwtYWlyLXF1YWxpdHktaW5kZXgvRklOQUwtUkVQT1JUX0FRSV8ucGRm'>india_thresholds</a></li>
+</ul></html>

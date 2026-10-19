@@ -1,0 +1,437 @@
+{
+  "created_at_utc": "2026-10-19T02:47:56.857009+00:00",
+  "experiment": "direct_NO2_DAQI_classification",
+  "config": {
+    "seed": 42,
+    "threads": 4,
+    "selection_metric": "f1_macro",
+    "weight_powers": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "random_forest": {
+      "n_estimators": 200,
+      "max_depth": 14,
+      "min_samples_leaf": 10,
+      "max_features": 0.8
+    },
+    "xgboost": {
+      "n_estimators": 300,
+      "max_depth": 4,
+      "learning_rate": 0.05,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 5.0,
+      "tree_method": "hist",
+      "objective": "multi:softprob",
+      "eval_metric": "mlogloss"
+    }
+  },
+  "temporal_config": {
+    "seed": 42,
+    "threads": 4,
+    "validation_start": "2024-01-01",
+    "test_start": "2025-01-01",
+    "gap_days": 2,
+    "minimum_daily_hours": 18,
+    "daily_predictor_hours": 24,
+    "regression_forest": {
+      "n_estimators": 200,
+      "max_depth": 16,
+      "min_samples_leaf": 10,
+      "max_features": 0.8
+    },
+    "regression_xgboost_candidates": [
+      {
+        "n_estimators": 400,
+        "max_depth": 3,
+        "learning_rate": 0.05
+      },
+      {
+        "n_estimators": 600,
+        "max_depth": 5,
+        "learning_rate": 0.05
+      }
+    ],
+    "classification_forest": {
+      "n_estimators": 300,
+      "max_depth": 12,
+      "min_samples_leaf": 5,
+      "max_features": 0.8,
+      "class_weight": "balanced_subsample"
+    },
+    "classification_xgboost_candidates": [
+      {
+        "n_estimators": 300,
+        "max_depth": 3,
+        "learning_rate": 0.05
+      },
+      {
+        "n_estimators": 500,
+        "max_depth": 4,
+        "learning_rate": 0.05
+      }
+    ],
+    "xgboost_common": {
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 5.0,
+      "tree_method": "hist"
+    }
+  },
+  "selection": {
+    "selected_classifier": "XGBoost",
+    "selection_metric": "f1_macro",
+    "validation_scores": {
+      "RandomForest": 0.15715627178536903,
+      "XGBoost": 0.16103137464872624
+    },
+    "parameters": {
+      "RandomForest": {
+        "n_estimators": 200,
+        "max_depth": 14,
+        "min_samples_leaf": 10,
+        "max_features": 0.8,
+        "weight_power": 0.5
+      },
+      "XGBoost": {
+        "n_estimators": 300,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 5.0,
+        "tree_method": "hist",
+        "objective": "multi:softprob",
+        "eval_metric": "mlogloss",
+        "num_class": 8,
+        "weight_power": 0.5
+      }
+    },
+    "trained_classes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8
+    ],
+    "unlearned_classes": [
+      7,
+      9
+    ]
+  },
+  "features": [
+    "anio",
+    "es_fin_de_semana",
+    "es_feriado_nacional",
+    "es_dia_no_laborable",
+    "temperature_2m",
+    "relative_humidity_2m",
+    "surface_pressure",
+    "wind_speed_10m",
+    "precipitation",
+    "cloud_cover",
+    "shortwave_radiation",
+    "viento_u",
+    "viento_v",
+    "estacion_centenario",
+    "estacion_cordoba",
+    "estacion_la_boca",
+    "dia_semana_1",
+    "dia_semana_2",
+    "dia_semana_3",
+    "dia_semana_4",
+    "dia_semana_5",
+    "dia_semana_6",
+    "dia_semana_7",
+    "mes_01",
+    "mes_02",
+    "mes_03",
+    "mes_04",
+    "mes_05",
+    "mes_06",
+    "mes_07",
+    "mes_08",
+    "mes_09",
+    "mes_10",
+    "mes_11",
+    "mes_12",
+    "hora_dia_00",
+    "hora_dia_01",
+    "hora_dia_02",
+    "hora_dia_03",
+    "hora_dia_04",
+    "hora_dia_05",
+    "hora_dia_06",
+    "hora_dia_07",
+    "hora_dia_08",
+    "hora_dia_09",
+    "hora_dia_10",
+    "hora_dia_11",
+    "hora_dia_12",
+    "hora_dia_13",
+    "hora_dia_14",
+    "hora_dia_15",
+    "hora_dia_16",
+    "hora_dia_17",
+    "hora_dia_18",
+    "hora_dia_19",
+    "hora_dia_20",
+    "hora_dia_21",
+    "hora_dia_22",
+    "hora_dia_23"
+  ],
+  "scale": {
+    "scheme": "UK_DAQI",
+    "input_unit": "ppb",
+    "unit": "µg/m³",
+    "averaging_hours": 1,
+    "factor": 1.9125,
+    "conversion_reference": "Factor DEFRA a 20 °C y 1013 mb; condición de referencia declarada, sin usar la meteorología del registro para alterar las concentraciones.",
+    "decimals": 0,
+    "rounding": "half_up",
+    "rounding_reference": "Conversión primero y redondeo único al entero más próximo antes de comparar con los límites, siguiendo DEFRA. Los empates .5 se resuelven hacia arriba.",
+    "upper_bounds": [
+      67,
+      134,
+      200,
+      267,
+      334,
+      400,
+      467,
+      534,
+      600
+    ],
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "band_classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "level_to_band": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      3
+    ]
+  },
+  "scale_sources": {
+    "uk_thresholds": "https://www.gov.uk/government/publications/health-effects-of-air-pollution/pollutant-concentrations-for-the-daily-air-quality-index-daqi",
+    "uk_rounding": "https://uk-air.defra.gov.uk/reports/cat14/1304251155_Update_on_Implementation_of_the_DAQI_April_2013_Final.pdf",
+    "gas_conversion": "https://uk-air.defra.gov.uk/reports/cat06/0502160851_Conversion_Factors_Between_ppb_and.pdf"
+  },
+  "tuning_trials": [
+    {
+      "model": "RandomForest",
+      "weight_power": 0.0,
+      "parameters": {
+        "n_estimators": 200,
+        "max_depth": 14,
+        "min_samples_leaf": 10,
+        "max_features": 0.8,
+        "weight_power": 0.0
+      },
+      "fit_seconds": 131.19477839999945,
+      "validation_n": 16976,
+      "validation_accuracy": 0.8769439208294062,
+      "validation_precision_macro": 0.1621218882973704,
+      "validation_recall_macro": 0.14588133145334228,
+      "validation_f1_macro": 0.151848160756668,
+      "validation_precision_macro_supported": 0.540406294324568,
+      "validation_recall_macro_supported": 0.4862711048444743,
+      "validation_f1_macro_supported": 0.50616053585556,
+      "validation_balanced_accuracy": 0.4862711048444743,
+      "validation_f1_weighted": 0.8671003890266795,
+      "validation_false_positive_rate_macro": 0.0539517226559702,
+      "validation_ordinal_mae": 0.12311498586239397,
+      "validation_classes_present": 3
+    },
+    {
+      "model": "RandomForest",
+      "weight_power": 0.5,
+      "parameters": {
+        "n_estimators": 200,
+        "max_depth": 14,
+        "min_samples_leaf": 10,
+        "max_features": 0.8,
+        "weight_power": 0.5
+      },
+      "fit_seconds": 114.93264249999993,
+      "validation_n": 16976,
+      "validation_accuracy": 0.870935438265787,
+      "validation_precision_macro": 0.15556904498122076,
+      "validation_recall_macro": 0.15892671353796972,
+      "validation_f1_macro": 0.15715627178536903,
+      "validation_precision_macro_supported": 0.5185634832707359,
+      "validation_recall_macro_supported": 0.5297557117932324,
+      "validation_f1_macro_supported": 0.5238542392845634,
+      "validation_balanced_accuracy": 0.5297557117932324,
+      "validation_f1_weighted": 0.8722156027352487,
+      "validation_false_positive_rate_macro": 0.04101568655540434,
+      "validation_ordinal_mae": 0.1291234684260132,
+      "validation_classes_present": 3
+    },
+    {
+      "model": "RandomForest",
+      "weight_power": 1.0,
+      "parameters": {
+        "n_estimators": 200,
+        "max_depth": 14,
+        "min_samples_leaf": 10,
+        "max_features": 0.8,
+        "weight_power": 1.0
+      },
+      "fit_seconds": 50.79171950000091,
+      "validation_n": 16976,
+      "validation_accuracy": 0.762782752120641,
+      "validation_precision_macro": 0.1377956187142666,
+      "validation_recall_macro": 0.1600018628612907,
+      "validation_f1_macro": 0.1399923370225339,
+      "validation_precision_macro_supported": 0.45931872904755533,
+      "validation_recall_macro_supported": 0.533339542870969,
+      "validation_f1_macro_supported": 0.4666411234084464,
+      "validation_balanced_accuracy": 0.533339542870969,
+      "validation_f1_weighted": 0.7879858062603281,
+      "validation_false_positive_rate_macro": 0.04003581405343457,
+      "validation_ordinal_mae": 0.23727615457115928,
+      "validation_classes_present": 3
+    },
+    {
+      "model": "XGBoost",
+      "weight_power": 0.0,
+      "parameters": {
+        "n_estimators": 300,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 5.0,
+        "tree_method": "hist",
+        "objective": "multi:softprob",
+        "eval_metric": "mlogloss",
+        "num_class": 8,
+        "weight_power": 0.0
+      },
+      "fit_seconds": 56.84054080000169,
+      "validation_n": 16976,
+      "validation_accuracy": 0.8620405278039586,
+      "validation_precision_macro": 0.16929773710083063,
+      "validation_recall_macro": 0.12711818570157604,
+      "validation_f1_macro": 0.13436813911199363,
+      "validation_precision_macro_supported": 0.5643257903361021,
+      "validation_recall_macro_supported": 0.42372728567192014,
+      "validation_f1_macro_supported": 0.4478937970399788,
+      "validation_balanced_accuracy": 0.42372728567192014,
+      "validation_f1_weighted": 0.8321919020065554,
+      "validation_false_positive_rate_macro": 0.0726280352410286,
+      "validation_ordinal_mae": 0.13813619227144203,
+      "validation_classes_present": 3
+    },
+    {
+      "model": "XGBoost",
+      "weight_power": 0.5,
+      "parameters": {
+        "n_estimators": 300,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 5.0,
+        "tree_method": "hist",
+        "objective": "multi:softprob",
+        "eval_metric": "mlogloss",
+        "num_class": 8,
+        "weight_power": 0.5
+      },
+      "fit_seconds": 63.165560299999925,
+      "validation_n": 16976,
+      "validation_accuracy": 0.8758836003770029,
+      "validation_precision_macro": 0.1569253854922037,
+      "validation_recall_macro": 0.16675569858904318,
+      "validation_f1_macro": 0.16103137464872624,
+      "validation_precision_macro_supported": 0.5230846183073457,
+      "validation_recall_macro_supported": 0.5558523286301439,
+      "validation_f1_macro_supported": 0.5367712488290874,
+      "validation_balanced_accuracy": 0.5558523286301439,
+      "validation_f1_weighted": 0.8802089088162237,
+      "validation_false_positive_rate_macro": 0.03324546952224053,
+      "validation_ordinal_mae": 0.12417530631479737,
+      "validation_classes_present": 3
+    },
+    {
+      "model": "XGBoost",
+      "weight_power": 1.0,
+      "parameters": {
+        "n_estimators": 300,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 5.0,
+        "tree_method": "hist",
+        "objective": "multi:softprob",
+        "eval_metric": "mlogloss",
+        "num_class": 8,
+        "weight_power": 1.0
+      },
+      "fit_seconds": 64.75604179999937,
+      "validation_n": 16976,
+      "validation_accuracy": 0.6615221489161168,
+      "validation_precision_macro": 0.1325174473415082,
+      "validation_recall_macro": 0.15575558831621966,
+      "validation_f1_macro": 0.12461195867778971,
+      "validation_precision_macro_supported": 0.441724824471694,
+      "validation_recall_macro_supported": 0.5191852943873988,
+      "validation_f1_macro_supported": 0.41537319559263236,
+      "validation_balanced_accuracy": 0.5191852943873988,
+      "validation_f1_weighted": 0.7003845863657517,
+      "validation_false_positive_rate_macro": 0.044329202779170546,
+      "validation_ordinal_mae": 0.3385367577756833,
+      "validation_classes_present": 3
+    }
+  ],
+  "sizes": {
+    "train": 275099,
+    "validation": 16976,
+    "test": 40719
+  },
+  "input_sha256": "ddd818250e62df81bd80bb1711ff1eda7e06a0c9b304086b2c407e1f1a88e11d",
+  "quality_sha256": "7a65c46d5ea62bcb6ecd99e3a7eecc67c0f11b227d8b689f0d111d6c208cf6ef",
+  "source_predictions_sha256": "38ec3b223e6bb1d4a0ac9b2ceb0e674abb3ff3375ff46683ad9778eb5f166f58",
+  "config_sha256": "8407542aa74998e241c12efb7834e29421e794ef763051587a4451a0d778df2e",
+  "scales_sha256": "d0b2129aa090dbac9a9488a54bc6a488ede5e90eaa59b3c49064ae719c2d7e62",
+  "code_sha256": "0b4bcb1ab4a496e5cf69534270cd2a69ee15685ba9ab8cbfccb84fafe6c0da5b",
+  "elapsed_seconds": 496.6221793000004,
+  "independent_new_test": false,
+  "probabilities_calibrated": false,
+  "versions": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "joblib": "1.6.0"
+  },
+  "outcome": "El clasificador elegido por validación fue XGBoost. En prueba, su F1 macro sobre clases presentes es 0.4548, frente a 0.4816 del método de regresión convertido (diferencia -0.0268). Accuracy 86.33% y balanced accuracy 53.36%."
+}

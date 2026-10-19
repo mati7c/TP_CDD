@@ -1,0 +1,5890 @@
+[
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "Regresion_XGBoost",
+    "split": "validation",
+    "station": "todas",
+    "selected_classifier": false,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        13661,
+        280,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1629,
+        1386,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        18,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "Regresion_XGBoost",
+    "split": "validation",
+    "station": "centenario",
+    "selected_classifier": false,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        1623,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        18,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "Regresion_XGBoost",
+    "split": "validation",
+    "station": "cordoba",
+    "selected_classifier": false,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        6561,
+        178,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        269,
+        165,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "Regresion_XGBoost",
+    "split": "validation",
+    "station": "la_boca",
+    "selected_classifier": false,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        5477,
+        102,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1342,
+        1221,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        18,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "Regresion_XGBoost",
+    "split": "test",
+    "station": "todas",
+    "selected_classifier": false,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        35862,
+        1806,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1466,
+        1566,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        15,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "Regresion_XGBoost",
+    "split": "test",
+    "station": "centenario",
+    "selected_classifier": false,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        13679,
+        111,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        81,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "Regresion_XGBoost",
+    "split": "test",
+    "station": "cordoba",
+    "selected_classifier": false,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        12303,
+        482,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        380,
+        148,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "Regresion_XGBoost",
+    "split": "test",
+    "station": "la_boca",
+    "selected_classifier": false,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        9880,
+        1213,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1005,
+        1415,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "Regresion_XGBoost",
+    "split": "validation",
+    "station": "todas",
+    "selected_classifier": false,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        16976,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "Regresion_XGBoost",
+    "split": "validation",
+    "station": "centenario",
+    "selected_classifier": false,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        1641,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "Regresion_XGBoost",
+    "split": "validation",
+    "station": "cordoba",
+    "selected_classifier": false,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        7173,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "Regresion_XGBoost",
+    "split": "validation",
+    "station": "la_boca",
+    "selected_classifier": false,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        8162,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "Regresion_XGBoost",
+    "split": "test",
+    "station": "todas",
+    "selected_classifier": false,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        40719,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "Regresion_XGBoost",
+    "split": "test",
+    "station": "centenario",
+    "selected_classifier": false,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        13874,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "Regresion_XGBoost",
+    "split": "test",
+    "station": "cordoba",
+    "selected_classifier": false,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        13325,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "Regresion_XGBoost",
+    "split": "test",
+    "station": "la_boca",
+    "selected_classifier": false,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        13520,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "Mayoria_train",
+    "split": "validation",
+    "station": "todas",
+    "selected_classifier": false,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        13941,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3015,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        20,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "Mayoria_train",
+    "split": "validation",
+    "station": "centenario",
+    "selected_classifier": false,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        1623,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        18,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "Mayoria_train",
+    "split": "validation",
+    "station": "cordoba",
+    "selected_classifier": false,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        6739,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        434,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "Mayoria_train",
+    "split": "validation",
+    "station": "la_boca",
+    "selected_classifier": false,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        5579,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2563,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        20,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "Mayoria_train",
+    "split": "test",
+    "station": "todas",
+    "selected_classifier": false,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        37668,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3032,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        19,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "Mayoria_train",
+    "split": "test",
+    "station": "centenario",
+    "selected_classifier": false,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        13790,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        84,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "Mayoria_train",
+    "split": "test",
+    "station": "cordoba",
+    "selected_classifier": false,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        12785,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        528,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "Mayoria_train",
+    "split": "test",
+    "station": "la_boca",
+    "selected_classifier": false,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        11093,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2420,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "Mayoria_train",
+    "split": "validation",
+    "station": "todas",
+    "selected_classifier": false,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        16976,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "Mayoria_train",
+    "split": "validation",
+    "station": "centenario",
+    "selected_classifier": false,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        1641,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "Mayoria_train",
+    "split": "validation",
+    "station": "cordoba",
+    "selected_classifier": false,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        7173,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "Mayoria_train",
+    "split": "validation",
+    "station": "la_boca",
+    "selected_classifier": false,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        8162,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "Mayoria_train",
+    "split": "test",
+    "station": "todas",
+    "selected_classifier": false,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        40719,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "Mayoria_train",
+    "split": "test",
+    "station": "centenario",
+    "selected_classifier": false,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        13874,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "Mayoria_train",
+    "split": "test",
+    "station": "cordoba",
+    "selected_classifier": false,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        13325,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "Mayoria_train",
+    "split": "test",
+    "station": "la_boca",
+    "selected_classifier": false,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        13520,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "RandomForest",
+    "split": "validation",
+    "station": "todas",
+    "selected_classifier": false,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        12751,
+        1190,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        981,
+        2034,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        19,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "RandomForest",
+    "split": "validation",
+    "station": "centenario",
+    "selected_classifier": false,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        1621,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        18,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "RandomForest",
+    "split": "validation",
+    "station": "cordoba",
+    "selected_classifier": false,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        6675,
+        64,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        398,
+        36,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "RandomForest",
+    "split": "validation",
+    "station": "la_boca",
+    "selected_classifier": false,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        4455,
+        1124,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        565,
+        1998,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        19,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "RandomForest",
+    "split": "test",
+    "station": "todas",
+    "selected_classifier": false,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        33248,
+        4420,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1245,
+        1787,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        15,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "RandomForest",
+    "split": "test",
+    "station": "centenario",
+    "selected_classifier": false,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        13739,
+        51,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        76,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "RandomForest",
+    "split": "test",
+    "station": "cordoba",
+    "selected_classifier": false,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        12643,
+        142,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        499,
+        29,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "RandomForest",
+    "split": "test",
+    "station": "la_boca",
+    "selected_classifier": false,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        6866,
+        4227,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        670,
+        1750,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "RandomForest",
+    "split": "validation",
+    "station": "todas",
+    "selected_classifier": false,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        16976,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "RandomForest",
+    "split": "validation",
+    "station": "centenario",
+    "selected_classifier": false,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        1641,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "RandomForest",
+    "split": "validation",
+    "station": "cordoba",
+    "selected_classifier": false,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        7173,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "RandomForest",
+    "split": "validation",
+    "station": "la_boca",
+    "selected_classifier": false,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        8162,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "RandomForest",
+    "split": "test",
+    "station": "todas",
+    "selected_classifier": false,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        40719,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "RandomForest",
+    "split": "test",
+    "station": "centenario",
+    "selected_classifier": false,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        13874,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "RandomForest",
+    "split": "test",
+    "station": "cordoba",
+    "selected_classifier": false,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        13325,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "RandomForest",
+    "split": "test",
+    "station": "la_boca",
+    "selected_classifier": false,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        13520,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "XGBoost",
+    "split": "validation",
+    "station": "todas",
+    "selected_classifier": true,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        12557,
+        1384,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        703,
+        2312,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        19,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "XGBoost",
+    "split": "validation",
+    "station": "centenario",
+    "selected_classifier": true,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        1622,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        18,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "XGBoost",
+    "split": "validation",
+    "station": "cordoba",
+    "selected_classifier": true,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        6201,
+        538,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        135,
+        299,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "XGBoost",
+    "split": "validation",
+    "station": "la_boca",
+    "selected_classifier": true,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        4734,
+        845,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        550,
+        2013,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        19,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "XGBoost",
+    "split": "test",
+    "station": "todas",
+    "selected_classifier": true,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        32953,
+        4715,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        831,
+        2201,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        15,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "XGBoost",
+    "split": "test",
+    "station": "centenario",
+    "selected_classifier": true,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        13730,
+        60,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        83,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "XGBoost",
+    "split": "test",
+    "station": "cordoba",
+    "selected_classifier": true,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        11593,
+        1192,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        295,
+        233,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "level",
+    "model": "XGBoost",
+    "split": "test",
+    "station": "la_boca",
+    "selected_classifier": true,
+    "classes": [
+      "1 · Baja",
+      "2 · Baja",
+      "3 · Baja",
+      "4 · Moderada",
+      "5 · Moderada",
+      "6 · Moderada",
+      "7 · Alta",
+      "8 · Alta",
+      "9 · Alta",
+      "10 · Muy alta"
+    ],
+    "matrix": [
+      [
+        7630,
+        3463,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        453,
+        1967,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "XGBoost",
+    "split": "validation",
+    "station": "todas",
+    "selected_classifier": true,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        16976,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "XGBoost",
+    "split": "validation",
+    "station": "centenario",
+    "selected_classifier": true,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        1641,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "XGBoost",
+    "split": "validation",
+    "station": "cordoba",
+    "selected_classifier": true,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        7173,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "XGBoost",
+    "split": "validation",
+    "station": "la_boca",
+    "selected_classifier": true,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        8162,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "XGBoost",
+    "split": "test",
+    "station": "todas",
+    "selected_classifier": true,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        40719,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "XGBoost",
+    "split": "test",
+    "station": "centenario",
+    "selected_classifier": true,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        13874,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "XGBoost",
+    "split": "test",
+    "station": "cordoba",
+    "selected_classifier": true,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        13325,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "UK_DAQI",
+    "resolution": "band",
+    "model": "XGBoost",
+    "split": "test",
+    "station": "la_boca",
+    "selected_classifier": true,
+    "classes": [
+      "Baja",
+      "Moderada",
+      "Alta",
+      "Muy alta"
+    ],
+    "matrix": [
+      [
+        13520,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  }
+]

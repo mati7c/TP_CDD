@@ -148,6 +148,25 @@ outputs/tercera_entrega; el notebook ejecutado y su HTML están en notebooks/.
 La metodología y las métricas se detallan en [docs/tercera_entrega.md](docs/tercera_entrega.md).
 Los modelos binarios se conservan localmente y se regeneran con model.
 
+`.\run.ps1 compare-indices` prueba NO₂/PM10 con el índice británico y CO con
+los rangos de India, reutilizando las concentraciones predichas. El informe HTML,
+CSV y matrices quedan en `outputs/comparacion_indices`. No reentrena ni reemplaza
+las categorías EPA originales. Ver [método y conversiones](docs/comparacion_indices.md).
+
+`.\run.ps1 classify-no2` entrena el piloto de clasificación directa de NO₂ con
+los niveles británicos y compara sus resultados con la regresión convertida.
+Los informes quedan en `outputs/clasificacion_no2`; ver [diseño del piloto](docs/clasificacion_no2.md).
+
+`.\run.ps1 classify-soft` aplica XGBoost con ponderación suave fija a CO, NO₂ y PM10.
+El [resumen de métricas](outputs/clasificacion_suave/resumen_metricas.md), los CSV,
+las matrices y los tres modelos nativos entrenados quedan en `outputs/clasificacion_suave`.
+Ver [reproducción, evaluación y carga de modelos](docs/clasificacion_suave.md).
+
+`.\run.ps1 classify-compare` amplía CO y PM10 a Random Forest/XGBoost con
+ponderación nula, suave y completa, e integra el piloto NO₂. Ver el
+[resumen ampliado](outputs/comparacion_clasificadores/resumen_comparacion.md) y su
+[metodología](docs/comparacion_clasificadores.md).
+
 1. Revisar los errores por estación, contaminante y categoría a partir de los resultados de tercera entrega.
 2. Revisar el calendario reconstruido y las fechas de anuncio antes de usarlo en pronósticos históricos.
 3. Evaluar el sistema con pronósticos meteorológicos emitidos y construir la aplicación futura.

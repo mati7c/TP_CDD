@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "verified_on": "2026-10-18",
+  "description": "Comparación por contaminante; no define un índice combinado de estación ni modifica el experimento EPA.",
+  "sources": {
+    "uk_thresholds": "https://www.gov.uk/government/publications/health-effects-of-air-pollution/pollutant-concentrations-for-the-daily-air-quality-index-daqi",
+    "uk_rounding": "https://uk-air.defra.gov.uk/reports/cat14/1304251155_Update_on_Implementation_of_the_DAQI_April_2013_Final.pdf",
+    "gas_conversion": "https://uk-air.defra.gov.uk/reports/cat06/0502160851_Conversion_Factors_Between_ppb_and.pdf",
+    "india_thresholds": "https://www.cpcb.gov.in/displaypdf.php?id=bmF0aW9uYWwtYWlyLXF1YWxpdHktaW5kZXgvRklOQUwtUkVQT1JUX0FRSV8ucGRm"
+  },
+  "pollutants": {
+    "CO": {
+      "scheme": "India_CO",
+      "input_unit": "ppm",
+      "unit": "mg/m³",
+      "averaging_hours": 8,
+      "factor": 1.15,
+      "conversion_reference": "Convención del experimento: factor de la columna OMS a 25 °C y 1013 mb de la tabla DEFRA. No se afirma que sea la condición de referencia del sensor CABA ni una exigencia de CPCB.",
+      "decimals": 1,
+      "rounding": "half_up",
+      "rounding_reference": "Convención explícita del experimento para resolver la separación 1.0/1.1 de la tabla CPCB; no se atribuye una regla de redondeo a CPCB.",
+      "upper_bounds": [1.0, 2.0, 10.0, 17.0, 34.0],
+      "classes": ["Buena", "Satisfactoria", "Moderada", "Mala", "Muy mala", "Severa"]
+    },
+    "NO2": {
+      "scheme": "UK_DAQI",
+      "input_unit": "ppb",
+      "unit": "µg/m³",
+      "averaging_hours": 1,
+      "factor": 1.9125,
+      "conversion_reference": "Factor DEFRA a 20 °C y 1013 mb; condición de referencia declarada, sin usar la meteorología del registro para alterar las concentraciones.",
+      "decimals": 0,
+      "rounding": "half_up",
+      "rounding_reference": "Conversión primero y redondeo único al entero más próximo antes de comparar con los límites, siguiendo DEFRA. Los empates .5 se resuelven hacia arriba.",
+      "upper_bounds": [67, 134, 200, 267, 334, 400, 467, 534, 600],
+      "classes": ["1 · Baja", "2 · Baja", "3 · Baja", "4 · Moderada", "5 · Moderada", "6 · Moderada", "7 · Alta", "8 · Alta", "9 · Alta", "10 · Muy alta"],
+      "band_classes": ["Baja", "Moderada", "Alta", "Muy alta"],
+      "level_to_band": [0, 0, 0, 1, 1, 1, 2, 2, 2, 3]
+    },
+    "PM10": {
+      "scheme": "UK_DAQI",
+      "input_unit": "µg/m³",
+      "unit": "µg/m³",
+      "averaging_hours": 24,
+      "factor": 1.0,
+      "conversion_reference": "Se conserva el promedio móvil de 24 horas publicado por CABA. No se vuelve a promediar ni se certifica equivalencia instrumental con el método de referencia europeo.",
+      "decimals": 0,
+      "rounding": "half_up",
+      "rounding_reference": "Redondeo único al entero más próximo antes de comparar con los límites DEFRA. Los empates .5 se resuelven hacia arriba.",
+      "upper_bounds": [16, 33, 50, 58, 66, 75, 83, 91, 100],
+      "classes": ["1 · Baja", "2 · Baja", "3 · Baja", "4 · Moderada", "5 · Moderada", "6 · Moderada", "7 · Alta", "8 · Alta", "9 · Alta", "10 · Muy alta"],
+      "band_classes": ["Baja", "Moderada", "Alta", "Muy alta"],
+      "level_to_band": [0, 0, 0, 1, 1, 1, 2, 2, 2, 3]
+    }
+  }
+}

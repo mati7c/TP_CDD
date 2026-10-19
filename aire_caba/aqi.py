@@ -18,18 +18,21 @@ def categorize(values, pollutant):
     return labels
 
 
-def classification_metrics(actual, predicted):
+def classification_metrics(actual, predicted, class_names=CLASS_NAMES):
     """Matriz real x predicha y métricas multiclase; FPR por clase contra el resto."""
     actual, predicted = np.asarray(actual, dtype=int), np.asarray(predicted, dtype=int)
     if actual.shape != predicted.shape or actual.ndim != 1 or len(actual) == 0:
         raise ValueError("Se requieren dos vectores de etiquetas del mismo tamaño, no vacíos")
-    if not (np.isin(actual, [0, 1, 2]).all() and np.isin(predicted, [0, 1, 2]).all()):
-        raise ValueError("Las etiquetas válidas son 0, 1 y 2")
-    matrix = np.zeros((3, 3), dtype=np.int64)
+    if len(class_names) < 2 or len(set(class_names)) != len(class_names):
+        raise ValueError("Se requieren al menos dos nombres de clase distintos")
+    labels = np.arange(len(class_names))
+    if not (np.isin(actual, labels).all() and np.isin(predicted, labels).all()):
+        raise ValueError("Las etiquetas deben corresponder a las clases declaradas")
+    matrix = np.zeros((len(labels), len(labels)), dtype=np.int64)
     np.add.at(matrix, (actual, predicted), 1)
     total = int(matrix.sum())
     rows = []
-    for label, name in enumerate(CLASS_NAMES):
+    for label, name in enumerate(class_names):
         tp = int(matrix[label, label])
         fn = int(matrix[label].sum() - tp)
         fp = int(matrix[:, label].sum() - tp)
@@ -48,9 +51,11 @@ def classification_metrics(actual, predicted):
     fprs = [row["false_positive_rate"] for row in rows if row["false_positive_rate"] is not None]
     summary = {
         "n": total, "accuracy": float(np.trace(matrix) / total),
-        "precision_macro": sum(row["precision"] or 0 for row in rows) / 3,
-        "recall_macro": sum(row["recall"] or 0 for row in rows) / 3,
-        "f1_macro": sum(row["f1"] or 0 for row in rows) / 3,
+        "precision_macro": sum(row["precision"] or 0 for row in rows) / len(labels),
+        "recall_macro": sum(row["recall"] or 0 for row in rows) / len(labels),
+        "f1_macro": sum(row["f1"] or 0 for row in rows) / len(labels),
+        "precision_macro_supported": sum(row["precision"] or 0 for row in supported) / len(supported),
+        "recall_macro_supported": sum(row["recall"] for row in supported) / len(supported),
         "f1_macro_supported": sum(row["f1"] or 0 for row in supported) / len(supported),
         "balanced_accuracy": sum(row["recall"] for row in supported) / len(supported),
         "f1_weighted": sum((row["f1"] or 0) * row["support"] for row in rows) / total,

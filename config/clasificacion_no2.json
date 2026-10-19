@@ -1,0 +1,23 @@
+{
+  "seed": 42,
+  "threads": 4,
+  "selection_metric": "f1_macro",
+  "weight_powers": [0.0, 0.5, 1.0],
+  "random_forest": {
+    "n_estimators": 200,
+    "max_depth": 14,
+    "min_samples_leaf": 10,
+    "max_features": 0.8
+  },
+  "xgboost": {
+    "n_estimators": 300,
+    "max_depth": 4,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_lambda": 5.0,
+    "tree_method": "hist",
+    "objective": "multi:softprob",
+    "eval_metric": "mlogloss"
+  }
+}

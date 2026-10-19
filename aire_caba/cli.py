@@ -13,7 +13,7 @@ PROJECT = Path(__file__).resolve().parent.parent
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Extracción de meteorología horaria para CABA")
-    parser.add_argument("command", choices=["import-air", "plan", "download", "status", "export-weather", "calendar", "join", "transform", "prepare-model", "model", "model-report"])
+    parser.add_argument("command", choices=["import-air", "plan", "download", "status", "export-weather", "calendar", "join", "transform", "prepare-model", "model", "model-report", "compare-indices", "classify-no2", "classify-soft", "classify-compare"])
     parser.add_argument("--csv", type=Path, help="CSV original para import-air")
     parser.add_argument("--config", type=Path, default=PROJECT / "config/open_meteo.json")
     parser.add_argument("--data-dir", type=Path, default=PROJECT / "data")
@@ -22,11 +22,43 @@ def main(argv=None):
     parser.add_argument("--stations", nargs="+", help="centenario cordoba la_boca palermo")
     parser.add_argument("--max-requests", type=int, help="Máximo de bloques nuevos en esta ejecución")
     parser.add_argument("--model-config", type=Path, help="Configuración del modelado (config/modeling.json por defecto)")
-    parser.add_argument("--output-dir", type=Path, help="Carpeta de resultados del modelado")
+    parser.add_argument("--output-dir", type=Path, help="Carpeta de resultados del modelado o la comparación de índices")
     args = parser.parse_args(argv)
     try:
         if args.max_requests is not None and args.max_requests < 1:
             raise ValueError("--max-requests debe ser positivo")
+        if args.command == "classify-compare":
+            from .classifier_experiments import run_experiments
+            if args.start or args.end or args.stations or args.max_requests or args.csv:
+                raise ValueError("classify-compare conserva los cortes temporales; admite --model-config y --output-dir.")
+            with download_lock(args.data_dir):
+                path = run_experiments(args.data_dir, args.model_config, args.output_dir)
+            print(f"Comparación ampliada de clasificadores: {path}")
+            return 0
+        if args.command == "classify-soft":
+            from .soft_classifiers import run_soft_classifiers
+            if args.start or args.end or args.stations or args.max_requests or args.csv:
+                raise ValueError("classify-soft conserva los cortes del modelado; admite --model-config y --output-dir.")
+            with download_lock(args.data_dir):
+                path = run_soft_classifiers(args.data_dir, args.model_config, args.output_dir)
+            print(f"Resumen de XGBoost y ponderación suave: {path}")
+            return 0
+        if args.command == "classify-no2":
+            from .no2_classifier import run_no2_classifier
+            if args.start or args.end or args.stations or args.max_requests or args.csv:
+                raise ValueError("classify-no2 conserva los cortes del modelado; admite --model-config y --output-dir.")
+            with download_lock(args.data_dir):
+                path = run_no2_classifier(args.data_dir, args.model_config, args.output_dir)
+            print(f"Piloto de clasificación directa NO2: {path}")
+            return 0
+        if args.command == "compare-indices":
+            from .compare_indices import run_comparison
+            if args.start or args.end or args.stations or args.max_requests or args.csv or args.model_config:
+                raise ValueError("compare-indices reevalúa las predicciones guardadas; sólo admite --output-dir.")
+            with download_lock(args.data_dir):
+                path = run_comparison(args.data_dir, output_dir=args.output_dir)
+            print(f"Comparación de escalas por contaminante: {path}")
+            return 0
         if args.command == "model-report":
             from .model_report import build_report
             if args.start or args.end or args.stations or args.max_requests or args.csv or args.model_config:

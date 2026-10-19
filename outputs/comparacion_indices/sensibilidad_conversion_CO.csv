@@ -1,0 +1,5 @@
+﻿pollutant,split,factor_primary_25C,factor_sensitivity_20C,n,labels_changed
+CO,purga,1.15,1.1642,240,0
+CO,test,1.15,1.1642,41189,123
+CO,train,1.15,1.1642,277126,1001
+CO,validation,1.15,1.1642,20137,65

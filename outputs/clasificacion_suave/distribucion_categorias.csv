@@ -1,0 +1,545 @@
+﻿pollutant,scheme,resolution,station,split,label,category,count,fraction
+CO,India_CO,level,todas,purga,0,Buena,240,1.0
+CO,India_CO,level,todas,purga,1,Satisfactoria,0,0.0
+CO,India_CO,level,todas,purga,2,Moderada,0,0.0
+CO,India_CO,level,todas,purga,3,Mala,0,0.0
+CO,India_CO,level,todas,purga,4,Muy mala,0,0.0
+CO,India_CO,level,todas,purga,5,Severa,0,0.0
+CO,India_CO,level,todas,test,0,Buena,38413,0.9326033649760859
+CO,India_CO,level,todas,test,1,Satisfactoria,2694,0.06540581223142101
+CO,India_CO,level,todas,test,2,Moderada,82,0.0019908227924931416
+CO,India_CO,level,todas,test,3,Mala,0,0.0
+CO,India_CO,level,todas,test,4,Muy mala,0,0.0
+CO,India_CO,level,todas,test,5,Severa,0,0.0
+CO,India_CO,level,todas,train,0,Buena,253567,0.9149881281438768
+CO,India_CO,level,todas,train,1,Satisfactoria,21901,0.0790290337247317
+CO,India_CO,level,todas,train,2,Moderada,1658,0.005982838131391497
+CO,India_CO,level,todas,train,3,Mala,0,0.0
+CO,India_CO,level,todas,train,4,Muy mala,0,0.0
+CO,India_CO,level,todas,train,5,Severa,0,0.0
+CO,India_CO,level,todas,validation,0,Buena,18636,0.9254605949247654
+CO,India_CO,level,todas,validation,1,Satisfactoria,1438,0.07141083577494164
+CO,India_CO,level,todas,validation,2,Moderada,63,0.003128569300292993
+CO,India_CO,level,todas,validation,3,Mala,0,0.0
+CO,India_CO,level,todas,validation,4,Muy mala,0,0.0
+CO,India_CO,level,todas,validation,5,Severa,0,0.0
+CO,India_CO,level,centenario,purga,0,Buena,96,1.0
+CO,India_CO,level,centenario,purga,1,Satisfactoria,0,0.0
+CO,India_CO,level,centenario,purga,2,Moderada,0,0.0
+CO,India_CO,level,centenario,purga,3,Mala,0,0.0
+CO,India_CO,level,centenario,purga,4,Muy mala,0,0.0
+CO,India_CO,level,centenario,purga,5,Severa,0,0.0
+CO,India_CO,level,centenario,test,0,Buena,13222,0.9550018057060311
+CO,India_CO,level,centenario,test,1,Satisfactoria,612,0.04420368364030336
+CO,India_CO,level,centenario,test,2,Moderada,11,0.0007945106536655833
+CO,India_CO,level,centenario,test,3,Mala,0,0.0
+CO,India_CO,level,centenario,test,4,Muy mala,0,0.0
+CO,India_CO,level,centenario,test,5,Severa,0,0.0
+CO,India_CO,level,centenario,train,0,Buena,87586,0.9219967156511854
+CO,India_CO,level,centenario,train,1,Satisfactoria,7094,0.07467682849804202
+CO,India_CO,level,centenario,train,2,Moderada,316,0.003326455850772664
+CO,India_CO,level,centenario,train,3,Mala,0,0.0
+CO,India_CO,level,centenario,train,4,Muy mala,0,0.0
+CO,India_CO,level,centenario,train,5,Severa,0,0.0
+CO,India_CO,level,centenario,validation,0,Buena,6592,0.9630387143900657
+CO,India_CO,level,centenario,validation,1,Satisfactoria,247,0.03608473338203068
+CO,India_CO,level,centenario,validation,2,Moderada,6,0.0008765522279035792
+CO,India_CO,level,centenario,validation,3,Mala,0,0.0
+CO,India_CO,level,centenario,validation,4,Muy mala,0,0.0
+CO,India_CO,level,centenario,validation,5,Severa,0,0.0
+CO,India_CO,level,cordoba,purga,0,Buena,48,1.0
+CO,India_CO,level,cordoba,purga,1,Satisfactoria,0,0.0
+CO,India_CO,level,cordoba,purga,2,Moderada,0,0.0
+CO,India_CO,level,cordoba,purga,3,Mala,0,0.0
+CO,India_CO,level,cordoba,purga,4,Muy mala,0,0.0
+CO,India_CO,level,cordoba,purga,5,Severa,0,0.0
+CO,India_CO,level,cordoba,test,0,Buena,11755,0.8507019829208279
+CO,India_CO,level,cordoba,test,1,Satisfactoria,2000,0.14473874656245478
+CO,India_CO,level,cordoba,test,2,Moderada,63,0.004559270516717325
+CO,India_CO,level,cordoba,test,3,Mala,0,0.0
+CO,India_CO,level,cordoba,test,4,Muy mala,0,0.0
+CO,India_CO,level,cordoba,test,5,Severa,0,0.0
+CO,India_CO,level,cordoba,train,0,Buena,79709,0.8598968671787348
+CO,India_CO,level,cordoba,train,1,Satisfactoria,11964,0.12906705790972642
+CO,India_CO,level,cordoba,train,2,Moderada,1023,0.011036074911538794
+CO,India_CO,level,cordoba,train,3,Mala,0,0.0
+CO,India_CO,level,cordoba,train,4,Muy mala,0,0.0
+CO,India_CO,level,cordoba,train,5,Severa,0,0.0
+CO,India_CO,level,cordoba,validation,0,Buena,4670,0.8426560808372429
+CO,India_CO,level,cordoba,validation,1,Satisfactoria,848,0.1530133525802959
+CO,India_CO,level,cordoba,validation,2,Moderada,24,0.004330566582461205
+CO,India_CO,level,cordoba,validation,3,Mala,0,0.0
+CO,India_CO,level,cordoba,validation,4,Muy mala,0,0.0
+CO,India_CO,level,cordoba,validation,5,Severa,0,0.0
+CO,India_CO,level,la_boca,purga,0,Buena,96,1.0
+CO,India_CO,level,la_boca,purga,1,Satisfactoria,0,0.0
+CO,India_CO,level,la_boca,purga,2,Moderada,0,0.0
+CO,India_CO,level,la_boca,purga,3,Mala,0,0.0
+CO,India_CO,level,la_boca,purga,4,Muy mala,0,0.0
+CO,India_CO,level,la_boca,purga,5,Severa,0,0.0
+CO,India_CO,level,la_boca,test,0,Buena,13436,0.9933461481591009
+CO,India_CO,level,la_boca,test,1,Satisfactoria,82,0.006062398343930208
+CO,India_CO,level,la_boca,test,2,Moderada,8,0.0005914534969688008
+CO,India_CO,level,la_boca,test,3,Mala,0,0.0
+CO,India_CO,level,la_boca,test,4,Muy mala,0,0.0
+CO,India_CO,level,la_boca,test,5,Severa,0,0.0
+CO,India_CO,level,la_boca,train,0,Buena,86272,0.9646443187154773
+CO,India_CO,level,la_boca,train,1,Satisfactoria,2843,0.03178880515240289
+CO,India_CO,level,la_boca,train,2,Moderada,319,0.0035668761321197753
+CO,India_CO,level,la_boca,train,3,Mala,0,0.0
+CO,India_CO,level,la_boca,train,4,Muy mala,0,0.0
+CO,India_CO,level,la_boca,train,5,Severa,0,0.0
+CO,India_CO,level,la_boca,validation,0,Buena,7374,0.9514838709677419
+CO,India_CO,level,la_boca,validation,1,Satisfactoria,343,0.044258064516129035
+CO,India_CO,level,la_boca,validation,2,Moderada,33,0.0042580645161290325
+CO,India_CO,level,la_boca,validation,3,Mala,0,0.0
+CO,India_CO,level,la_boca,validation,4,Muy mala,0,0.0
+CO,India_CO,level,la_boca,validation,5,Severa,0,0.0
+NO2,UK_DAQI,level,todas,purga,0,1 · Baja,239,1.0
+NO2,UK_DAQI,level,todas,purga,1,2 · Baja,0,0.0
+NO2,UK_DAQI,level,todas,purga,2,3 · Baja,0,0.0
+NO2,UK_DAQI,level,todas,purga,3,4 · Moderada,0,0.0
+NO2,UK_DAQI,level,todas,purga,4,5 · Moderada,0,0.0
+NO2,UK_DAQI,level,todas,purga,5,6 · Moderada,0,0.0
+NO2,UK_DAQI,level,todas,purga,6,7 · Alta,0,0.0
+NO2,UK_DAQI,level,todas,purga,7,8 · Alta,0,0.0
+NO2,UK_DAQI,level,todas,purga,8,9 · Alta,0,0.0
+NO2,UK_DAQI,level,todas,purga,9,10 · Muy alta,0,0.0
+NO2,UK_DAQI,level,todas,test,0,1 · Baja,37668,0.9250718337876667
+NO2,UK_DAQI,level,todas,test,1,2 · Baja,3032,0.0744615535744984
+NO2,UK_DAQI,level,todas,test,2,3 · Baja,19,0.00046661263783491735
+NO2,UK_DAQI,level,todas,test,3,4 · Moderada,0,0.0
+NO2,UK_DAQI,level,todas,test,4,5 · Moderada,0,0.0
+NO2,UK_DAQI,level,todas,test,5,6 · Moderada,0,0.0
+NO2,UK_DAQI,level,todas,test,6,7 · Alta,0,0.0
+NO2,UK_DAQI,level,todas,test,7,8 · Alta,0,0.0
+NO2,UK_DAQI,level,todas,test,8,9 · Alta,0,0.0
+NO2,UK_DAQI,level,todas,test,9,10 · Muy alta,0,0.0
+NO2,UK_DAQI,level,todas,train,0,1 · Baja,247380,0.8992399099960378
+NO2,UK_DAQI,level,todas,train,1,2 · Baja,26263,0.09546744989985423
+NO2,UK_DAQI,level,todas,train,2,3 · Baja,1214,0.0044129567901010185
+NO2,UK_DAQI,level,todas,train,3,4 · Moderada,193,0.0007015656181956314
+NO2,UK_DAQI,level,todas,train,4,5 · Moderada,42,0.00015267231069542237
+NO2,UK_DAQI,level,todas,train,5,6 · Moderada,4,1.4540220066230702e-05
+NO2,UK_DAQI,level,todas,train,6,7 · Alta,2,7.270110033115351e-06
+NO2,UK_DAQI,level,todas,train,7,8 · Alta,0,0.0
+NO2,UK_DAQI,level,todas,train,8,9 · Alta,1,3.6350550165576755e-06
+NO2,UK_DAQI,level,todas,train,9,10 · Muy alta,0,0.0
+NO2,UK_DAQI,level,todas,validation,0,1 · Baja,13941,0.8212181903864278
+NO2,UK_DAQI,level,todas,validation,1,2 · Baja,3015,0.17760367577756833
+NO2,UK_DAQI,level,todas,validation,2,3 · Baja,20,0.00117813383600377
+NO2,UK_DAQI,level,todas,validation,3,4 · Moderada,0,0.0
+NO2,UK_DAQI,level,todas,validation,4,5 · Moderada,0,0.0
+NO2,UK_DAQI,level,todas,validation,5,6 · Moderada,0,0.0
+NO2,UK_DAQI,level,todas,validation,6,7 · Alta,0,0.0
+NO2,UK_DAQI,level,todas,validation,7,8 · Alta,0,0.0
+NO2,UK_DAQI,level,todas,validation,8,9 · Alta,0,0.0
+NO2,UK_DAQI,level,todas,validation,9,10 · Muy alta,0,0.0
+NO2,UK_DAQI,level,centenario,purga,0,1 · Baja,96,1.0
+NO2,UK_DAQI,level,centenario,purga,1,2 · Baja,0,0.0
+NO2,UK_DAQI,level,centenario,purga,2,3 · Baja,0,0.0
+NO2,UK_DAQI,level,centenario,purga,3,4 · Moderada,0,0.0
+NO2,UK_DAQI,level,centenario,purga,4,5 · Moderada,0,0.0
+NO2,UK_DAQI,level,centenario,purga,5,6 · Moderada,0,0.0
+NO2,UK_DAQI,level,centenario,purga,6,7 · Alta,0,0.0
+NO2,UK_DAQI,level,centenario,purga,7,8 · Alta,0,0.0
+NO2,UK_DAQI,level,centenario,purga,8,9 · Alta,0,0.0
+NO2,UK_DAQI,level,centenario,purga,9,10 · Muy alta,0,0.0
+NO2,UK_DAQI,level,centenario,test,0,1 · Baja,13790,0.9939455095862765
+NO2,UK_DAQI,level,centenario,test,1,2 · Baja,84,0.006054490413723511
+NO2,UK_DAQI,level,centenario,test,2,3 · Baja,0,0.0
+NO2,UK_DAQI,level,centenario,test,3,4 · Moderada,0,0.0
+NO2,UK_DAQI,level,centenario,test,4,5 · Moderada,0,0.0
+NO2,UK_DAQI,level,centenario,test,5,6 · Moderada,0,0.0
+NO2,UK_DAQI,level,centenario,test,6,7 · Alta,0,0.0
+NO2,UK_DAQI,level,centenario,test,7,8 · Alta,0,0.0
+NO2,UK_DAQI,level,centenario,test,8,9 · Alta,0,0.0
+NO2,UK_DAQI,level,centenario,test,9,10 · Muy alta,0,0.0
+NO2,UK_DAQI,level,centenario,train,0,1 · Baja,95728,0.951826036809084
+NO2,UK_DAQI,level,centenario,train,1,2 · Baja,4768,0.04740835015361976
+NO2,UK_DAQI,level,centenario,train,2,3 · Baja,75,0.0007457269843795055
+NO2,UK_DAQI,level,centenario,train,3,4 · Moderada,1,9.943026458393407e-06
+NO2,UK_DAQI,level,centenario,train,4,5 · Moderada,1,9.943026458393407e-06
+NO2,UK_DAQI,level,centenario,train,5,6 · Moderada,0,0.0
+NO2,UK_DAQI,level,centenario,train,6,7 · Alta,0,0.0
+NO2,UK_DAQI,level,centenario,train,7,8 · Alta,0,0.0
+NO2,UK_DAQI,level,centenario,train,8,9 · Alta,0,0.0
+NO2,UK_DAQI,level,centenario,train,9,10 · Muy alta,0,0.0
+NO2,UK_DAQI,level,centenario,validation,0,1 · Baja,1623,0.9890310786106032
+NO2,UK_DAQI,level,centenario,validation,1,2 · Baja,18,0.010968921389396709
+NO2,UK_DAQI,level,centenario,validation,2,3 · Baja,0,0.0
+NO2,UK_DAQI,level,centenario,validation,3,4 · Moderada,0,0.0
+NO2,UK_DAQI,level,centenario,validation,4,5 · Moderada,0,0.0
+NO2,UK_DAQI,level,centenario,validation,5,6 · Moderada,0,0.0
+NO2,UK_DAQI,level,centenario,validation,6,7 · Alta,0,0.0
+NO2,UK_DAQI,level,centenario,validation,7,8 · Alta,0,0.0
+NO2,UK_DAQI,level,centenario,validation,8,9 · Alta,0,0.0
+NO2,UK_DAQI,level,centenario,validation,9,10 · Muy alta,0,0.0
+NO2,UK_DAQI,level,cordoba,purga,0,1 · Baja,47,1.0
+NO2,UK_DAQI,level,cordoba,purga,1,2 · Baja,0,0.0
+NO2,UK_DAQI,level,cordoba,purga,2,3 · Baja,0,0.0
+NO2,UK_DAQI,level,cordoba,purga,3,4 · Moderada,0,0.0
+NO2,UK_DAQI,level,cordoba,purga,4,5 · Moderada,0,0.0
+NO2,UK_DAQI,level,cordoba,purga,5,6 · Moderada,0,0.0
+NO2,UK_DAQI,level,cordoba,purga,6,7 · Alta,0,0.0
+NO2,UK_DAQI,level,cordoba,purga,7,8 · Alta,0,0.0
+NO2,UK_DAQI,level,cordoba,purga,8,9 · Alta,0,0.0
+NO2,UK_DAQI,level,cordoba,purga,9,10 · Muy alta,0,0.0
+NO2,UK_DAQI,level,cordoba,test,0,1 · Baja,12785,0.9594746716697936
+NO2,UK_DAQI,level,cordoba,test,1,2 · Baja,528,0.039624765478424015
+NO2,UK_DAQI,level,cordoba,test,2,3 · Baja,12,0.000900562851782364
+NO2,UK_DAQI,level,cordoba,test,3,4 · Moderada,0,0.0
+NO2,UK_DAQI,level,cordoba,test,4,5 · Moderada,0,0.0
+NO2,UK_DAQI,level,cordoba,test,5,6 · Moderada,0,0.0
+NO2,UK_DAQI,level,cordoba,test,6,7 · Alta,0,0.0
+NO2,UK_DAQI,level,cordoba,test,7,8 · Alta,0,0.0
+NO2,UK_DAQI,level,cordoba,test,8,9 · Alta,0,0.0
+NO2,UK_DAQI,level,cordoba,test,9,10 · Muy alta,0,0.0
+NO2,UK_DAQI,level,cordoba,train,0,1 · Baja,62813,0.82072020278569
+NO2,UK_DAQI,level,cordoba,train,1,2 · Baja,12586,0.1644497870227611
+NO2,UK_DAQI,level,cordoba,train,2,3 · Baja,903,0.011798677711866622
+NO2,UK_DAQI,level,cordoba,train,3,4 · Moderada,184,0.0024041602425065984
+NO2,UK_DAQI,level,cordoba,train,4,5 · Moderada,41,0.0005357096192541876
+NO2,UK_DAQI,level,cordoba,train,5,6 · Moderada,4,5.226435309796953e-05
+NO2,UK_DAQI,level,cordoba,train,6,7 · Alta,2,2.6132176548984765e-05
+NO2,UK_DAQI,level,cordoba,train,7,8 · Alta,0,0.0
+NO2,UK_DAQI,level,cordoba,train,8,9 · Alta,1,1.3066088274492383e-05
+NO2,UK_DAQI,level,cordoba,train,9,10 · Muy alta,0,0.0
+NO2,UK_DAQI,level,cordoba,validation,0,1 · Baja,6739,0.9394953297086296
+NO2,UK_DAQI,level,cordoba,validation,1,2 · Baja,434,0.06050467029137042
+NO2,UK_DAQI,level,cordoba,validation,2,3 · Baja,0,0.0
+NO2,UK_DAQI,level,cordoba,validation,3,4 · Moderada,0,0.0
+NO2,UK_DAQI,level,cordoba,validation,4,5 · Moderada,0,0.0
+NO2,UK_DAQI,level,cordoba,validation,5,6 · Moderada,0,0.0
+NO2,UK_DAQI,level,cordoba,validation,6,7 · Alta,0,0.0
+NO2,UK_DAQI,level,cordoba,validation,7,8 · Alta,0,0.0
+NO2,UK_DAQI,level,cordoba,validation,8,9 · Alta,0,0.0
+NO2,UK_DAQI,level,cordoba,validation,9,10 · Muy alta,0,0.0
+NO2,UK_DAQI,level,la_boca,purga,0,1 · Baja,96,1.0
+NO2,UK_DAQI,level,la_boca,purga,1,2 · Baja,0,0.0
+NO2,UK_DAQI,level,la_boca,purga,2,3 · Baja,0,0.0
+NO2,UK_DAQI,level,la_boca,purga,3,4 · Moderada,0,0.0
+NO2,UK_DAQI,level,la_boca,purga,4,5 · Moderada,0,0.0
+NO2,UK_DAQI,level,la_boca,purga,5,6 · Moderada,0,0.0
+NO2,UK_DAQI,level,la_boca,purga,6,7 · Alta,0,0.0
+NO2,UK_DAQI,level,la_boca,purga,7,8 · Alta,0,0.0
+NO2,UK_DAQI,level,la_boca,purga,8,9 · Alta,0,0.0
+NO2,UK_DAQI,level,la_boca,purga,9,10 · Muy alta,0,0.0
+NO2,UK_DAQI,level,la_boca,test,0,1 · Baja,11093,0.8204881656804733
+NO2,UK_DAQI,level,la_boca,test,1,2 · Baja,2420,0.17899408284023668
+NO2,UK_DAQI,level,la_boca,test,2,3 · Baja,7,0.0005177514792899408
+NO2,UK_DAQI,level,la_boca,test,3,4 · Moderada,0,0.0
+NO2,UK_DAQI,level,la_boca,test,4,5 · Moderada,0,0.0
+NO2,UK_DAQI,level,la_boca,test,5,6 · Moderada,0,0.0
+NO2,UK_DAQI,level,la_boca,test,6,7 · Alta,0,0.0
+NO2,UK_DAQI,level,la_boca,test,7,8 · Alta,0,0.0
+NO2,UK_DAQI,level,la_boca,test,8,9 · Alta,0,0.0
+NO2,UK_DAQI,level,la_boca,test,9,10 · Muy alta,0,0.0
+NO2,UK_DAQI,level,la_boca,train,0,1 · Baja,88839,0.9065944158706833
+NO2,UK_DAQI,level,la_boca,train,1,2 · Baja,8909,0.09091558494570985
+NO2,UK_DAQI,level,la_boca,train,2,3 · Baja,236,0.0024083598661115194
+NO2,UK_DAQI,level,la_boca,train,3,4 · Moderada,8,8.163931749530574e-05
+NO2,UK_DAQI,level,la_boca,train,4,5 · Moderada,0,0.0
+NO2,UK_DAQI,level,la_boca,train,5,6 · Moderada,0,0.0
+NO2,UK_DAQI,level,la_boca,train,6,7 · Alta,0,0.0
+NO2,UK_DAQI,level,la_boca,train,7,8 · Alta,0,0.0
+NO2,UK_DAQI,level,la_boca,train,8,9 · Alta,0,0.0
+NO2,UK_DAQI,level,la_boca,train,9,10 · Muy alta,0,0.0
+NO2,UK_DAQI,level,la_boca,validation,0,1 · Baja,5579,0.6835334476843911
+NO2,UK_DAQI,level,la_boca,validation,1,2 · Baja,2563,0.3140161725067385
+NO2,UK_DAQI,level,la_boca,validation,2,3 · Baja,20,0.002450379808870375
+NO2,UK_DAQI,level,la_boca,validation,3,4 · Moderada,0,0.0
+NO2,UK_DAQI,level,la_boca,validation,4,5 · Moderada,0,0.0
+NO2,UK_DAQI,level,la_boca,validation,5,6 · Moderada,0,0.0
+NO2,UK_DAQI,level,la_boca,validation,6,7 · Alta,0,0.0
+NO2,UK_DAQI,level,la_boca,validation,7,8 · Alta,0,0.0
+NO2,UK_DAQI,level,la_boca,validation,8,9 · Alta,0,0.0
+NO2,UK_DAQI,level,la_boca,validation,9,10 · Muy alta,0,0.0
+NO2,UK_DAQI,band,todas,purga,0,Baja,239,1.0
+NO2,UK_DAQI,band,todas,purga,1,Moderada,0,0.0
+NO2,UK_DAQI,band,todas,purga,2,Alta,0,0.0
+NO2,UK_DAQI,band,todas,purga,3,Muy alta,0,0.0
+NO2,UK_DAQI,band,todas,test,0,Baja,40719,1.0
+NO2,UK_DAQI,band,todas,test,1,Moderada,0,0.0
+NO2,UK_DAQI,band,todas,test,2,Alta,0,0.0
+NO2,UK_DAQI,band,todas,test,3,Muy alta,0,0.0
+NO2,UK_DAQI,band,todas,train,0,Baja,274857,0.999120316685993
+NO2,UK_DAQI,band,todas,train,1,Moderada,239,0.0008687781489572845
+NO2,UK_DAQI,band,todas,train,2,Alta,3,1.0905165049673027e-05
+NO2,UK_DAQI,band,todas,train,3,Muy alta,0,0.0
+NO2,UK_DAQI,band,todas,validation,0,Baja,16976,1.0
+NO2,UK_DAQI,band,todas,validation,1,Moderada,0,0.0
+NO2,UK_DAQI,band,todas,validation,2,Alta,0,0.0
+NO2,UK_DAQI,band,todas,validation,3,Muy alta,0,0.0
+NO2,UK_DAQI,band,centenario,purga,0,Baja,96,1.0
+NO2,UK_DAQI,band,centenario,purga,1,Moderada,0,0.0
+NO2,UK_DAQI,band,centenario,purga,2,Alta,0,0.0
+NO2,UK_DAQI,band,centenario,purga,3,Muy alta,0,0.0
+NO2,UK_DAQI,band,centenario,test,0,Baja,13874,1.0
+NO2,UK_DAQI,band,centenario,test,1,Moderada,0,0.0
+NO2,UK_DAQI,band,centenario,test,2,Alta,0,0.0
+NO2,UK_DAQI,band,centenario,test,3,Muy alta,0,0.0
+NO2,UK_DAQI,band,centenario,train,0,Baja,100571,0.9999801139470832
+NO2,UK_DAQI,band,centenario,train,1,Moderada,2,1.9886052916786813e-05
+NO2,UK_DAQI,band,centenario,train,2,Alta,0,0.0
+NO2,UK_DAQI,band,centenario,train,3,Muy alta,0,0.0
+NO2,UK_DAQI,band,centenario,validation,0,Baja,1641,1.0
+NO2,UK_DAQI,band,centenario,validation,1,Moderada,0,0.0
+NO2,UK_DAQI,band,centenario,validation,2,Alta,0,0.0
+NO2,UK_DAQI,band,centenario,validation,3,Muy alta,0,0.0
+NO2,UK_DAQI,band,cordoba,purga,0,Baja,47,1.0
+NO2,UK_DAQI,band,cordoba,purga,1,Moderada,0,0.0
+NO2,UK_DAQI,band,cordoba,purga,2,Alta,0,0.0
+NO2,UK_DAQI,band,cordoba,purga,3,Muy alta,0,0.0
+NO2,UK_DAQI,band,cordoba,test,0,Baja,13325,1.0
+NO2,UK_DAQI,band,cordoba,test,1,Moderada,0,0.0
+NO2,UK_DAQI,band,cordoba,test,2,Alta,0,0.0
+NO2,UK_DAQI,band,cordoba,test,3,Muy alta,0,0.0
+NO2,UK_DAQI,band,cordoba,train,0,Baja,76302,0.9969686675203178
+NO2,UK_DAQI,band,cordoba,train,1,Moderada,229,0.0029921342148587554
+NO2,UK_DAQI,band,cordoba,train,2,Alta,3,3.9198264823477146e-05
+NO2,UK_DAQI,band,cordoba,train,3,Muy alta,0,0.0
+NO2,UK_DAQI,band,cordoba,validation,0,Baja,7173,1.0
+NO2,UK_DAQI,band,cordoba,validation,1,Moderada,0,0.0
+NO2,UK_DAQI,band,cordoba,validation,2,Alta,0,0.0
+NO2,UK_DAQI,band,cordoba,validation,3,Muy alta,0,0.0
+NO2,UK_DAQI,band,la_boca,purga,0,Baja,96,1.0
+NO2,UK_DAQI,band,la_boca,purga,1,Moderada,0,0.0
+NO2,UK_DAQI,band,la_boca,purga,2,Alta,0,0.0
+NO2,UK_DAQI,band,la_boca,purga,3,Muy alta,0,0.0
+NO2,UK_DAQI,band,la_boca,test,0,Baja,13520,1.0
+NO2,UK_DAQI,band,la_boca,test,1,Moderada,0,0.0
+NO2,UK_DAQI,band,la_boca,test,2,Alta,0,0.0
+NO2,UK_DAQI,band,la_boca,test,3,Muy alta,0,0.0
+NO2,UK_DAQI,band,la_boca,train,0,Baja,97984,0.9999183606825047
+NO2,UK_DAQI,band,la_boca,train,1,Moderada,8,8.163931749530574e-05
+NO2,UK_DAQI,band,la_boca,train,2,Alta,0,0.0
+NO2,UK_DAQI,band,la_boca,train,3,Muy alta,0,0.0
+NO2,UK_DAQI,band,la_boca,validation,0,Baja,8162,1.0
+NO2,UK_DAQI,band,la_boca,validation,1,Moderada,0,0.0
+NO2,UK_DAQI,band,la_boca,validation,2,Alta,0,0.0
+NO2,UK_DAQI,band,la_boca,validation,3,Muy alta,0,0.0
+PM10,UK_DAQI,level,todas,purga,0,1 · Baja,59,0.26339285714285715
+PM10,UK_DAQI,level,todas,purga,1,2 · Baja,119,0.53125
+PM10,UK_DAQI,level,todas,purga,2,3 · Baja,46,0.20535714285714285
+PM10,UK_DAQI,level,todas,purga,3,4 · Moderada,0,0.0
+PM10,UK_DAQI,level,todas,purga,4,5 · Moderada,0,0.0
+PM10,UK_DAQI,level,todas,purga,5,6 · Moderada,0,0.0
+PM10,UK_DAQI,level,todas,purga,6,7 · Alta,0,0.0
+PM10,UK_DAQI,level,todas,purga,7,8 · Alta,0,0.0
+PM10,UK_DAQI,level,todas,purga,8,9 · Alta,0,0.0
+PM10,UK_DAQI,level,todas,purga,9,10 · Muy alta,0,0.0
+PM10,UK_DAQI,level,todas,test,0,1 · Baja,8938,0.23519195852958977
+PM10,UK_DAQI,level,todas,test,1,2 · Baja,23566,0.620108938767992
+PM10,UK_DAQI,level,todas,test,2,3 · Baja,4771,0.12554272031155436
+PM10,UK_DAQI,level,todas,test,3,4 · Moderada,468,0.012314817251269636
+PM10,UK_DAQI,level,todas,test,4,5 · Moderada,140,0.003683919690550746
+PM10,UK_DAQI,level,todas,test,5,6 · Moderada,66,0.001736704996973923
+PM10,UK_DAQI,level,todas,test,6,7 · Alta,9,0.00023682340867826223
+PM10,UK_DAQI,level,todas,test,7,8 · Alta,14,0.0003683919690550746
+PM10,UK_DAQI,level,todas,test,8,9 · Alta,5,0.00013156856037681235
+PM10,UK_DAQI,level,todas,test,9,10 · Muy alta,26,0.0006841565139594243
+PM10,UK_DAQI,level,todas,train,0,1 · Baja,44323,0.16385582255083178
+PM10,UK_DAQI,level,todas,train,1,2 · Baja,167103,0.6177560073937154
+PM10,UK_DAQI,level,todas,train,2,3 · Baja,46068,0.17030683918669132
+PM10,UK_DAQI,level,todas,train,3,4 · Moderada,5445,0.020129390018484287
+PM10,UK_DAQI,level,todas,train,4,5 · Moderada,2768,0.010232902033271719
+PM10,UK_DAQI,level,todas,train,5,6 · Moderada,1593,0.00588909426987061
+PM10,UK_DAQI,level,todas,train,6,7 · Alta,892,0.0032975970425138633
+PM10,UK_DAQI,level,todas,train,7,8 · Alta,649,0.002399260628465804
+PM10,UK_DAQI,level,todas,train,8,9 · Alta,453,0.0016746765249537894
+PM10,UK_DAQI,level,todas,train,9,10 · Muy alta,1206,0.004458410351201479
+PM10,UK_DAQI,level,todas,validation,0,1 · Baja,5622,0.24962259124411687
+PM10,UK_DAQI,level,todas,validation,1,2 · Baja,14067,0.624589290471539
+PM10,UK_DAQI,level,todas,validation,2,3 · Baja,2276,0.10105674451647279
+PM10,UK_DAQI,level,todas,validation,3,4 · Moderada,229,0.010167835893792736
+PM10,UK_DAQI,level,todas,validation,4,5 · Moderada,128,0.005683331853298996
+PM10,UK_DAQI,level,todas,validation,5,6 · Moderada,83,0.003685285498623568
+PM10,UK_DAQI,level,todas,validation,6,7 · Alta,47,0.002086848414883225
+PM10,UK_DAQI,level,todas,validation,7,8 · Alta,62,0.0027528638664417013
+PM10,UK_DAQI,level,todas,validation,8,9 · Alta,8,0.00035520824083118727
+PM10,UK_DAQI,level,todas,validation,9,10 · Muy alta,0,0.0
+PM10,UK_DAQI,level,centenario,purga,0,1 · Baja,28,0.4307692307692308
+PM10,UK_DAQI,level,centenario,purga,1,2 · Baja,37,0.5692307692307692
+PM10,UK_DAQI,level,centenario,purga,2,3 · Baja,0,0.0
+PM10,UK_DAQI,level,centenario,purga,3,4 · Moderada,0,0.0
+PM10,UK_DAQI,level,centenario,purga,4,5 · Moderada,0,0.0
+PM10,UK_DAQI,level,centenario,purga,5,6 · Moderada,0,0.0
+PM10,UK_DAQI,level,centenario,purga,6,7 · Alta,0,0.0
+PM10,UK_DAQI,level,centenario,purga,7,8 · Alta,0,0.0
+PM10,UK_DAQI,level,centenario,purga,8,9 · Alta,0,0.0
+PM10,UK_DAQI,level,centenario,purga,9,10 · Muy alta,0,0.0
+PM10,UK_DAQI,level,centenario,test,0,1 · Baja,4342,0.32575587065796385
+PM10,UK_DAQI,level,centenario,test,1,2 · Baja,7594,0.5697351639282767
+PM10,UK_DAQI,level,centenario,test,2,3 · Baja,1251,0.09385550303848751
+PM10,UK_DAQI,level,centenario,test,3,4 · Moderada,107,0.008027608972916198
+PM10,UK_DAQI,level,centenario,test,4,5 · Moderada,18,0.0013504388926401081
+PM10,UK_DAQI,level,centenario,test,5,6 · Moderada,6,0.00045014629754670267
+PM10,UK_DAQI,level,centenario,test,6,7 · Alta,2,0.00015004876584890088
+PM10,UK_DAQI,level,centenario,test,7,8 · Alta,1,7.502438292445044e-05
+PM10,UK_DAQI,level,centenario,test,8,9 · Alta,2,0.00015004876584890088
+PM10,UK_DAQI,level,centenario,test,9,10 · Muy alta,6,0.00045014629754670267
+PM10,UK_DAQI,level,centenario,train,0,1 · Baja,16558,0.17094599477601924
+PM10,UK_DAQI,level,centenario,train,1,2 · Baja,61468,0.6346000970462828
+PM10,UK_DAQI,level,centenario,train,2,3 · Baja,14739,0.15216650664354076
+PM10,UK_DAQI,level,centenario,train,3,4 · Moderada,1788,0.018459441880633073
+PM10,UK_DAQI,level,centenario,train,4,5 · Moderada,887,0.00915745243183531
+PM10,UK_DAQI,level,centenario,train,5,6 · Moderada,504,0.005203332610648249
+PM10,UK_DAQI,level,centenario,train,6,7 · Alta,224,0.0023125922713992217
+PM10,UK_DAQI,level,centenario,train,7,8 · Alta,181,0.0018686571478716925
+PM10,UK_DAQI,level,centenario,train,8,9 · Alta,128,0.0013214812979424123
+PM10,UK_DAQI,level,centenario,train,9,10 · Muy alta,384,0.003964443893827237
+PM10,UK_DAQI,level,centenario,validation,0,1 · Baja,2901,0.3820624259186092
+PM10,UK_DAQI,level,centenario,validation,1,2 · Baja,3842,0.5059923613854866
+PM10,UK_DAQI,level,centenario,validation,2,3 · Baja,666,0.08771236665349665
+PM10,UK_DAQI,level,centenario,validation,3,4 · Moderada,79,0.010404319768207559
+PM10,UK_DAQI,level,centenario,validation,4,5 · Moderada,35,0.004609508758066641
+PM10,UK_DAQI,level,centenario,validation,5,6 · Moderada,28,0.003687607006453312
+PM10,UK_DAQI,level,centenario,validation,6,7 · Alta,22,0.0028974055050704594
+PM10,UK_DAQI,level,centenario,validation,7,8 · Alta,20,0.0026340050046095085
+PM10,UK_DAQI,level,centenario,validation,8,9 · Alta,0,0.0
+PM10,UK_DAQI,level,centenario,validation,9,10 · Muy alta,0,0.0
+PM10,UK_DAQI,level,cordoba,purga,0,1 · Baja,2,0.031746031746031744
+PM10,UK_DAQI,level,cordoba,purga,1,2 · Baja,38,0.6031746031746031
+PM10,UK_DAQI,level,cordoba,purga,2,3 · Baja,23,0.36507936507936506
+PM10,UK_DAQI,level,cordoba,purga,3,4 · Moderada,0,0.0
+PM10,UK_DAQI,level,cordoba,purga,4,5 · Moderada,0,0.0
+PM10,UK_DAQI,level,cordoba,purga,5,6 · Moderada,0,0.0
+PM10,UK_DAQI,level,cordoba,purga,6,7 · Alta,0,0.0
+PM10,UK_DAQI,level,cordoba,purga,7,8 · Alta,0,0.0
+PM10,UK_DAQI,level,cordoba,purga,8,9 · Alta,0,0.0
+PM10,UK_DAQI,level,cordoba,purga,9,10 · Muy alta,0,0.0
+PM10,UK_DAQI,level,cordoba,test,0,1 · Baja,1569,0.12440532825880114
+PM10,UK_DAQI,level,cordoba,test,1,2 · Baja,9028,0.7158261972724389
+PM10,UK_DAQI,level,cordoba,test,2,3 · Baja,1776,0.14081826831588962
+PM10,UK_DAQI,level,cordoba,test,3,4 · Moderada,167,0.013241357437361243
+PM10,UK_DAQI,level,cordoba,test,4,5 · Moderada,40,0.003171582619727244
+PM10,UK_DAQI,level,cordoba,test,5,6 · Moderada,2,0.0001585791309863622
+PM10,UK_DAQI,level,cordoba,test,6,7 · Alta,5,0.0003964478274659055
+PM10,UK_DAQI,level,cordoba,test,7,8 · Alta,12,0.0009514747859181732
+PM10,UK_DAQI,level,cordoba,test,8,9 · Alta,2,0.0001585791309863622
+PM10,UK_DAQI,level,cordoba,test,9,10 · Muy alta,11,0.0008721852204249921
+PM10,UK_DAQI,level,cordoba,train,0,1 · Baja,13344,0.1699764346219986
+PM10,UK_DAQI,level,cordoba,train,1,2 · Baja,50023,0.6371950831157251
+PM10,UK_DAQI,level,cordoba,train,2,3 · Baja,12330,0.15706005986879817
+PM10,UK_DAQI,level,cordoba,train,3,4 · Moderada,1109,0.014126488758677792
+PM10,UK_DAQI,level,cordoba,train,4,5 · Moderada,606,0.007719253550729253
+PM10,UK_DAQI,level,cordoba,train,5,6 · Moderada,379,0.004827717979746513
+PM10,UK_DAQI,level,cordoba,train,6,7 · Alta,164,0.0020890389147188077
+PM10,UK_DAQI,level,cordoba,train,7,8 · Alta,158,0.0020126106617412904
+PM10,UK_DAQI,level,cordoba,train,8,9 · Alta,74,0.0009426151200560474
+PM10,UK_DAQI,level,cordoba,train,9,10 · Muy alta,318,0.00405069740780842
+PM10,UK_DAQI,level,cordoba,validation,0,1 · Baja,1241,0.1558457867637825
+PM10,UK_DAQI,level,cordoba,validation,1,2 · Baja,5641,0.7084013562727616
+PM10,UK_DAQI,level,cordoba,validation,2,3 · Baja,912,0.11452969986186111
+PM10,UK_DAQI,level,cordoba,validation,3,4 · Moderada,84,0.010548788145171418
+PM10,UK_DAQI,level,cordoba,validation,4,5 · Moderada,27,0.0033906819038050985
+PM10,UK_DAQI,level,cordoba,validation,5,6 · Moderada,14,0.0017581313575285697
+PM10,UK_DAQI,level,cordoba,validation,6,7 · Alta,11,0.0013813889237724475
+PM10,UK_DAQI,level,cordoba,validation,7,8 · Alta,30,0.003767424337561221
+PM10,UK_DAQI,level,cordoba,validation,8,9 · Alta,3,0.00037674243375612206
+PM10,UK_DAQI,level,cordoba,validation,9,10 · Muy alta,0,0.0
+PM10,UK_DAQI,level,la_boca,purga,0,1 · Baja,29,0.3020833333333333
+PM10,UK_DAQI,level,la_boca,purga,1,2 · Baja,44,0.4583333333333333
+PM10,UK_DAQI,level,la_boca,purga,2,3 · Baja,23,0.23958333333333334
+PM10,UK_DAQI,level,la_boca,purga,3,4 · Moderada,0,0.0
+PM10,UK_DAQI,level,la_boca,purga,4,5 · Moderada,0,0.0
+PM10,UK_DAQI,level,la_boca,purga,5,6 · Moderada,0,0.0
+PM10,UK_DAQI,level,la_boca,purga,6,7 · Alta,0,0.0
+PM10,UK_DAQI,level,la_boca,purga,7,8 · Alta,0,0.0
+PM10,UK_DAQI,level,la_boca,purga,8,9 · Alta,0,0.0
+PM10,UK_DAQI,level,la_boca,purga,9,10 · Muy alta,0,0.0
+PM10,UK_DAQI,level,la_boca,test,0,1 · Baja,3027,0.25095340739512517
+PM10,UK_DAQI,level,la_boca,test,1,2 · Baja,6944,0.5756922566738518
+PM10,UK_DAQI,level,la_boca,test,2,3 · Baja,1744,0.14458630409550655
+PM10,UK_DAQI,level,la_boca,test,3,4 · Moderada,194,0.016083568230807494
+PM10,UK_DAQI,level,la_boca,test,4,5 · Moderada,82,0.006798209252196982
+PM10,UK_DAQI,level,la_boca,test,5,6 · Moderada,58,0.004808489471066158
+PM10,UK_DAQI,level,la_boca,test,6,7 · Alta,2,0.000165809981760902
+PM10,UK_DAQI,level,la_boca,test,7,8 · Alta,1,8.2904990880451e-05
+PM10,UK_DAQI,level,la_boca,test,8,9 · Alta,1,8.2904990880451e-05
+PM10,UK_DAQI,level,la_boca,test,9,10 · Muy alta,9,0.000746144917924059
+PM10,UK_DAQI,level,la_boca,train,0,1 · Baja,14421,0.15158618369878277
+PM10,UK_DAQI,level,la_boca,train,1,2 · Baja,55612,0.5845649294679084
+PM10,UK_DAQI,level,la_boca,train,2,3 · Baja,18999,0.19970778060420039
+PM10,UK_DAQI,level,la_boca,train,3,4 · Moderada,2548,0.026783274118611644
+PM10,UK_DAQI,level,la_boca,train,4,5 · Moderada,1275,0.01340214854836336
+PM10,UK_DAQI,level,la_boca,train,5,6 · Moderada,710,0.007463157230853322
+PM10,UK_DAQI,level,la_boca,train,6,7 · Alta,504,0.005297790485000105
+PM10,UK_DAQI,level,la_boca,train,7,8 · Alta,310,0.003258561607837366
+PM10,UK_DAQI,level,la_boca,train,8,9 · Alta,251,0.0026383837534425126
+PM10,UK_DAQI,level,la_boca,train,9,10 · Muy alta,504,0.005297790485000105
+PM10,UK_DAQI,level,la_boca,validation,0,1 · Baja,1480,0.21246052253804193
+PM10,UK_DAQI,level,la_boca,validation,1,2 · Baja,4584,0.6580534022394487
+PM10,UK_DAQI,level,la_boca,validation,2,3 · Baja,698,0.10020097616996841
+PM10,UK_DAQI,level,la_boca,validation,3,4 · Moderada,66,0.009474590869939707
+PM10,UK_DAQI,level,la_boca,validation,4,5 · Moderada,66,0.009474590869939707
+PM10,UK_DAQI,level,la_boca,validation,5,6 · Moderada,41,0.005885730691932242
+PM10,UK_DAQI,level,la_boca,validation,6,7 · Alta,14,0.0020097616996841805
+PM10,UK_DAQI,level,la_boca,validation,7,8 · Alta,12,0.0017226528854435831
+PM10,UK_DAQI,level,la_boca,validation,8,9 · Alta,5,0.000717772035601493
+PM10,UK_DAQI,level,la_boca,validation,9,10 · Muy alta,0,0.0
+PM10,UK_DAQI,band,todas,purga,0,Baja,224,1.0
+PM10,UK_DAQI,band,todas,purga,1,Moderada,0,0.0
+PM10,UK_DAQI,band,todas,purga,2,Alta,0,0.0
+PM10,UK_DAQI,band,todas,purga,3,Muy alta,0,0.0
+PM10,UK_DAQI,band,todas,test,0,Baja,37275,0.9808436176091361
+PM10,UK_DAQI,band,todas,test,1,Moderada,674,0.017735441938794307
+PM10,UK_DAQI,band,todas,test,2,Alta,28,0.0007367839381101492
+PM10,UK_DAQI,band,todas,test,3,Muy alta,26,0.0006841565139594243
+PM10,UK_DAQI,band,todas,train,0,Baja,257494,0.9519186691312385
+PM10,UK_DAQI,band,todas,train,1,Moderada,9806,0.03625138632162662
+PM10,UK_DAQI,band,todas,train,2,Alta,1994,0.007371534195933457
+PM10,UK_DAQI,band,todas,train,3,Muy alta,1206,0.004458410351201479
+PM10,UK_DAQI,band,todas,validation,0,Baja,21965,0.9752686262321286
+PM10,UK_DAQI,band,todas,validation,1,Moderada,440,0.0195364532457153
+PM10,UK_DAQI,band,todas,validation,2,Alta,117,0.005194920522156114
+PM10,UK_DAQI,band,todas,validation,3,Muy alta,0,0.0
+PM10,UK_DAQI,band,centenario,purga,0,Baja,65,1.0
+PM10,UK_DAQI,band,centenario,purga,1,Moderada,0,0.0
+PM10,UK_DAQI,band,centenario,purga,2,Alta,0,0.0
+PM10,UK_DAQI,band,centenario,purga,3,Muy alta,0,0.0
+PM10,UK_DAQI,band,centenario,test,0,Baja,13187,0.989346537624728
+PM10,UK_DAQI,band,centenario,test,1,Moderada,131,0.009828194163103009
+PM10,UK_DAQI,band,centenario,test,2,Alta,5,0.00037512191462225225
+PM10,UK_DAQI,band,centenario,test,3,Muy alta,6,0.00045014629754670267
+PM10,UK_DAQI,band,centenario,train,0,Baja,92765,0.9577125984658428
+PM10,UK_DAQI,band,centenario,train,1,Moderada,3179,0.03282022692311663
+PM10,UK_DAQI,band,centenario,train,2,Alta,533,0.005502730717213326
+PM10,UK_DAQI,band,centenario,train,3,Muy alta,384,0.003964443893827237
+PM10,UK_DAQI,band,centenario,validation,0,Baja,7409,0.9757671539575925
+PM10,UK_DAQI,band,centenario,validation,1,Moderada,142,0.018701435532727514
+PM10,UK_DAQI,band,centenario,validation,2,Alta,42,0.005531410509679968
+PM10,UK_DAQI,band,centenario,validation,3,Muy alta,0,0.0
+PM10,UK_DAQI,band,cordoba,purga,0,Baja,63,1.0
+PM10,UK_DAQI,band,cordoba,purga,1,Moderada,0,0.0
+PM10,UK_DAQI,band,cordoba,purga,2,Alta,0,0.0
+PM10,UK_DAQI,band,cordoba,purga,3,Muy alta,0,0.0
+PM10,UK_DAQI,band,cordoba,test,0,Baja,12373,0.9810497938471298
+PM10,UK_DAQI,band,cordoba,test,1,Moderada,209,0.01657151918807485
+PM10,UK_DAQI,band,cordoba,test,2,Alta,19,0.0015065017443704409
+PM10,UK_DAQI,band,cordoba,test,3,Muy alta,11,0.0008721852204249921
+PM10,UK_DAQI,band,cordoba,train,0,Baja,75697,0.9642315776065219
+PM10,UK_DAQI,band,cordoba,train,1,Moderada,2094,0.02667346028915356
+PM10,UK_DAQI,band,cordoba,train,2,Alta,396,0.005044264696516146
+PM10,UK_DAQI,band,cordoba,train,3,Muy alta,318,0.00405069740780842
+PM10,UK_DAQI,band,cordoba,validation,0,Baja,7794,0.9787768428984052
+PM10,UK_DAQI,band,cordoba,validation,1,Moderada,125,0.015697601406505085
+PM10,UK_DAQI,band,cordoba,validation,2,Alta,44,0.00552555569508979
+PM10,UK_DAQI,band,cordoba,validation,3,Muy alta,0,0.0
+PM10,UK_DAQI,band,la_boca,purga,0,Baja,96,1.0
+PM10,UK_DAQI,band,la_boca,purga,1,Moderada,0,0.0
+PM10,UK_DAQI,band,la_boca,purga,2,Alta,0,0.0
+PM10,UK_DAQI,band,la_boca,purga,3,Muy alta,0,0.0
+PM10,UK_DAQI,band,la_boca,test,0,Baja,11715,0.9712319681644835
+PM10,UK_DAQI,band,la_boca,test,1,Moderada,334,0.027690266954070637
+PM10,UK_DAQI,band,la_boca,test,2,Alta,4,0.000331619963521804
+PM10,UK_DAQI,band,la_boca,test,3,Muy alta,9,0.000746144917924059
+PM10,UK_DAQI,band,la_boca,train,0,Baja,89032,0.9358588937708916
+PM10,UK_DAQI,band,la_boca,train,1,Moderada,4533,0.04764857989782833
+PM10,UK_DAQI,band,la_boca,train,2,Alta,1065,0.011194735846279984
+PM10,UK_DAQI,band,la_boca,train,3,Muy alta,504,0.005297790485000105
+PM10,UK_DAQI,band,la_boca,validation,0,Baja,6762,0.970714900947459
+PM10,UK_DAQI,band,la_boca,validation,1,Moderada,173,0.024834912431811657
+PM10,UK_DAQI,band,la_boca,validation,2,Alta,31,0.004450186620729256
+PM10,UK_DAQI,band,la_boca,validation,3,Muy alta,0,0.0

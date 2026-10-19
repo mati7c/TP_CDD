@@ -1,0 +1,40 @@
+{
+  "selected_classifier": "XGBoost",
+  "selection_metric": "f1_macro",
+  "validation_scores": {
+    "RandomForest": 0.2088775938530362,
+    "XGBoost": 0.21580001652481673
+  },
+  "parameters": {
+    "RandomForest": {
+      "n_estimators": 200,
+      "max_depth": 14,
+      "min_samples_leaf": 10,
+      "max_features": 0.8,
+      "weight_power": 1.0
+    },
+    "XGBoost": {
+      "n_estimators": 300,
+      "max_depth": 4,
+      "learning_rate": 0.05,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 5.0,
+      "tree_method": "hist",
+      "objective": "multi:softprob",
+      "eval_metric": "mlogloss",
+      "num_class": 3,
+      "weight_power": 1.0
+    }
+  },
+  "trained_classes": [
+    0,
+    1,
+    2
+  ],
+  "unlearned_classes": [
+    3,
+    4,
+    5
+  ]
+}

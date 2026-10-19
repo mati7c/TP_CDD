@@ -1,0 +1,17 @@
+{
+  "seed": 42,
+  "threads": 4,
+  "weight_power": 0.5,
+  "reuse_no2_pilot_if_compatible": true,
+  "xgboost": {
+    "n_estimators": 300,
+    "max_depth": 4,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_lambda": 5.0,
+    "tree_method": "hist",
+    "objective": "multi:softprob",
+    "eval_metric": "mlogloss"
+  }
+}

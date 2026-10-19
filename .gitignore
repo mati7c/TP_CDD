@@ -17,4 +17,6 @@ data/derived/
 data/raw/open_meteo/
 tmp/
 outputs/tercera_entrega/models/
+outputs/clasificacion_no2/models/
+outputs/comparacion_clasificadores/*/models/
 .ipynb_checkpoints/
