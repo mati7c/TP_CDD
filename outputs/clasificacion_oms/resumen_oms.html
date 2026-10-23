@@ -1,0 +1,646 @@
+<!doctype html><html lang='es'><meta charset='utf-8'><title>Clasificación OMS</title>
+<style>body{font:16px system-ui;max-width:1450px;margin:35px auto;padding:0 20px;color:#193049}table{border-collapse:collapse;font-size:13px}td,th{padding:8px;border:1px solid #ccd5df}th{background:#edf3f8}section{overflow-x:auto}img{max-width:100%}li{margin:10px 0}</style>
+<h1>Clasificación diaria con las guías OMS 2021</h1><ul>
+<li>NO2: validación eligió XGBoost_rezago. En prueba, F1 macro 0.735 frente a 0.246 de la clase mayoritaria; balanced accuracy 72.7% y accuracy 76.8%. Variables más usadas (SHAP): valor_dia_anterior (25%), wind_speed_10m (10%), anio (9%), estacion (8%).</li>
+<li>PM10: validación eligió XGBoost_rezago. En prueba, F1 macro 0.608 frente a 0.492 de la clase mayoritaria; balanced accuracy 62.0% y accuracy 94.7%. Variables más usadas (SHAP): valor_dia_anterior (33%), temperature_2m (12%), viento_u (9%), viento_v (7%).</li>
+<li>CO: 0 estación-días superan la guía OMS de 4 mg/m³ en todo el período; con una sola clase no hay problema de clasificación y CO se analiza sólo con la regresión de la entrega.</li>
+</ul><h2>Método y alcance</h2><ul>
+<li>Motivación: con los cortes EPA casi todas las jornadas son Buena (0 Desfavorable en prueba) y la accuracy es alta sin detectar episodios. Las guías OMS 2021 son el estándar sanitario internacional vigente y más exigente; producen clases evaluables en NO2 y PM10.</li>
+<li>Las guías OMS se definen sobre promedios de 24 h. Se usa el promedio de los registros publicados del día de medición (al menos 18 horas válidas y 24 filas meteorológicas, igual que la clasificación diaria original). NO2 se publica horario; PM10 ya es un móvil de 24 h, por lo que su promedio diario es una aproximación. No es un dictamen de cumplimiento normativo.</li>
+<li>Cortes: NO2 guía 25 µg/m³ y objetivo intermedio 2 de 50 µg/m³ (el objetivo intermedio 1, 120 µg/m³, tiene muy pocos días y se agrupa); PM10 guía 45 µg/m³. Se reutilizan los factores de conversión del experimento de índices alternativos.</li>
+<li>Se mantienen los cortes temporales (entrenamiento antes de 2024, validación 2024, prueba desde 2025, purga de 2 días), las entradas diarias del modelado original y la exclusión de objetivos interpolados.</li>
+<li>Se compara un conjunto adicional de entradas con el promedio del día anterior del mismo contaminante (pendiente de la segunda entrega). Es información disponible al estimar el día siguiente.</li>
+<li>Grilla explícita por validación: Random Forest (max_depth 8/12/sin límite × min_samples_leaf 5/20) y XGBoost (max_depth 3/4/6 × 300/600 árboles), cada uno con pesos de clase 0, 0.5 y 1. Se elige por F1 macro de validación; la selección se guarda antes de calcular prueba.</li>
+<li>Las métricas de prueba se informan para el elegido y para los finalistas de cada familia y conjunto de entradas, sin cambiar la elección. Accuracy se lee junto a F1 macro, recall por clase y la matriz.</li>
+<li>La interpretación usa TreeSHAP nativo de XGBoost sobre la prueba: describe cómo usa el modelo cada variable, no relaciones causales. ERA5 es meteorología histórica; un pronóstico operativo agregaría el error de la previsión meteorológica.</li>
+</ul>
+<h2>Distribución de clases OMS (estación-días)</h2><section>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>split</th>
+      <th>pollutant</th>
+      <th>category</th>
+      <th>purga</th>
+      <th>test</th>
+      <th>train</th>
+      <th>validation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th></th>
+      <td>CO</td>
+      <td>Cumple guía OMS</td>
+      <td>10.0000</td>
+      <td>1679.0000</td>
+      <td>11109.0000</td>
+      <td>801.0000</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>CO</td>
+      <td>Supera guía OMS</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>NO2</td>
+      <td>Cumple guía OMS</td>
+      <td>7.0000</td>
+      <td>372.0000</td>
+      <td>2457.0000</td>
+      <td>87.0000</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>NO2</td>
+      <td>Entre guía y objetivo intermedio</td>
+      <td>3.0000</td>
+      <td>970.0000</td>
+      <td>6277.0000</td>
+      <td>346.0000</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>NO2</td>
+      <td>Supera objetivo intermedio</td>
+      <td>0.0000</td>
+      <td>322.0000</td>
+      <td>2329.0000</td>
+      <td>248.0000</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>PM10</td>
+      <td>Cumple guía OMS</td>
+      <td>8.0000</td>
+      <td>1488.0000</td>
+      <td>10147.0000</td>
+      <td>854.0000</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>PM10</td>
+      <td>Supera guía OMS</td>
+      <td>0.0000</td>
+      <td>48.0000</td>
+      <td>734.0000</td>
+      <td>32.0000</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<h2>Finalistas por validación</h2><section>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>pollutant</th>
+      <th>model</th>
+      <th>feature_set</th>
+      <th>weight_power</th>
+      <th>max_depth</th>
+      <th>min_samples_leaf</th>
+      <th>n_estimators</th>
+      <th>validation_accuracy</th>
+      <th>validation_f1_macro</th>
+      <th>validation_balanced_accuracy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NO2</td>
+      <td>RandomForest</td>
+      <td>meteo</td>
+      <td>0.5000</td>
+      <td>8</td>
+      <td>5</td>
+      <td>300</td>
+      <td>0.7533</td>
+      <td>0.7152</td>
+      <td>0.6862</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost</td>
+      <td>meteo</td>
+      <td>1.0000</td>
+      <td>6</td>
+      <td>—</td>
+      <td>600</td>
+      <td>0.7533</td>
+      <td>0.6941</td>
+      <td>0.6763</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>RandomForest</td>
+      <td>rezago</td>
+      <td>0.0000</td>
+      <td>sin límite</td>
+      <td>20</td>
+      <td>300</td>
+      <td>0.7695</td>
+      <td>0.7522</td>
+      <td>0.7428</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost</td>
+      <td>rezago</td>
+      <td>0.5000</td>
+      <td>6</td>
+      <td>—</td>
+      <td>600</td>
+      <td>0.7988</td>
+      <td>0.7758</td>
+      <td>0.7702</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>RandomForest</td>
+      <td>meteo</td>
+      <td>1.0000</td>
+      <td>sin límite</td>
+      <td>20</td>
+      <td>300</td>
+      <td>0.9074</td>
+      <td>0.5812</td>
+      <td>0.6362</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>XGBoost</td>
+      <td>meteo</td>
+      <td>1.0000</td>
+      <td>4</td>
+      <td>—</td>
+      <td>300</td>
+      <td>0.9187</td>
+      <td>0.6035</td>
+      <td>0.6571</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>RandomForest</td>
+      <td>rezago</td>
+      <td>0.5000</td>
+      <td>12</td>
+      <td>20</td>
+      <td>300</td>
+      <td>0.9560</td>
+      <td>0.6975</td>
+      <td>0.7065</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>XGBoost</td>
+      <td>rezago</td>
+      <td>1.0000</td>
+      <td>6</td>
+      <td>—</td>
+      <td>300</td>
+      <td>0.9684</td>
+      <td>0.7731</td>
+      <td>0.7731</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<h2>Prueba: elegido, finalistas y referencia</h2><section>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>pollutant</th>
+      <th>model</th>
+      <th>n</th>
+      <th>accuracy</th>
+      <th>precision_macro</th>
+      <th>recall_macro</th>
+      <th>f1_macro</th>
+      <th>balanced_accuracy</th>
+      <th>false_positive_rate_macro</th>
+      <th>f1_weighted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NO2</td>
+      <td>Mayoria_train</td>
+      <td>1664</td>
+      <td>0.5829</td>
+      <td>0.1943</td>
+      <td>0.3333</td>
+      <td>0.2455</td>
+      <td>0.3333</td>
+      <td>0.3333</td>
+      <td>0.4293</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>RandomForest_meteo</td>
+      <td>1664</td>
+      <td>0.6659</td>
+      <td>0.7116</td>
+      <td>0.6295</td>
+      <td>0.6072</td>
+      <td>0.6295</td>
+      <td>0.2066</td>
+      <td>0.6499</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost_meteo</td>
+      <td>1664</td>
+      <td>0.6382</td>
+      <td>0.7017</td>
+      <td>0.6059</td>
+      <td>0.5736</td>
+      <td>0.6059</td>
+      <td>0.2234</td>
+      <td>0.6177</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>RandomForest_rezago</td>
+      <td>1664</td>
+      <td>0.7506</td>
+      <td>0.7447</td>
+      <td>0.6980</td>
+      <td>0.7170</td>
+      <td>0.6980</td>
+      <td>0.1646</td>
+      <td>0.7462</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost_rezago</td>
+      <td>1664</td>
+      <td>0.7680</td>
+      <td>0.7691</td>
+      <td>0.7274</td>
+      <td>0.7348</td>
+      <td>0.7274</td>
+      <td>0.1515</td>
+      <td>0.7611</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>Mayoria_train</td>
+      <td>1536</td>
+      <td>0.9688</td>
+      <td>0.4844</td>
+      <td>0.5000</td>
+      <td>0.4921</td>
+      <td>0.5000</td>
+      <td>0.5000</td>
+      <td>0.9534</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>RandomForest_meteo</td>
+      <td>1536</td>
+      <td>0.8854</td>
+      <td>0.5384</td>
+      <td>0.6183</td>
+      <td>0.5462</td>
+      <td>0.6183</td>
+      <td>0.3817</td>
+      <td>0.9140</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>XGBoost_meteo</td>
+      <td>1536</td>
+      <td>0.8796</td>
+      <td>0.5356</td>
+      <td>0.6153</td>
+      <td>0.5413</td>
+      <td>0.6153</td>
+      <td>0.3847</td>
+      <td>0.9106</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>RandomForest_rezago</td>
+      <td>1536</td>
+      <td>0.9466</td>
+      <td>0.5965</td>
+      <td>0.6196</td>
+      <td>0.6065</td>
+      <td>0.6196</td>
+      <td>0.3804</td>
+      <td>0.9495</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>XGBoost_rezago</td>
+      <td>1536</td>
+      <td>0.9473</td>
+      <td>0.5983</td>
+      <td>0.6200</td>
+      <td>0.6078</td>
+      <td>0.6200</td>
+      <td>0.3800</td>
+      <td>0.9499</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<h2>Detalle por clase del elegido — prueba</h2><section>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>pollutant</th>
+      <th>model</th>
+      <th>category</th>
+      <th>support</th>
+      <th>precision</th>
+      <th>recall</th>
+      <th>f1</th>
+      <th>false_positive_rate</th>
+      <th>tp</th>
+      <th>fp</th>
+      <th>fn</th>
+      <th>tn</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost_rezago</td>
+      <td>Cumple guía OMS</td>
+      <td>372</td>
+      <td>0.8155</td>
+      <td>0.5108</td>
+      <td>0.6281</td>
+      <td>0.0333</td>
+      <td>190</td>
+      <td>43</td>
+      <td>182</td>
+      <td>1249</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost_rezago</td>
+      <td>Entre guía y objetivo intermedio</td>
+      <td>970</td>
+      <td>0.7757</td>
+      <td>0.8485</td>
+      <td>0.8104</td>
+      <td>0.3429</td>
+      <td>823</td>
+      <td>238</td>
+      <td>147</td>
+      <td>456</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost_rezago</td>
+      <td>Supera objetivo intermedio</td>
+      <td>322</td>
+      <td>0.7162</td>
+      <td>0.8230</td>
+      <td>0.7659</td>
+      <td>0.0782</td>
+      <td>265</td>
+      <td>105</td>
+      <td>57</td>
+      <td>1237</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>XGBoost_rezago</td>
+      <td>Cumple guía OMS</td>
+      <td>1488</td>
+      <td>0.9763</td>
+      <td>0.9691</td>
+      <td>0.9727</td>
+      <td>0.7292</td>
+      <td>1442</td>
+      <td>35</td>
+      <td>46</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>XGBoost_rezago</td>
+      <td>Supera guía OMS</td>
+      <td>48</td>
+      <td>0.2203</td>
+      <td>0.2708</td>
+      <td>0.2430</td>
+      <td>0.0309</td>
+      <td>13</td>
+      <td>46</td>
+      <td>35</td>
+      <td>1442</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<h2>Elegido por estación — prueba</h2><section>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>pollutant</th>
+      <th>model</th>
+      <th>station</th>
+      <th>n</th>
+      <th>accuracy</th>
+      <th>f1_macro</th>
+      <th>balanced_accuracy</th>
+      <th>false_positive_rate_macro</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost_rezago</td>
+      <td>centenario</td>
+      <td>571</td>
+      <td>0.7461</td>
+      <td>0.6069</td>
+      <td>0.6916</td>
+      <td>0.1745</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost_rezago</td>
+      <td>cordoba</td>
+      <td>542</td>
+      <td>0.7786</td>
+      <td>0.6738</td>
+      <td>0.6885</td>
+      <td>0.1837</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>XGBoost_rezago</td>
+      <td>la_boca</td>
+      <td>551</td>
+      <td>0.7804</td>
+      <td>0.7140</td>
+      <td>0.7264</td>
+      <td>0.1295</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>XGBoost_rezago</td>
+      <td>centenario</td>
+      <td>541</td>
+      <td>0.9667</td>
+      <td>0.5824</td>
+      <td>0.5906</td>
+      <td>0.4094</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>XGBoost_rezago</td>
+      <td>cordoba</td>
+      <td>510</td>
+      <td>0.9451</td>
+      <td>0.5192</td>
+      <td>0.5181</td>
+      <td>0.4819</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>XGBoost_rezago</td>
+      <td>la_boca</td>
+      <td>485</td>
+      <td>0.9278</td>
+      <td>0.6627</td>
+      <td>0.7024</td>
+      <td>0.2976</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<h2>Importancia SHAP agrupada (top 10)</h2><section>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>pollutant</th>
+      <th>variable</th>
+      <th>share</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NO2</td>
+      <td>valor_dia_anterior</td>
+      <td>0.2529</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>wind_speed_10m</td>
+      <td>0.0977</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>anio</td>
+      <td>0.0863</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>estacion</td>
+      <td>0.0788</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>viento_u</td>
+      <td>0.0732</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>temperature_2m</td>
+      <td>0.0693</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>es_fin_de_semana</td>
+      <td>0.0611</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>viento_v</td>
+      <td>0.0595</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>dia_semana</td>
+      <td>0.0383</td>
+    </tr>
+    <tr>
+      <td>NO2</td>
+      <td>shortwave_radiation</td>
+      <td>0.0357</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>valor_dia_anterior</td>
+      <td>0.3300</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>temperature_2m</td>
+      <td>0.1243</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>viento_u</td>
+      <td>0.0854</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>viento_v</td>
+      <td>0.0749</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>wind_speed_10m</td>
+      <td>0.0632</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>relative_humidity_2m</td>
+      <td>0.0554</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>anio</td>
+      <td>0.0439</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>surface_pressure</td>
+      <td>0.0414</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>estacion</td>
+      <td>0.0365</td>
+    </tr>
+    <tr>
+      <td>PM10</td>
+      <td>cloud_cover</td>
+      <td>0.0325</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<h2>Distribución de clases</h2><img alt='Distribución de clases' src='figuras/distribucion_oms.png'>
+<h2>Selección por validación</h2><img alt='Selección por validación' src='figuras/seleccion_validacion.png'>
+<h2>Matrices de confusión</h2><img alt='Matrices de confusión' src='figuras/matrices_oms.png'>
+<h2>Importancia SHAP</h2><img alt='Importancia SHAP' src='figuras/shap_importancia.png'>
+<h2>Dependencia SHAP de la meteorología</h2><img alt='Dependencia SHAP de la meteorología' src='figuras/shap_dependencia.png'>
+<h2>Patrones de excedencia</h2><img alt='Patrones de excedencia' src='figuras/patrones_excedencias.png'>
+<h2>Fuentes</h2><ul>
+<li><a href='https://www.who.int/publications/i/item/9789240034228'>who_aqg_2021</a></li>
+<li><a href='https://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health'>who_aqg_2021_summary</a></li>
+<li><a href='https://uk-air.defra.gov.uk/reports/cat06/0502160851_Conversion_Factors_Between_ppb_and.pdf'>gas_conversion</a></li>
+</ul></html>

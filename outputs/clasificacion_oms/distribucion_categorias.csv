@@ -1,0 +1,113 @@
+﻿pollutant,scheme,resolution,station,split,label,category,count,fraction
+CO,OMS_2021,level,todas,purga,0,Cumple guía OMS,10,1.0
+CO,OMS_2021,level,todas,purga,1,Supera guía OMS,0,0.0
+CO,OMS_2021,level,todas,test,0,Cumple guía OMS,1679,1.0
+CO,OMS_2021,level,todas,test,1,Supera guía OMS,0,0.0
+CO,OMS_2021,level,todas,train,0,Cumple guía OMS,11109,1.0
+CO,OMS_2021,level,todas,train,1,Supera guía OMS,0,0.0
+CO,OMS_2021,level,todas,validation,0,Cumple guía OMS,801,1.0
+CO,OMS_2021,level,todas,validation,1,Supera guía OMS,0,0.0
+CO,OMS_2021,level,centenario,purga,0,Cumple guía OMS,4,1.0
+CO,OMS_2021,level,centenario,purga,1,Supera guía OMS,0,0.0
+CO,OMS_2021,level,centenario,test,0,Cumple guía OMS,565,1.0
+CO,OMS_2021,level,centenario,test,1,Supera guía OMS,0,0.0
+CO,OMS_2021,level,centenario,train,0,Cumple guía OMS,3831,1.0
+CO,OMS_2021,level,centenario,train,1,Supera guía OMS,0,0.0
+CO,OMS_2021,level,centenario,validation,0,Cumple guía OMS,273,1.0
+CO,OMS_2021,level,centenario,validation,1,Supera guía OMS,0,0.0
+CO,OMS_2021,level,cordoba,purga,0,Cumple guía OMS,2,1.0
+CO,OMS_2021,level,cordoba,purga,1,Supera guía OMS,0,0.0
+CO,OMS_2021,level,cordoba,test,0,Cumple guía OMS,566,1.0
+CO,OMS_2021,level,cordoba,test,1,Supera guía OMS,0,0.0
+CO,OMS_2021,level,cordoba,train,0,Cumple guía OMS,3720,1.0
+CO,OMS_2021,level,cordoba,train,1,Supera guía OMS,0,0.0
+CO,OMS_2021,level,cordoba,validation,0,Cumple guía OMS,223,1.0
+CO,OMS_2021,level,cordoba,validation,1,Supera guía OMS,0,0.0
+CO,OMS_2021,level,la_boca,purga,0,Cumple guía OMS,4,1.0
+CO,OMS_2021,level,la_boca,purga,1,Supera guía OMS,0,0.0
+CO,OMS_2021,level,la_boca,test,0,Cumple guía OMS,548,1.0
+CO,OMS_2021,level,la_boca,test,1,Supera guía OMS,0,0.0
+CO,OMS_2021,level,la_boca,train,0,Cumple guía OMS,3558,1.0
+CO,OMS_2021,level,la_boca,train,1,Supera guía OMS,0,0.0
+CO,OMS_2021,level,la_boca,validation,0,Cumple guía OMS,305,1.0
+CO,OMS_2021,level,la_boca,validation,1,Supera guía OMS,0,0.0
+NO2,OMS_2021,level,todas,purga,0,Cumple guía OMS,7,0.7
+NO2,OMS_2021,level,todas,purga,1,Entre guía y objetivo intermedio,3,0.3
+NO2,OMS_2021,level,todas,purga,2,Supera objetivo intermedio,0,0.0
+NO2,OMS_2021,level,todas,test,0,Cumple guía OMS,372,0.22355769230769232
+NO2,OMS_2021,level,todas,test,1,Entre guía y objetivo intermedio,970,0.5829326923076923
+NO2,OMS_2021,level,todas,test,2,Supera objetivo intermedio,322,0.1935096153846154
+NO2,OMS_2021,level,todas,train,0,Cumple guía OMS,2457,0.22209165687426558
+NO2,OMS_2021,level,todas,train,1,Entre guía y objetivo intermedio,6277,0.5673867847780891
+NO2,OMS_2021,level,todas,train,2,Supera objetivo intermedio,2329,0.2105215583476453
+NO2,OMS_2021,level,todas,validation,0,Cumple guía OMS,87,0.1277533039647577
+NO2,OMS_2021,level,todas,validation,1,Entre guía y objetivo intermedio,346,0.5080763582966226
+NO2,OMS_2021,level,todas,validation,2,Supera objetivo intermedio,248,0.3641703377386197
+NO2,OMS_2021,level,centenario,purga,0,Cumple guía OMS,4,1.0
+NO2,OMS_2021,level,centenario,purga,1,Entre guía y objetivo intermedio,0,0.0
+NO2,OMS_2021,level,centenario,purga,2,Supera objetivo intermedio,0,0.0
+NO2,OMS_2021,level,centenario,test,0,Cumple guía OMS,248,0.4343257443082312
+NO2,OMS_2021,level,centenario,test,1,Entre guía y objetivo intermedio,315,0.5516637478108581
+NO2,OMS_2021,level,centenario,test,2,Supera objetivo intermedio,8,0.014010507880910683
+NO2,OMS_2021,level,centenario,train,0,Cumple guía OMS,867,0.21281296023564064
+NO2,OMS_2021,level,centenario,train,1,Entre guía y objetivo intermedio,2766,0.678939617083947
+NO2,OMS_2021,level,centenario,train,2,Supera objetivo intermedio,441,0.10824742268041238
+NO2,OMS_2021,level,centenario,validation,0,Cumple guía OMS,43,0.6417910447761194
+NO2,OMS_2021,level,centenario,validation,1,Entre guía y objetivo intermedio,22,0.3283582089552239
+NO2,OMS_2021,level,centenario,validation,2,Supera objetivo intermedio,2,0.029850746268656716
+NO2,OMS_2021,level,cordoba,purga,0,Cumple guía OMS,2,1.0
+NO2,OMS_2021,level,cordoba,purga,1,Entre guía y objetivo intermedio,0,0.0
+NO2,OMS_2021,level,cordoba,purga,2,Supera objetivo intermedio,0,0.0
+NO2,OMS_2021,level,cordoba,test,0,Cumple guía OMS,92,0.16974169741697417
+NO2,OMS_2021,level,cordoba,test,1,Entre guía y objetivo intermedio,391,0.7214022140221402
+NO2,OMS_2021,level,cordoba,test,2,Supera objetivo intermedio,59,0.1088560885608856
+NO2,OMS_2021,level,cordoba,train,0,Cumple guía OMS,426,0.13880742913000976
+NO2,OMS_2021,level,cordoba,train,1,Entre guía y objetivo intermedio,1584,0.5161290322580645
+NO2,OMS_2021,level,cordoba,train,2,Supera objetivo intermedio,1059,0.34506353861192574
+NO2,OMS_2021,level,cordoba,validation,0,Cumple guía OMS,31,0.10726643598615918
+NO2,OMS_2021,level,cordoba,validation,1,Entre guía y objetivo intermedio,208,0.7197231833910035
+NO2,OMS_2021,level,cordoba,validation,2,Supera objetivo intermedio,50,0.17301038062283736
+NO2,OMS_2021,level,la_boca,purga,0,Cumple guía OMS,1,0.25
+NO2,OMS_2021,level,la_boca,purga,1,Entre guía y objetivo intermedio,3,0.75
+NO2,OMS_2021,level,la_boca,purga,2,Supera objetivo intermedio,0,0.0
+NO2,OMS_2021,level,la_boca,test,0,Cumple guía OMS,32,0.05807622504537205
+NO2,OMS_2021,level,la_boca,test,1,Entre guía y objetivo intermedio,264,0.4791288566243194
+NO2,OMS_2021,level,la_boca,test,2,Supera objetivo intermedio,255,0.4627949183303085
+NO2,OMS_2021,level,la_boca,train,0,Cumple guía OMS,1164,0.2969387755102041
+NO2,OMS_2021,level,la_boca,train,1,Entre guía y objetivo intermedio,1927,0.4915816326530612
+NO2,OMS_2021,level,la_boca,train,2,Supera objetivo intermedio,829,0.2114795918367347
+NO2,OMS_2021,level,la_boca,validation,0,Cumple guía OMS,13,0.04
+NO2,OMS_2021,level,la_boca,validation,1,Entre guía y objetivo intermedio,116,0.3569230769230769
+NO2,OMS_2021,level,la_boca,validation,2,Supera objetivo intermedio,196,0.6030769230769231
+PM10,OMS_2021,level,todas,purga,0,Cumple guía OMS,8,1.0
+PM10,OMS_2021,level,todas,purga,1,Supera guía OMS,0,0.0
+PM10,OMS_2021,level,todas,test,0,Cumple guía OMS,1488,0.96875
+PM10,OMS_2021,level,todas,test,1,Supera guía OMS,48,0.03125
+PM10,OMS_2021,level,todas,train,0,Cumple guía OMS,10147,0.9325429648010293
+PM10,OMS_2021,level,todas,train,1,Supera guía OMS,734,0.06745703519897069
+PM10,OMS_2021,level,todas,validation,0,Cumple guía OMS,854,0.963882618510158
+PM10,OMS_2021,level,todas,validation,1,Supera guía OMS,32,0.03611738148984198
+PM10,OMS_2021,level,centenario,purga,0,Cumple guía OMS,2,1.0
+PM10,OMS_2021,level,centenario,purga,1,Supera guía OMS,0,0.0
+PM10,OMS_2021,level,centenario,test,0,Cumple guía OMS,531,0.9815157116451017
+PM10,OMS_2021,level,centenario,test,1,Supera guía OMS,10,0.018484288354898338
+PM10,OMS_2021,level,centenario,train,0,Cumple guía OMS,3690,0.9415667262056647
+PM10,OMS_2021,level,centenario,train,1,Supera guía OMS,229,0.05843327379433529
+PM10,OMS_2021,level,centenario,validation,0,Cumple guía OMS,287,0.9695945945945946
+PM10,OMS_2021,level,centenario,validation,1,Supera guía OMS,9,0.030405405405405407
+PM10,OMS_2021,level,cordoba,purga,0,Cumple guía OMS,2,1.0
+PM10,OMS_2021,level,cordoba,purga,1,Supera guía OMS,0,0.0
+PM10,OMS_2021,level,cordoba,test,0,Cumple guía OMS,494,0.9686274509803922
+PM10,OMS_2021,level,cordoba,test,1,Supera guía OMS,16,0.03137254901960784
+PM10,OMS_2021,level,cordoba,train,0,Cumple guía OMS,2970,0.9500959692898272
+PM10,OMS_2021,level,cordoba,train,1,Supera guía OMS,156,0.04990403071017274
+PM10,OMS_2021,level,cordoba,validation,0,Cumple guía OMS,301,0.9616613418530351
+PM10,OMS_2021,level,cordoba,validation,1,Supera guía OMS,12,0.038338658146964855
+PM10,OMS_2021,level,la_boca,purga,0,Cumple guía OMS,4,1.0
+PM10,OMS_2021,level,la_boca,purga,1,Supera guía OMS,0,0.0
+PM10,OMS_2021,level,la_boca,test,0,Cumple guía OMS,463,0.954639175257732
+PM10,OMS_2021,level,la_boca,test,1,Supera guía OMS,22,0.04536082474226804
+PM10,OMS_2021,level,la_boca,train,0,Cumple guía OMS,3487,0.9090198123044838
+PM10,OMS_2021,level,la_boca,train,1,Supera guía OMS,349,0.09098018769551616
+PM10,OMS_2021,level,la_boca,validation,0,Cumple guía OMS,266,0.9602888086642599
+PM10,OMS_2021,level,la_boca,validation,1,Supera guía OMS,11,0.039711191335740074

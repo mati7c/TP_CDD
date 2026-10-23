@@ -1,0 +1,30 @@
+{
+  "seed": 42,
+  "threads": 4,
+  "selection_metric": "f1_macro",
+  "pollutants": ["NO2", "PM10"],
+  "weight_powers": [0.0, 0.5, 1.0],
+  "feature_sets": {
+    "meteo": "Meteorología diaria y calendario (mismas entradas que la clasificación diaria original)",
+    "rezago": "Las mismas entradas más el promedio del día anterior del contaminante en la estación"
+  },
+  "random_forest": {
+    "n_estimators": 300,
+    "max_features": 0.8
+  },
+  "random_forest_grid": {
+    "max_depth": [8, 12, null],
+    "min_samples_leaf": [5, 20]
+  },
+  "xgboost": {
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_lambda": 5.0,
+    "tree_method": "hist"
+  },
+  "xgboost_grid": {
+    "max_depth": [3, 4, 6],
+    "n_estimators": [300, 600]
+  }
+}

@@ -13,7 +13,7 @@ PROJECT = Path(__file__).resolve().parent.parent
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Extracción de meteorología horaria para CABA")
-    parser.add_argument("command", choices=["import-air", "plan", "download", "status", "export-weather", "calendar", "join", "transform", "prepare-model", "model", "model-report", "compare-indices", "classify-no2", "classify-soft", "classify-compare"])
+    parser.add_argument("command", choices=["import-air", "plan", "download", "status", "export-weather", "calendar", "join", "transform", "prepare-model", "model", "model-report", "compare-indices", "classify-no2", "classify-soft", "classify-compare", "classify-oms"])
     parser.add_argument("--csv", type=Path, help="CSV original para import-air")
     parser.add_argument("--config", type=Path, default=PROJECT / "config/open_meteo.json")
     parser.add_argument("--data-dir", type=Path, default=PROJECT / "data")
@@ -27,6 +27,14 @@ def main(argv=None):
     try:
         if args.max_requests is not None and args.max_requests < 1:
             raise ValueError("--max-requests debe ser positivo")
+        if args.command == "classify-oms":
+            from .oms_classifier import run_oms_classifier
+            if args.start or args.end or args.stations or args.max_requests or args.csv:
+                raise ValueError("classify-oms conserva los cortes del modelado; admite --model-config y --output-dir.")
+            with download_lock(args.data_dir):
+                path = run_oms_classifier(args.data_dir, args.model_config, args.output_dir)
+            print(f"Clasificación diaria con guías OMS: {path}")
+            return 0
         if args.command == "classify-compare":
             from .classifier_experiments import run_experiments
             if args.start or args.end or args.stations or args.max_requests or args.csv:

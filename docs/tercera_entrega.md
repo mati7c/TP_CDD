@@ -136,3 +136,9 @@ ERA5 es reanálisis histórico. El experimento mide capacidad de estimar concent
 condicionadas a esa meteorología y no valida por sí solo un pronóstico operativo
 a 24/48 horas. La futura evaluación con pronósticos emitidos deberá medir ese error
 adicional. No se desarrolla todavía frontend ni backend.
+
+## Continuación: guías OMS 2021
+
+La clasificación EPA queda casi sin episodios en prueba. La etiqueta se redefine con las
+guías OMS 2021 sobre promedios diarios, con selección de parámetros por validación,
+rezago del día anterior e interpretación SHAP: ver [clasificacion_oms.md](clasificacion_oms.md).

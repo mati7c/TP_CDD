@@ -1,0 +1,112 @@
+{
+  "input_rows": 398961,
+  "input_sha256": "ddd818250e62df81bd80bb1711ff1eda7e06a0c9b304086b2c407e1f1a88e11d",
+  "quality_sha256": "7a65c46d5ea62bcb6ecd99e3a7eecc67c0f11b227d8b689f0d111d6c208cf6ef",
+  "original_outliers": {
+    "source": "data\\raw\\air\\2e7f655c2bbe802e53c9b0fe9428150cf0ff71435ee8e9b0a75e29832fd513f9\\calidad-aire.csv",
+    "sha256": "63522e12d4f06d02e4229c97e6974a613af5a87c383c52be4403ba0c9136cee8",
+    "by_station": [
+      {
+        "pollutant": "CO",
+        "station": "centenario",
+        "maximum_allowed": 10.0,
+        "above_maximum": 103,
+        "maximum_observed": 49.95
+      },
+      {
+        "pollutant": "CO",
+        "station": "cordoba",
+        "maximum_allowed": 10.0,
+        "above_maximum": 96,
+        "maximum_observed": 47.29
+      },
+      {
+        "pollutant": "CO",
+        "station": "la_boca",
+        "maximum_allowed": 10.0,
+        "above_maximum": 122,
+        "maximum_observed": 44.73
+      },
+      {
+        "pollutant": "NO2",
+        "station": "centenario",
+        "maximum_allowed": 400.0,
+        "above_maximum": 0,
+        "maximum_observed": 155.0
+      },
+      {
+        "pollutant": "NO2",
+        "station": "cordoba",
+        "maximum_allowed": 400.0,
+        "above_maximum": 0,
+        "maximum_observed": 283.0
+      },
+      {
+        "pollutant": "NO2",
+        "station": "la_boca",
+        "maximum_allowed": 400.0,
+        "above_maximum": 0,
+        "maximum_observed": 129.0
+      },
+      {
+        "pollutant": "PM10",
+        "station": "centenario",
+        "maximum_allowed": 600.0,
+        "above_maximum": 0,
+        "maximum_observed": 427.0
+      },
+      {
+        "pollutant": "PM10",
+        "station": "cordoba",
+        "maximum_allowed": 600.0,
+        "above_maximum": 0,
+        "maximum_observed": 253.0
+      },
+      {
+        "pollutant": "PM10",
+        "station": "la_boca",
+        "maximum_allowed": 600.0,
+        "above_maximum": 0,
+        "maximum_observed": 387.0
+      }
+    ],
+    "total_above_maximum": 321,
+    "distinct_original_rows": 146
+  },
+  "targets": {
+    "CO": {
+      "plausibility_range": [
+        0.0,
+        10.0
+      ],
+      "missing_in_input": 60209,
+      "invalid_in_input": 0,
+      "interpolated_excluded": 60,
+      "usable": 338692
+    },
+    "NO2": {
+      "plausibility_range": [
+        0.0,
+        400.0
+      ],
+      "missing_in_input": 63181,
+      "invalid_in_input": 0,
+      "interpolated_excluded": 2747,
+      "usable": 333033
+    },
+    "PM10": {
+      "plausibility_range": [
+        0.0,
+        600.0
+      ],
+      "missing_in_input": 67680,
+      "invalid_in_input": 0,
+      "interpolated_excluded": 32,
+      "usable": 331249
+    }
+  },
+  "accepted_states": [
+    "medido",
+    "censurado"
+  ]
+}

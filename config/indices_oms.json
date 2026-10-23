@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "verified_on": "2026-10-23",
+  "description": "Guías de calidad del aire OMS 2021 para promedios de 24 horas, aplicadas al promedio diario de cada estación. No define un índice combinado ni un dictamen de cumplimiento legal.",
+  "sources": {
+    "who_aqg_2021": "https://www.who.int/publications/i/item/9789240034228",
+    "who_aqg_2021_summary": "https://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health",
+    "gas_conversion": "https://uk-air.defra.gov.uk/reports/cat06/0502160851_Conversion_Factors_Between_ppb_and.pdf"
+  },
+  "pollutants": {
+    "CO": {
+      "scheme": "OMS_2021",
+      "input_unit": "ppm",
+      "unit": "mg/m³",
+      "averaging_hours": 24,
+      "factor": 1.15,
+      "conversion_reference": "Mismo factor ppm→mg/m³ que el experimento de índices alternativos (tabla DEFRA, 25 °C y 1013 mb).",
+      "decimals": 1,
+      "rounding": "half_up",
+      "rounding_reference": "Promedio diario convertido y redondeado a un decimal antes de comparar con la guía.",
+      "upper_bounds": [4.0],
+      "classes": ["Cumple guía OMS", "Supera guía OMS"]
+    },
+    "NO2": {
+      "scheme": "OMS_2021",
+      "input_unit": "ppb",
+      "unit": "µg/m³",
+      "averaging_hours": 24,
+      "factor": 1.9125,
+      "conversion_reference": "Mismo factor DEFRA a 20 °C y 1013 mb que el experimento de índices alternativos.",
+      "decimals": 0,
+      "rounding": "half_up",
+      "rounding_reference": "Promedio diario convertido y redondeado al entero antes de comparar con guía (25) y objetivo intermedio 2 (50).",
+      "upper_bounds": [25, 50],
+      "classes": ["Cumple guía OMS", "Entre guía y objetivo intermedio", "Supera objetivo intermedio"]
+    },
+    "PM10": {
+      "scheme": "OMS_2021",
+      "input_unit": "µg/m³",
+      "unit": "µg/m³",
+      "averaging_hours": 24,
+      "factor": 1.0,
+      "conversion_reference": "Sin conversión. CABA publica PM10 como promedio móvil de 24 h; el promedio diario de esa serie aproxima la media de 24 h del día.",
+      "decimals": 0,
+      "rounding": "half_up",
+      "rounding_reference": "Promedio diario redondeado al entero antes de comparar con la guía (45).",
+      "upper_bounds": [45],
+      "classes": ["Cumple guía OMS", "Supera guía OMS"]
+    }
+  }
+}

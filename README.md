@@ -167,6 +167,13 @@ ponderación nula, suave y completa, e integra el piloto NO₂. Ver el
 [resumen ampliado](outputs/comparacion_clasificadores/resumen_comparacion.md) y su
 [metodología](docs/comparacion_clasificadores.md).
 
+`.\run.ps1 classify-oms` reemplaza la etiqueta por las guías OMS 2021 sobre promedios
+diarios (NO₂ en tres clases, PM10 en dos; CO no supera la guía ningún día). Elige
+técnica, hiperparámetros, ponderación y entradas (con o sin el promedio del día anterior)
+por validación, e interpreta con SHAP. Genera `outputs/clasificacion_oms` y
+`notebooks/tercera_entrega_oms.ipynb`. Ver el [resumen](outputs/clasificacion_oms/resumen_oms.md)
+y su [metodología](docs/clasificacion_oms.md).
+
 1. Revisar los errores por estación, contaminante y categoría a partir de los resultados de tercera entrega.
 2. Revisar el calendario reconstruido y las fechas de anuncio antes de usarlo en pronósticos históricos.
 3. Evaluar el sistema con pronósticos meteorológicos emitidos y construir la aplicación futura.
