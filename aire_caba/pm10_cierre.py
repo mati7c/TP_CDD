@@ -148,12 +148,69 @@ def write_summary(output, report, metrics, detail, config):
     (output / 'resumen_oms.md').write_text('\n\n'.join(parts) + '\n', encoding='utf-8')
 
 
+def make_validation_figure(output):
+    """NO2 conserva su comparación; PM10 muestra la calibración del modelo final."""
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+
+    report = json.loads((output / 'reporte.json').read_text(encoding='utf-8'))
+    trials = pd.read_csv(output / 'candidatos_validacion.csv')
+    predictions = pd.read_csv(output / 'predicciones_PM10.csv')
+    validation = predictions.loc[predictions.split.eq('validation')]
+    # Recuperar el float32 nativo: la lectura CSV puede mover un valor justo
+    # en el corte una fracción de ULP en float64 y alterar una alerta.
+    scores = validation.selected_probability_class_1.to_numpy(dtype=np.float32).astype(float)
+    actual = validation.label.to_numpy()
+    precision, recall, thresholds = precision_recall_curve(actual, scores)
+    cut = report['models']['PM10']['decision_threshold']
+    alerted = scores >= cut
+    tp = int(np.sum(alerted & (actual == 1)))
+    fp = int(np.sum(alerted & (actual == 0)))
+    saved = pd.read_csv(output / 'metricas_excedencias_PM10.csv').query(
+        "split == 'validation' and station == 'todas'").iloc[0]
+    assert (tp, fp) == (int(saved.tp), int(saved.fp)), 'El gráfico debe reproducir las métricas guardadas'
+    p_at_cut = tp / int(alerted.sum()) if alerted.any() else 0.
+    r_at_cut = tp / int(actual.sum())
+
+    plt.rcParams.update({'font.size': 10, 'axes.spines.top': False, 'axes.spines.right': False,
+                         'axes.titleweight': 'bold', 'figure.facecolor': 'white', 'savefig.facecolor': 'white'})
+    fig, axes = plt.subplots(1, 2, figsize=(13, 5), layout='constrained')
+    no2 = trials.loc[trials.pollutant.eq('NO2')]
+    for (family, feature_set), group in no2.groupby(['model', 'feature_set']):
+        curve = group.groupby('weight_power')['validation_f1_macro'].max()
+        axes[0].plot(curve.index, curve.values, marker='o', label=f'{family} · {feature_set}',
+                     ls='-' if feature_set == 'rezago' else '--',
+                     color='#147d92' if family == 'RandomForest' else '#e28a35')
+    axes[0].set(xlabel='Exponente de ponderación de clases', ylabel='Mejor F1 macro en validación',
+                title='NO₂ — comparación de modelos', xticks=report['config']['weight_powers'])
+    axes[0].legend(fontsize=8)
+    axes[0].grid(alpha=.2)
+
+    axes[1].plot(thresholds, precision[:-1] * 100, color='#147d92', label='Precision de excedencias')
+    axes[1].plot(thresholds, recall[:-1] * 100, color='#e28a35', label='Recall de excedencias')
+    axes[1].axvline(cut, color='#68798b', ls='--', lw=1.3, label=f'Umbral elegido: {cut:.4f}')
+    axes[1].scatter([cut, cut], [p_at_cut * 100, r_at_cut * 100], color=['#147d92', '#e28a35'], zorder=4)
+    axes[1].set(xlabel='Umbral de decisión', ylabel='Precision / recall de excedencias (%)',
+                title='PM10 — calibración del umbral', xlim=(0, 1), ylim=(0, 104))
+    axes[1].grid(alpha=.2)
+    axes[1].legend(fontsize=8, loc='upper right')
+    axes[1].text(.03, .04, f'{tp}/{int(actual.sum())} excedencias detectadas · {fp} falsas alarmas\n'
+                 f'Precision: {p_at_cut:.2%} · Recall: {r_at_cut:.2%}',
+                 transform=axes[1].transAxes, fontsize=9, va='bottom',
+                 bbox={'facecolor': 'white', 'edgecolor': '#ccd5df', 'alpha': .95, 'pad': 6})
+    fig.suptitle('Validación: selección de NO₂ y calibración del modelo final de PM10', fontweight='bold')
+    fig.savefig(output / 'figuras/seleccion_validacion.png', dpi=150)
+    plt.close(fig)
+
+
 def build_notebook(output):
     import nbformat
     from jupyter_client import AsyncKernelManager
     from nbclient import NotebookClient
     from nbconvert import HTMLExporter
 
+    make_validation_figure(output)
     template = PROJECT / 'notebooks/tercera_entrega_oms_modificado.ipynb'
     nb = nbformat.read(template, as_version=4)
     original_cells = deepcopy(nb.cells)
@@ -174,13 +231,42 @@ El corte se calibra en 2024 maximizando las detecciones con un presupuesto de ha
 
 La mejora frente al original corresponde al conjunto de cambios de entradas, parámetros, ponderación y umbral; no se atribuye sólo a la variable nueva.
 '''
+    nb.cells[6].source = nb.cells[6].source.replace(
+        'for p in report["config"]["pollutants"]:', 'for p in ("NO2",):')
     nb.cells[6].source += '''
 
-print("PM10 — configuración final y umbral")
+print("PM10 — configuración del modelo final")
 pm10_meta = report["models"]["PM10"]
-display(pd.Series(pm10_meta["parameters"], name="valor").to_frame())
-print("Umbral de decisión:", pm10_meta["decision_threshold"])
-print("Variables:", len(pm10_meta["features"]), "· única nueva: pm_close_lag1")
+params = pm10_meta["parameters"]
+configuration = {
+    "Modelo": pm10_meta["model"],
+    "Variables totales": str(len(pm10_meta["features"])),
+    "Única variable nueva": "Cierre de PM10 del día anterior",
+    "Cantidad de árboles": str(params["n_estimators"]),
+    "Profundidad máxima": str(params["max_depth"]),
+    "Peso mínimo de hijo": str(params["min_child_weight"]),
+    "Tasa de aprendizaje": f'{params["learning_rate"]:.2f}',
+    "Regularización L2": f'{params["reg_lambda"]:g}',
+    "Submuestreo de filas / columnas": f'{params["subsample"]:.1f} / {params["colsample_bytree"]:.1f}',
+    "Ponderación": f'Suave (exponente {params["weight_power"]:g})',
+    "Umbral de decisión": f'{pm10_meta["decision_threshold"]:.6f}',
+}
+display(pd.DataFrame(configuration.items(), columns=["Parámetro", "Valor"]))
+print("PM10 — resultados en validación (2024)")
+pm10_validation = pd.read_csv(OUT / "metricas_excedencias_PM10.csv").query(
+    "split == 'validation' and station == 'todas'").iloc[0]
+validation_summary = {
+    "Casos / excedencias": f'{int(pm10_validation["n"])} / {int(pm10_validation["support"])}',
+    "Accuracy": f'{pm10_validation["accuracy"]:.2%}',
+    "Precision de excedencias": f'{pm10_validation["precision_positive"]:.2%}',
+    "Recall de excedencias": f'{pm10_validation["recall_positive"]:.2%}',
+    "F1 de excedencias": f'{pm10_validation["f1_positive"]:.2%}',
+    "F1 macro": f'{pm10_validation["f1_macro"]:.4f}',
+    "Accuracy balanceada": f'{pm10_validation["balanced_accuracy"]:.2%}',
+    "Tasa de falsos positivos": f'{pm10_validation["false_positive_rate_positive"]:.2%}',
+    "TP / FP / FN / TN": " / ".join(str(int(pm10_validation[k])) for k in ("tp", "fp", "fn", "tn")),
+}
+display(pd.DataFrame(validation_summary.items(), columns=["Métrica", "Valor"]))
 print("PM10 — controles temporales del modelo final")
 display(pd.read_csv(OUT / "control_temporal_PM10.csv")[["evaluation_year","n","precision_positive","recall_positive","f1_positive","tp","fp","fn"]])
 '''
@@ -351,6 +437,7 @@ def run(data_dir, output, config_path=CONFIG, execute_notebook=True):
     write_summary(output, report, metrics, detail, config)
     report['elapsed_seconds'] = perf_counter() - started
     write_json(output / 'reporte.json', report)
+    make_validation_figure(output)
     assert all(sha256(PROJECT / p) == h for p, h in before.items())
     write_json(output / 'auditoria.json', audit | {
         'source_files_sha256': before,
