@@ -1,0 +1,23 @@
+{
+  "seed": 42,
+  "threads": 4,
+  "model_name": "XGBoost_cierre",
+  "extra_feature": "pm_close_lag1",
+  "weight_power": 0.5,
+  "validation_false_positive_budget": 14,
+  "xgboost": {
+    "n_estimators": 200,
+    "max_depth": 2,
+    "min_child_weight": 10,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_lambda": 20.0,
+    "tree_method": "hist"
+  },
+  "temporal_controls": [
+    {"calibration_year": 2020, "evaluation_year": 2021, "calibration_false_positive_budget": 7},
+    {"calibration_year": 2021, "evaluation_year": 2022, "calibration_false_positive_budget": 7},
+    {"calibration_year": 2022, "evaluation_year": 2023, "calibration_false_positive_budget": 28}
+  ]
+}

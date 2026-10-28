@@ -1,0 +1,57 @@
+{
+  "summary": {
+    "n": 2278,
+    "accuracy": 0.956540825285338,
+    "precision_macro": 0.8195704631055944,
+    "recall_macro": 0.837312030075188,
+    "f1_macro": 0.8281505391584236,
+    "precision_macro_supported": 0.8195704631055944,
+    "recall_macro_supported": 0.837312030075188,
+    "f1_macro_supported": 0.8281505391584236,
+    "balanced_accuracy": 0.837312030075188,
+    "f1_weighted": 0.95712767778668,
+    "false_positive_rate_macro": 0.16268796992481202,
+    "ordinal_mae": 0.043459174714661986,
+    "classes_present": 2
+  },
+  "classes": [
+    {
+      "class_id": 0,
+      "category": "Cumple guía OMS",
+      "support": 2128,
+      "predicted_count": 2119,
+      "tp": 2074,
+      "fp": 45,
+      "fn": 54,
+      "tn": 105,
+      "precision": 0.9787635677206229,
+      "recall": 0.974624060150376,
+      "f1": 0.9766894278314104,
+      "false_positive_rate": 0.3
+    },
+    {
+      "class_id": 1,
+      "category": "Supera guía OMS",
+      "support": 150,
+      "predicted_count": 159,
+      "tp": 105,
+      "fp": 54,
+      "fn": 45,
+      "tn": 2074,
+      "precision": 0.660377358490566,
+      "recall": 0.7,
+      "f1": 0.6796116504854369,
+      "false_positive_rate": 0.02537593984962406
+    }
+  ],
+  "confusion": [
+    [
+      2074,
+      54
+    ],
+    [
+      45,
+      105
+    ]
+  ]
+}

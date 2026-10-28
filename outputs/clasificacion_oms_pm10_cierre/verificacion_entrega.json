@@ -1,0 +1,24 @@
+{
+  "notebook_executed_without_errors": true,
+  "notebook_structure_preserved": true,
+  "notebook_cell_count": 13,
+  "weekday_subplots_kept": 2,
+  "majority_rows_hidden_in_summary_table": true,
+  "no2_model_predictions_metrics_and_shap_preserved": true,
+  "observed_distribution_and_seasonal_figures_identical": true,
+  "pm10_matches_selected_reduced_model": true,
+  "pm10_metrics_verified_with_sklearn": true,
+  "pm10_feature_count": 56,
+  "pm10_new_feature_count": 1,
+  "pm10_tp_fp_fn_tn": [
+    32,
+    47,
+    16,
+    1441
+  ],
+  "model_sha256": "3d8e3a3b41910aac000a09739232e0a6d040944c0e963b77f17d00336d80efff",
+  "native_reload_checked": true,
+  "source_data_and_originals_preserved": true,
+  "clean_published_tree_tests_passed": 61,
+  "clean_published_tree_notebook_executed": true
+}

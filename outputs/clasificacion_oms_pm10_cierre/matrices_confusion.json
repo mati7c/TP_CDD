@@ -1,0 +1,1426 @@
+[
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "Mayoria_train",
+    "selected_by_validation": false,
+    "split": "validation",
+    "station": "todas",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        0,
+        87,
+        0
+      ],
+      [
+        0,
+        346,
+        0
+      ],
+      [
+        0,
+        248,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "Mayoria_train",
+    "selected_by_validation": false,
+    "split": "validation",
+    "station": "centenario",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        0,
+        43,
+        0
+      ],
+      [
+        0,
+        22,
+        0
+      ],
+      [
+        0,
+        2,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "Mayoria_train",
+    "selected_by_validation": false,
+    "split": "validation",
+    "station": "cordoba",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        0,
+        31,
+        0
+      ],
+      [
+        0,
+        208,
+        0
+      ],
+      [
+        0,
+        50,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "Mayoria_train",
+    "selected_by_validation": false,
+    "split": "validation",
+    "station": "la_boca",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        0,
+        13,
+        0
+      ],
+      [
+        0,
+        116,
+        0
+      ],
+      [
+        0,
+        196,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "Mayoria_train",
+    "selected_by_validation": false,
+    "split": "test",
+    "station": "todas",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        0,
+        372,
+        0
+      ],
+      [
+        0,
+        970,
+        0
+      ],
+      [
+        0,
+        322,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "Mayoria_train",
+    "selected_by_validation": false,
+    "split": "test",
+    "station": "centenario",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        0,
+        248,
+        0
+      ],
+      [
+        0,
+        315,
+        0
+      ],
+      [
+        0,
+        8,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "Mayoria_train",
+    "selected_by_validation": false,
+    "split": "test",
+    "station": "cordoba",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        0,
+        92,
+        0
+      ],
+      [
+        0,
+        391,
+        0
+      ],
+      [
+        0,
+        59,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "Mayoria_train",
+    "selected_by_validation": false,
+    "split": "test",
+    "station": "la_boca",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        0,
+        32,
+        0
+      ],
+      [
+        0,
+        264,
+        0
+      ],
+      [
+        0,
+        255,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "RandomForest_meteo",
+    "selected_by_validation": false,
+    "split": "validation",
+    "station": "todas",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        40,
+        45,
+        2
+      ],
+      [
+        5,
+        270,
+        71
+      ],
+      [
+        0,
+        45,
+        203
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "RandomForest_meteo",
+    "selected_by_validation": false,
+    "split": "validation",
+    "station": "centenario",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        28,
+        15,
+        0
+      ],
+      [
+        2,
+        20,
+        0
+      ],
+      [
+        0,
+        2,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "RandomForest_meteo",
+    "selected_by_validation": false,
+    "split": "validation",
+    "station": "cordoba",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        12,
+        19,
+        0
+      ],
+      [
+        3,
+        195,
+        10
+      ],
+      [
+        0,
+        23,
+        27
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "RandomForest_meteo",
+    "selected_by_validation": false,
+    "split": "validation",
+    "station": "la_boca",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        0,
+        11,
+        2
+      ],
+      [
+        0,
+        55,
+        61
+      ],
+      [
+        0,
+        20,
+        176
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "RandomForest_meteo",
+    "selected_by_validation": false,
+    "split": "test",
+    "station": "todas",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        111,
+        244,
+        17
+      ],
+      [
+        12,
+        726,
+        232
+      ],
+      [
+        0,
+        51,
+        271
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "RandomForest_meteo",
+    "selected_by_validation": false,
+    "split": "test",
+    "station": "centenario",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        85,
+        163,
+        0
+      ],
+      [
+        2,
+        294,
+        19
+      ],
+      [
+        0,
+        4,
+        4
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "RandomForest_meteo",
+    "selected_by_validation": false,
+    "split": "test",
+    "station": "cordoba",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        26,
+        65,
+        1
+      ],
+      [
+        9,
+        342,
+        40
+      ],
+      [
+        0,
+        32,
+        27
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "RandomForest_meteo",
+    "selected_by_validation": false,
+    "split": "test",
+    "station": "la_boca",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        0,
+        16,
+        16
+      ],
+      [
+        1,
+        90,
+        173
+      ],
+      [
+        0,
+        15,
+        240
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "XGBoost_meteo",
+    "selected_by_validation": false,
+    "split": "validation",
+    "station": "todas",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        36,
+        51,
+        0
+      ],
+      [
+        17,
+        270,
+        59
+      ],
+      [
+        0,
+        41,
+        207
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "XGBoost_meteo",
+    "selected_by_validation": false,
+    "split": "validation",
+    "station": "centenario",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        29,
+        14,
+        0
+      ],
+      [
+        1,
+        21,
+        0
+      ],
+      [
+        0,
+        2,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "XGBoost_meteo",
+    "selected_by_validation": false,
+    "split": "validation",
+    "station": "cordoba",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        1,
+        30,
+        0
+      ],
+      [
+        1,
+        192,
+        15
+      ],
+      [
+        0,
+        18,
+        32
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "XGBoost_meteo",
+    "selected_by_validation": false,
+    "split": "validation",
+    "station": "la_boca",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        6,
+        7,
+        0
+      ],
+      [
+        15,
+        57,
+        44
+      ],
+      [
+        0,
+        21,
+        175
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "XGBoost_meteo",
+    "selected_by_validation": false,
+    "split": "test",
+    "station": "todas",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        92,
+        271,
+        9
+      ],
+      [
+        8,
+        695,
+        267
+      ],
+      [
+        0,
+        47,
+        275
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "XGBoost_meteo",
+    "selected_by_validation": false,
+    "split": "test",
+    "station": "centenario",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        68,
+        180,
+        0
+      ],
+      [
+        2,
+        254,
+        59
+      ],
+      [
+        0,
+        2,
+        6
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "XGBoost_meteo",
+    "selected_by_validation": false,
+    "split": "test",
+    "station": "cordoba",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        17,
+        74,
+        1
+      ],
+      [
+        0,
+        333,
+        58
+      ],
+      [
+        0,
+        21,
+        38
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "XGBoost_meteo",
+    "selected_by_validation": false,
+    "split": "test",
+    "station": "la_boca",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        7,
+        17,
+        8
+      ],
+      [
+        6,
+        108,
+        150
+      ],
+      [
+        0,
+        24,
+        231
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "RandomForest_rezago",
+    "selected_by_validation": false,
+    "split": "validation",
+    "station": "todas",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        60,
+        26,
+        1
+      ],
+      [
+        23,
+        291,
+        32
+      ],
+      [
+        0,
+        75,
+        173
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "RandomForest_rezago",
+    "selected_by_validation": false,
+    "split": "validation",
+    "station": "centenario",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        35,
+        8,
+        0
+      ],
+      [
+        1,
+        21,
+        0
+      ],
+      [
+        0,
+        2,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "RandomForest_rezago",
+    "selected_by_validation": false,
+    "split": "validation",
+    "station": "cordoba",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        16,
+        15,
+        0
+      ],
+      [
+        11,
+        181,
+        16
+      ],
+      [
+        0,
+        23,
+        27
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "RandomForest_rezago",
+    "selected_by_validation": false,
+    "split": "validation",
+    "station": "la_boca",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        9,
+        3,
+        1
+      ],
+      [
+        11,
+        89,
+        16
+      ],
+      [
+        0,
+        50,
+        146
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "RandomForest_rezago",
+    "selected_by_validation": false,
+    "split": "test",
+    "station": "todas",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        215,
+        157,
+        0
+      ],
+      [
+        79,
+        817,
+        74
+      ],
+      [
+        0,
+        105,
+        217
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "RandomForest_rezago",
+    "selected_by_validation": false,
+    "split": "test",
+    "station": "centenario",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        154,
+        94,
+        0
+      ],
+      [
+        28,
+        284,
+        3
+      ],
+      [
+        0,
+        7,
+        1
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "RandomForest_rezago",
+    "selected_by_validation": false,
+    "split": "test",
+    "station": "cordoba",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        43,
+        49,
+        0
+      ],
+      [
+        33,
+        331,
+        27
+      ],
+      [
+        0,
+        25,
+        34
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "RandomForest_rezago",
+    "selected_by_validation": false,
+    "split": "test",
+    "station": "la_boca",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        18,
+        14,
+        0
+      ],
+      [
+        18,
+        202,
+        44
+      ],
+      [
+        0,
+        73,
+        182
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "XGBoost_rezago",
+    "selected_by_validation": true,
+    "split": "validation",
+    "station": "todas",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        59,
+        27,
+        1
+      ],
+      [
+        23,
+        283,
+        40
+      ],
+      [
+        0,
+        46,
+        202
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "XGBoost_rezago",
+    "selected_by_validation": true,
+    "split": "validation",
+    "station": "centenario",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        34,
+        9,
+        0
+      ],
+      [
+        0,
+        22,
+        0
+      ],
+      [
+        0,
+        2,
+        0
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "XGBoost_rezago",
+    "selected_by_validation": true,
+    "split": "validation",
+    "station": "cordoba",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        14,
+        17,
+        0
+      ],
+      [
+        7,
+        181,
+        20
+      ],
+      [
+        0,
+        15,
+        35
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "XGBoost_rezago",
+    "selected_by_validation": true,
+    "split": "validation",
+    "station": "la_boca",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        11,
+        1,
+        1
+      ],
+      [
+        16,
+        80,
+        20
+      ],
+      [
+        0,
+        29,
+        167
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "XGBoost_rezago",
+    "selected_by_validation": true,
+    "split": "test",
+    "station": "todas",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        190,
+        181,
+        1
+      ],
+      [
+        43,
+        823,
+        104
+      ],
+      [
+        0,
+        57,
+        265
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "XGBoost_rezago",
+    "selected_by_validation": true,
+    "split": "test",
+    "station": "centenario",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        132,
+        115,
+        1
+      ],
+      [
+        11,
+        289,
+        15
+      ],
+      [
+        0,
+        3,
+        5
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "XGBoost_rezago",
+    "selected_by_validation": true,
+    "split": "test",
+    "station": "cordoba",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        39,
+        53,
+        0
+      ],
+      [
+        14,
+        337,
+        40
+      ],
+      [
+        0,
+        13,
+        46
+      ]
+    ]
+  },
+  {
+    "pollutant": "NO2",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "XGBoost_rezago",
+    "selected_by_validation": true,
+    "split": "test",
+    "station": "la_boca",
+    "classes": [
+      "Cumple guía OMS",
+      "Entre guía y objetivo intermedio",
+      "Supera objetivo intermedio"
+    ],
+    "matrix": [
+      [
+        19,
+        13,
+        0
+      ],
+      [
+        18,
+        197,
+        49
+      ],
+      [
+        0,
+        41,
+        214
+      ]
+    ]
+  },
+  {
+    "pollutant": "PM10",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "XGBoost_cierre",
+    "selected_by_validation": true,
+    "split": "validation",
+    "station": "todas",
+    "classes": [
+      "Cumple guía OMS",
+      "Supera guía OMS"
+    ],
+    "matrix": [
+      [
+        844,
+        10
+      ],
+      [
+        5,
+        27
+      ]
+    ]
+  },
+  {
+    "pollutant": "PM10",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "XGBoost_cierre",
+    "selected_by_validation": true,
+    "split": "validation",
+    "station": "centenario",
+    "classes": [
+      "Cumple guía OMS",
+      "Supera guía OMS"
+    ],
+    "matrix": [
+      [
+        282,
+        5
+      ],
+      [
+        1,
+        8
+      ]
+    ]
+  },
+  {
+    "pollutant": "PM10",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "XGBoost_cierre",
+    "selected_by_validation": true,
+    "split": "validation",
+    "station": "cordoba",
+    "classes": [
+      "Cumple guía OMS",
+      "Supera guía OMS"
+    ],
+    "matrix": [
+      [
+        299,
+        2
+      ],
+      [
+        1,
+        11
+      ]
+    ]
+  },
+  {
+    "pollutant": "PM10",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "XGBoost_cierre",
+    "selected_by_validation": true,
+    "split": "validation",
+    "station": "la_boca",
+    "classes": [
+      "Cumple guía OMS",
+      "Supera guía OMS"
+    ],
+    "matrix": [
+      [
+        263,
+        3
+      ],
+      [
+        3,
+        8
+      ]
+    ]
+  },
+  {
+    "pollutant": "PM10",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "XGBoost_cierre",
+    "selected_by_validation": true,
+    "split": "test",
+    "station": "todas",
+    "classes": [
+      "Cumple guía OMS",
+      "Supera guía OMS"
+    ],
+    "matrix": [
+      [
+        1441,
+        47
+      ],
+      [
+        16,
+        32
+      ]
+    ]
+  },
+  {
+    "pollutant": "PM10",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "XGBoost_cierre",
+    "selected_by_validation": true,
+    "split": "test",
+    "station": "centenario",
+    "classes": [
+      "Cumple guía OMS",
+      "Supera guía OMS"
+    ],
+    "matrix": [
+      [
+        521,
+        10
+      ],
+      [
+        3,
+        7
+      ]
+    ]
+  },
+  {
+    "pollutant": "PM10",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "XGBoost_cierre",
+    "selected_by_validation": true,
+    "split": "test",
+    "station": "cordoba",
+    "classes": [
+      "Cumple guía OMS",
+      "Supera guía OMS"
+    ],
+    "matrix": [
+      [
+        476,
+        18
+      ],
+      [
+        6,
+        10
+      ]
+    ]
+  },
+  {
+    "pollutant": "PM10",
+    "scheme": "OMS_2021",
+    "resolution": "level",
+    "model": "XGBoost_cierre",
+    "selected_by_validation": true,
+    "split": "test",
+    "station": "la_boca",
+    "classes": [
+      "Cumple guía OMS",
+      "Supera guía OMS"
+    ],
+    "matrix": [
+      [
+        444,
+        19
+      ],
+      [
+        7,
+        15
+      ]
+    ]
+  }
+]

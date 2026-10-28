@@ -1,0 +1,137 @@
+﻿pollutant,scheme,resolution,model,selected_by_validation,split,station,class_id,category,support,predicted_count,tp,fp,fn,tn,precision,recall,f1,false_positive_rate
+NO2,OMS_2021,level,Mayoria_train,False,validation,todas,0,Cumple guía OMS,87,0,0,0,87,594,,0.0,0.0,0.0
+NO2,OMS_2021,level,Mayoria_train,False,validation,todas,1,Entre guía y objetivo intermedio,346,681,346,335,0,0,0.5080763582966226,1.0,0.6738072054527751,1.0
+NO2,OMS_2021,level,Mayoria_train,False,validation,todas,2,Supera objetivo intermedio,248,0,0,0,248,433,,0.0,0.0,0.0
+NO2,OMS_2021,level,Mayoria_train,False,validation,centenario,0,Cumple guía OMS,43,0,0,0,43,24,,0.0,0.0,0.0
+NO2,OMS_2021,level,Mayoria_train,False,validation,centenario,1,Entre guía y objetivo intermedio,22,67,22,45,0,0,0.3283582089552239,1.0,0.4943820224719101,1.0
+NO2,OMS_2021,level,Mayoria_train,False,validation,centenario,2,Supera objetivo intermedio,2,0,0,0,2,65,,0.0,0.0,0.0
+NO2,OMS_2021,level,Mayoria_train,False,validation,cordoba,0,Cumple guía OMS,31,0,0,0,31,258,,0.0,0.0,0.0
+NO2,OMS_2021,level,Mayoria_train,False,validation,cordoba,1,Entre guía y objetivo intermedio,208,289,208,81,0,0,0.7197231833910035,1.0,0.8370221327967807,1.0
+NO2,OMS_2021,level,Mayoria_train,False,validation,cordoba,2,Supera objetivo intermedio,50,0,0,0,50,239,,0.0,0.0,0.0
+NO2,OMS_2021,level,Mayoria_train,False,validation,la_boca,0,Cumple guía OMS,13,0,0,0,13,312,,0.0,0.0,0.0
+NO2,OMS_2021,level,Mayoria_train,False,validation,la_boca,1,Entre guía y objetivo intermedio,116,325,116,209,0,0,0.3569230769230769,1.0,0.5260770975056689,1.0
+NO2,OMS_2021,level,Mayoria_train,False,validation,la_boca,2,Supera objetivo intermedio,196,0,0,0,196,129,,0.0,0.0,0.0
+NO2,OMS_2021,level,Mayoria_train,False,test,todas,0,Cumple guía OMS,372,0,0,0,372,1292,,0.0,0.0,0.0
+NO2,OMS_2021,level,Mayoria_train,False,test,todas,1,Entre guía y objetivo intermedio,970,1664,970,694,0,0,0.5829326923076923,1.0,0.7365223993925588,1.0
+NO2,OMS_2021,level,Mayoria_train,False,test,todas,2,Supera objetivo intermedio,322,0,0,0,322,1342,,0.0,0.0,0.0
+NO2,OMS_2021,level,Mayoria_train,False,test,centenario,0,Cumple guía OMS,248,0,0,0,248,323,,0.0,0.0,0.0
+NO2,OMS_2021,level,Mayoria_train,False,test,centenario,1,Entre guía y objetivo intermedio,315,571,315,256,0,0,0.5516637478108581,1.0,0.7110609480812641,1.0
+NO2,OMS_2021,level,Mayoria_train,False,test,centenario,2,Supera objetivo intermedio,8,0,0,0,8,563,,0.0,0.0,0.0
+NO2,OMS_2021,level,Mayoria_train,False,test,cordoba,0,Cumple guía OMS,92,0,0,0,92,450,,0.0,0.0,0.0
+NO2,OMS_2021,level,Mayoria_train,False,test,cordoba,1,Entre guía y objetivo intermedio,391,542,391,151,0,0,0.7214022140221402,1.0,0.8381564844587353,1.0
+NO2,OMS_2021,level,Mayoria_train,False,test,cordoba,2,Supera objetivo intermedio,59,0,0,0,59,483,,0.0,0.0,0.0
+NO2,OMS_2021,level,Mayoria_train,False,test,la_boca,0,Cumple guía OMS,32,0,0,0,32,519,,0.0,0.0,0.0
+NO2,OMS_2021,level,Mayoria_train,False,test,la_boca,1,Entre guía y objetivo intermedio,264,551,264,287,0,0,0.4791288566243194,1.0,0.6478527607361964,1.0
+NO2,OMS_2021,level,Mayoria_train,False,test,la_boca,2,Supera objetivo intermedio,255,0,0,0,255,296,,0.0,0.0,0.0
+NO2,OMS_2021,level,RandomForest_meteo,False,validation,todas,0,Cumple guía OMS,87,45,40,5,47,589,0.8888888888888888,0.4597701149425287,0.6060606060606061,0.0084175084175084
+NO2,OMS_2021,level,RandomForest_meteo,False,validation,todas,1,Entre guía y objetivo intermedio,346,360,270,90,76,245,0.75,0.7803468208092486,0.7648725212464589,0.2686567164179104
+NO2,OMS_2021,level,RandomForest_meteo,False,validation,todas,2,Supera objetivo intermedio,248,276,203,73,45,360,0.7355072463768116,0.8185483870967742,0.7748091603053435,0.1685912240184757
+NO2,OMS_2021,level,RandomForest_meteo,False,validation,centenario,0,Cumple guía OMS,43,30,28,2,15,22,0.9333333333333332,0.6511627906976745,0.7671232876712328,0.0833333333333333
+NO2,OMS_2021,level,RandomForest_meteo,False,validation,centenario,1,Entre guía y objetivo intermedio,22,37,20,17,2,28,0.5405405405405406,0.9090909090909092,0.6779661016949152,0.3777777777777777
+NO2,OMS_2021,level,RandomForest_meteo,False,validation,centenario,2,Supera objetivo intermedio,2,0,0,0,2,65,,0.0,0.0,0.0
+NO2,OMS_2021,level,RandomForest_meteo,False,validation,cordoba,0,Cumple guía OMS,31,15,12,3,19,255,0.8,0.3870967741935484,0.5217391304347826,0.0116279069767441
+NO2,OMS_2021,level,RandomForest_meteo,False,validation,cordoba,1,Entre guía y objetivo intermedio,208,237,195,42,13,39,0.8227848101265823,0.9375,0.8764044943820225,0.5185185185185185
+NO2,OMS_2021,level,RandomForest_meteo,False,validation,cordoba,2,Supera objetivo intermedio,50,37,27,10,23,229,0.7297297297297297,0.54,0.6206896551724138,0.0418410041841004
+NO2,OMS_2021,level,RandomForest_meteo,False,validation,la_boca,0,Cumple guía OMS,13,0,0,0,13,312,,0.0,0.0,0.0
+NO2,OMS_2021,level,RandomForest_meteo,False,validation,la_boca,1,Entre guía y objetivo intermedio,116,86,55,31,61,178,0.6395348837209303,0.4741379310344827,0.5445544554455446,0.1483253588516746
+NO2,OMS_2021,level,RandomForest_meteo,False,validation,la_boca,2,Supera objetivo intermedio,196,239,176,63,20,66,0.7364016736401674,0.8979591836734694,0.8091954022988506,0.4883720930232558
+NO2,OMS_2021,level,RandomForest_meteo,False,test,todas,0,Cumple guía OMS,372,123,111,12,261,1280,0.902439024390244,0.2983870967741935,0.4484848484848485,0.0092879256965944
+NO2,OMS_2021,level,RandomForest_meteo,False,test,todas,1,Entre guía y objetivo intermedio,970,1021,726,295,244,399,0.7110675808031341,0.7484536082474227,0.7292817679558011,0.4250720461095101
+NO2,OMS_2021,level,RandomForest_meteo,False,test,todas,2,Supera objetivo intermedio,322,520,271,249,51,1093,0.5211538461538462,0.8416149068322981,0.6437054631828979,0.1855439642324888
+NO2,OMS_2021,level,RandomForest_meteo,False,test,centenario,0,Cumple guía OMS,248,87,85,2,163,321,0.9770114942528736,0.3427419354838709,0.5074626865671642,0.0061919504643962
+NO2,OMS_2021,level,RandomForest_meteo,False,test,centenario,1,Entre guía y objetivo intermedio,315,461,294,167,21,89,0.6377440347071583,0.9333333333333332,0.7577319587628866,0.65234375
+NO2,OMS_2021,level,RandomForest_meteo,False,test,centenario,2,Supera objetivo intermedio,8,23,4,19,4,544,0.1739130434782608,0.5,0.2580645161290322,0.0337477797513321
+NO2,OMS_2021,level,RandomForest_meteo,False,test,cordoba,0,Cumple guía OMS,92,35,26,9,66,441,0.7428571428571429,0.2826086956521739,0.4094488188976378,0.02
+NO2,OMS_2021,level,RandomForest_meteo,False,test,cordoba,1,Entre guía y objetivo intermedio,391,439,342,97,49,54,0.7790432801822323,0.8746803069053708,0.8240963855421687,0.6423841059602649
+NO2,OMS_2021,level,RandomForest_meteo,False,test,cordoba,2,Supera objetivo intermedio,59,68,27,41,32,442,0.3970588235294117,0.4576271186440678,0.4251968503937008,0.0848861283643892
+NO2,OMS_2021,level,RandomForest_meteo,False,test,la_boca,0,Cumple guía OMS,32,1,0,1,32,518,0.0,0.0,0.0,0.001926782273603
+NO2,OMS_2021,level,RandomForest_meteo,False,test,la_boca,1,Entre guía y objetivo intermedio,264,121,90,31,174,256,0.743801652892562,0.3409090909090909,0.4675324675324675,0.1080139372822299
+NO2,OMS_2021,level,RandomForest_meteo,False,test,la_boca,2,Supera objetivo intermedio,255,429,240,189,15,107,0.5594405594405595,0.9411764705882352,0.7017543859649122,0.6385135135135135
+NO2,OMS_2021,level,XGBoost_meteo,False,validation,todas,0,Cumple guía OMS,87,53,36,17,51,577,0.6792452830188679,0.4137931034482758,0.5142857142857142,0.0286195286195286
+NO2,OMS_2021,level,XGBoost_meteo,False,validation,todas,1,Entre guía y objetivo intermedio,346,362,270,92,76,243,0.7458563535911602,0.7803468208092486,0.7627118644067796,0.2746268656716418
+NO2,OMS_2021,level,XGBoost_meteo,False,validation,todas,2,Supera objetivo intermedio,248,266,207,59,41,374,0.7781954887218046,0.8346774193548387,0.8054474708171206,0.1362586605080831
+NO2,OMS_2021,level,XGBoost_meteo,False,validation,centenario,0,Cumple guía OMS,43,30,29,1,14,23,0.9666666666666668,0.6744186046511628,0.7945205479452054,0.0416666666666666
+NO2,OMS_2021,level,XGBoost_meteo,False,validation,centenario,1,Entre guía y objetivo intermedio,22,37,21,16,1,29,0.5675675675675675,0.9545454545454546,0.711864406779661,0.3555555555555555
+NO2,OMS_2021,level,XGBoost_meteo,False,validation,centenario,2,Supera objetivo intermedio,2,0,0,0,2,65,,0.0,0.0,0.0
+NO2,OMS_2021,level,XGBoost_meteo,False,validation,cordoba,0,Cumple guía OMS,31,2,1,1,30,257,0.5,0.032258064516129,0.0606060606060606,0.003875968992248
+NO2,OMS_2021,level,XGBoost_meteo,False,validation,cordoba,1,Entre guía y objetivo intermedio,208,240,192,48,16,33,0.8,0.9230769230769232,0.8571428571428571,0.5925925925925926
+NO2,OMS_2021,level,XGBoost_meteo,False,validation,cordoba,2,Supera objetivo intermedio,50,47,32,15,18,224,0.6808510638297872,0.64,0.6597938144329897,0.0627615062761506
+NO2,OMS_2021,level,XGBoost_meteo,False,validation,la_boca,0,Cumple guía OMS,13,21,6,15,7,297,0.2857142857142857,0.4615384615384615,0.3529411764705882,0.048076923076923
+NO2,OMS_2021,level,XGBoost_meteo,False,validation,la_boca,1,Entre guía y objetivo intermedio,116,85,57,28,59,181,0.6705882352941176,0.4913793103448275,0.5671641791044776,0.1339712918660287
+NO2,OMS_2021,level,XGBoost_meteo,False,validation,la_boca,2,Supera objetivo intermedio,196,219,175,44,21,85,0.7990867579908676,0.8928571428571429,0.8433734939759037,0.3410852713178294
+NO2,OMS_2021,level,XGBoost_meteo,False,test,todas,0,Cumple guía OMS,372,100,92,8,280,1284,0.92,0.2473118279569892,0.3898305084745763,0.0061919504643962
+NO2,OMS_2021,level,XGBoost_meteo,False,test,todas,1,Entre guía y objetivo intermedio,970,1013,695,318,275,376,0.6860809476801579,0.7164948453608248,0.7009581442259203,0.4582132564841498
+NO2,OMS_2021,level,XGBoost_meteo,False,test,todas,2,Supera objetivo intermedio,322,551,275,276,47,1066,0.499092558983666,0.8540372670807453,0.6300114547537228,0.2056631892697466
+NO2,OMS_2021,level,XGBoost_meteo,False,test,centenario,0,Cumple guía OMS,248,70,68,2,180,321,0.9714285714285714,0.2741935483870967,0.4276729559748428,0.0061919504643962
+NO2,OMS_2021,level,XGBoost_meteo,False,test,centenario,1,Entre guía y objetivo intermedio,315,436,254,182,61,74,0.5825688073394495,0.8063492063492064,0.6764314247669774,0.7109375
+NO2,OMS_2021,level,XGBoost_meteo,False,test,centenario,2,Supera objetivo intermedio,8,65,6,59,2,504,0.0923076923076923,0.75,0.1643835616438356,0.1047957371225577
+NO2,OMS_2021,level,XGBoost_meteo,False,test,cordoba,0,Cumple guía OMS,92,17,17,0,75,450,1.0,0.1847826086956521,0.3119266055045872,0.0
+NO2,OMS_2021,level,XGBoost_meteo,False,test,cordoba,1,Entre guía y objetivo intermedio,391,428,333,95,58,56,0.7780373831775701,0.8516624040920716,0.8131868131868132,0.6291390728476821
+NO2,OMS_2021,level,XGBoost_meteo,False,test,cordoba,2,Supera objetivo intermedio,59,97,38,59,21,424,0.3917525773195876,0.6440677966101694,0.4871794871794871,0.1221532091097308
+NO2,OMS_2021,level,XGBoost_meteo,False,test,la_boca,0,Cumple guía OMS,32,13,7,6,25,513,0.5384615384615384,0.21875,0.3111111111111111,0.0115606936416184
+NO2,OMS_2021,level,XGBoost_meteo,False,test,la_boca,1,Entre guía y objetivo intermedio,264,149,108,41,156,246,0.7248322147651006,0.4090909090909091,0.5230024213075061,0.1428571428571428
+NO2,OMS_2021,level,XGBoost_meteo,False,test,la_boca,2,Supera objetivo intermedio,255,389,231,158,24,138,0.5938303341902313,0.9058823529411764,0.717391304347826,0.5337837837837838
+NO2,OMS_2021,level,RandomForest_rezago,False,validation,todas,0,Cumple guía OMS,87,83,60,23,27,571,0.7228915662650602,0.6896551724137931,0.7058823529411765,0.0387205387205387
+NO2,OMS_2021,level,RandomForest_rezago,False,validation,todas,1,Entre guía y objetivo intermedio,346,392,291,101,55,234,0.7423469387755102,0.8410404624277457,0.7886178861788617,0.3014925373134328
+NO2,OMS_2021,level,RandomForest_rezago,False,validation,todas,2,Supera objetivo intermedio,248,206,173,33,75,400,0.8398058252427184,0.6975806451612904,0.762114537444934,0.0762124711316397
+NO2,OMS_2021,level,RandomForest_rezago,False,validation,centenario,0,Cumple guía OMS,43,36,35,1,8,23,0.9722222222222222,0.813953488372093,0.8860759493670886,0.0416666666666666
+NO2,OMS_2021,level,RandomForest_rezago,False,validation,centenario,1,Entre guía y objetivo intermedio,22,31,21,10,1,35,0.6774193548387096,0.9545454545454546,0.7924528301886793,0.2222222222222222
+NO2,OMS_2021,level,RandomForest_rezago,False,validation,centenario,2,Supera objetivo intermedio,2,0,0,0,2,65,,0.0,0.0,0.0
+NO2,OMS_2021,level,RandomForest_rezago,False,validation,cordoba,0,Cumple guía OMS,31,27,16,11,15,247,0.5925925925925926,0.5161290322580645,0.5517241379310345,0.0426356589147286
+NO2,OMS_2021,level,RandomForest_rezago,False,validation,cordoba,1,Entre guía y objetivo intermedio,208,219,181,38,27,43,0.8264840182648402,0.8701923076923077,0.8477751756440282,0.4691358024691358
+NO2,OMS_2021,level,RandomForest_rezago,False,validation,cordoba,2,Supera objetivo intermedio,50,43,27,16,23,223,0.627906976744186,0.54,0.5806451612903226,0.0669456066945606
+NO2,OMS_2021,level,RandomForest_rezago,False,validation,la_boca,0,Cumple guía OMS,13,20,9,11,4,301,0.45,0.6923076923076923,0.5454545454545454,0.0352564102564102
+NO2,OMS_2021,level,RandomForest_rezago,False,validation,la_boca,1,Entre guía y objetivo intermedio,116,142,89,53,27,156,0.6267605633802817,0.7672413793103449,0.689922480620155,0.2535885167464115
+NO2,OMS_2021,level,RandomForest_rezago,False,validation,la_boca,2,Supera objetivo intermedio,196,163,146,17,50,112,0.8957055214723927,0.7448979591836735,0.8133704735376045,0.1317829457364341
+NO2,OMS_2021,level,RandomForest_rezago,False,test,todas,0,Cumple guía OMS,372,294,215,79,157,1213,0.7312925170068028,0.5779569892473119,0.6456456456456456,0.0611455108359133
+NO2,OMS_2021,level,RandomForest_rezago,False,test,todas,1,Entre guía y objetivo intermedio,970,1079,817,262,153,432,0.7571825764596849,0.8422680412371134,0.7974621766715471,0.377521613832853
+NO2,OMS_2021,level,RandomForest_rezago,False,test,todas,2,Supera objetivo intermedio,322,291,217,74,105,1268,0.7457044673539519,0.6739130434782609,0.7079934747145188,0.0551415797317436
+NO2,OMS_2021,level,RandomForest_rezago,False,test,centenario,0,Cumple guía OMS,248,182,154,28,94,295,0.8461538461538461,0.6209677419354839,0.7162790697674418,0.0866873065015479
+NO2,OMS_2021,level,RandomForest_rezago,False,test,centenario,1,Entre guía y objetivo intermedio,315,385,284,101,31,155,0.7376623376623377,0.9015873015873016,0.8114285714285714,0.39453125
+NO2,OMS_2021,level,RandomForest_rezago,False,test,centenario,2,Supera objetivo intermedio,8,4,1,3,7,560,0.25,0.125,0.1666666666666666,0.0053285968028419
+NO2,OMS_2021,level,RandomForest_rezago,False,test,cordoba,0,Cumple guía OMS,92,76,43,33,49,417,0.5657894736842105,0.4673913043478261,0.5119047619047619,0.0733333333333333
+NO2,OMS_2021,level,RandomForest_rezago,False,test,cordoba,1,Entre guía y objetivo intermedio,391,405,331,74,60,77,0.817283950617284,0.8465473145780051,0.8316582914572864,0.4900662251655629
+NO2,OMS_2021,level,RandomForest_rezago,False,test,cordoba,2,Supera objetivo intermedio,59,61,34,27,25,456,0.5573770491803278,0.576271186440678,0.5666666666666667,0.0559006211180124
+NO2,OMS_2021,level,RandomForest_rezago,False,test,la_boca,0,Cumple guía OMS,32,36,18,18,14,501,0.5,0.5625,0.5294117647058824,0.0346820809248554
+NO2,OMS_2021,level,RandomForest_rezago,False,test,la_boca,1,Entre guía y objetivo intermedio,264,289,202,87,62,200,0.698961937716263,0.7651515151515151,0.7305605786618445,0.3031358885017421
+NO2,OMS_2021,level,RandomForest_rezago,False,test,la_boca,2,Supera objetivo intermedio,255,226,182,44,73,252,0.8053097345132744,0.7137254901960784,0.7567567567567568,0.1486486486486486
+NO2,OMS_2021,level,XGBoost_rezago,True,validation,todas,0,Cumple guía OMS,87,82,59,23,28,571,0.7195121951219512,0.6781609195402298,0.6982248520710059,0.0387205387205387
+NO2,OMS_2021,level,XGBoost_rezago,True,validation,todas,1,Entre guía y objetivo intermedio,346,356,283,73,63,262,0.7949438202247191,0.8179190751445087,0.8062678062678063,0.217910447761194
+NO2,OMS_2021,level,XGBoost_rezago,True,validation,todas,2,Supera objetivo intermedio,248,243,202,41,46,392,0.831275720164609,0.8145161290322581,0.8228105906313645,0.0946882217090069
+NO2,OMS_2021,level,XGBoost_rezago,True,validation,centenario,0,Cumple guía OMS,43,34,34,0,9,24,1.0,0.7906976744186046,0.8831168831168831,0.0
+NO2,OMS_2021,level,XGBoost_rezago,True,validation,centenario,1,Entre guía y objetivo intermedio,22,33,22,11,0,34,0.6666666666666666,1.0,0.8,0.2444444444444444
+NO2,OMS_2021,level,XGBoost_rezago,True,validation,centenario,2,Supera objetivo intermedio,2,0,0,0,2,65,,0.0,0.0,0.0
+NO2,OMS_2021,level,XGBoost_rezago,True,validation,cordoba,0,Cumple guía OMS,31,21,14,7,17,251,0.6666666666666666,0.4516129032258064,0.5384615384615384,0.0271317829457364
+NO2,OMS_2021,level,XGBoost_rezago,True,validation,cordoba,1,Entre guía y objetivo intermedio,208,213,181,32,27,49,0.8497652582159625,0.8701923076923077,0.8598574821852731,0.3950617283950617
+NO2,OMS_2021,level,XGBoost_rezago,True,validation,cordoba,2,Supera objetivo intermedio,50,55,35,20,15,219,0.6363636363636364,0.7,0.6666666666666666,0.0836820083682008
+NO2,OMS_2021,level,XGBoost_rezago,True,validation,la_boca,0,Cumple guía OMS,13,27,11,16,2,296,0.4074074074074074,0.8461538461538461,0.55,0.0512820512820512
+NO2,OMS_2021,level,XGBoost_rezago,True,validation,la_boca,1,Entre guía y objetivo intermedio,116,110,80,30,36,179,0.7272727272727273,0.6896551724137931,0.7079646017699115,0.1435406698564593
+NO2,OMS_2021,level,XGBoost_rezago,True,validation,la_boca,2,Supera objetivo intermedio,196,188,167,21,29,108,0.8882978723404256,0.8520408163265306,0.8697916666666666,0.1627906976744186
+NO2,OMS_2021,level,XGBoost_rezago,True,test,todas,0,Cumple guía OMS,372,233,190,43,182,1249,0.8154506437768241,0.510752688172043,0.628099173553719,0.03328173374613
+NO2,OMS_2021,level,XGBoost_rezago,True,test,todas,1,Entre guía y objetivo intermedio,970,1061,823,238,147,456,0.7756833176248822,0.8484536082474227,0.810438207779419,0.3429394812680115
+NO2,OMS_2021,level,XGBoost_rezago,True,test,todas,2,Supera objetivo intermedio,322,370,265,105,57,1237,0.7162162162162162,0.8229813664596274,0.7658959537572254,0.078241430700447
+NO2,OMS_2021,level,XGBoost_rezago,True,test,centenario,0,Cumple guía OMS,248,143,132,11,116,312,0.9230769230769232,0.532258064516129,0.6751918158567775,0.0340557275541795
+NO2,OMS_2021,level,XGBoost_rezago,True,test,centenario,1,Entre guía y objetivo intermedio,315,407,289,118,26,138,0.7100737100737101,0.9174603174603174,0.8005540166204986,0.4609375
+NO2,OMS_2021,level,XGBoost_rezago,True,test,centenario,2,Supera objetivo intermedio,8,21,5,16,3,547,0.238095238095238,0.625,0.3448275862068966,0.0284191829484902
+NO2,OMS_2021,level,XGBoost_rezago,True,test,cordoba,0,Cumple guía OMS,92,53,39,14,53,436,0.7358490566037735,0.4239130434782608,0.5379310344827586,0.0311111111111111
+NO2,OMS_2021,level,XGBoost_rezago,True,test,cordoba,1,Entre guía y objetivo intermedio,391,403,337,66,54,85,0.8362282878411911,0.8618925831202046,0.8488664987405542,0.4370860927152318
+NO2,OMS_2021,level,XGBoost_rezago,True,test,cordoba,2,Supera objetivo intermedio,59,86,46,40,13,443,0.5348837209302325,0.7796610169491526,0.6344827586206897,0.082815734989648
+NO2,OMS_2021,level,XGBoost_rezago,True,test,la_boca,0,Cumple guía OMS,32,37,19,18,13,501,0.5135135135135135,0.59375,0.5507246376811594,0.0346820809248554
+NO2,OMS_2021,level,XGBoost_rezago,True,test,la_boca,1,Entre guía y objetivo intermedio,264,251,197,54,67,233,0.7848605577689243,0.7462121212121212,0.7650485436893204,0.1881533101045296
+NO2,OMS_2021,level,XGBoost_rezago,True,test,la_boca,2,Supera objetivo intermedio,255,263,214,49,41,247,0.8136882129277566,0.8392156862745098,0.8262548262548263,0.1655405405405405
+PM10,OMS_2021,level,XGBoost_cierre,True,validation,todas,0,Cumple guía OMS,854,849,844,5,10,27,0.9941107184923439,0.9882903981264637,0.9911920140927775,0.15625
+PM10,OMS_2021,level,XGBoost_cierre,True,validation,todas,1,Supera guía OMS,32,37,27,10,5,844,0.7297297297297297,0.84375,0.782608695652174,0.0117096018735363
+PM10,OMS_2021,level,XGBoost_cierre,True,validation,centenario,0,Cumple guía OMS,287,283,282,1,5,8,0.9964664310954063,0.9825783972125436,0.9894736842105263,0.1111111111111111
+PM10,OMS_2021,level,XGBoost_cierre,True,validation,centenario,1,Supera guía OMS,9,13,8,5,1,282,0.6153846153846154,0.8888888888888888,0.7272727272727273,0.017421602787456445
+PM10,OMS_2021,level,XGBoost_cierre,True,validation,cordoba,0,Cumple guía OMS,301,300,299,1,2,11,0.9966666666666667,0.9933554817275747,0.9950083194675541,0.08333333333333333
+PM10,OMS_2021,level,XGBoost_cierre,True,validation,cordoba,1,Supera guía OMS,12,13,11,2,1,299,0.8461538461538461,0.9166666666666666,0.88,0.006644518272425249
+PM10,OMS_2021,level,XGBoost_cierre,True,validation,la_boca,0,Cumple guía OMS,266,266,263,3,3,8,0.9887218045112782,0.9887218045112782,0.9887218045112782,0.2727272727272727
+PM10,OMS_2021,level,XGBoost_cierre,True,validation,la_boca,1,Supera guía OMS,11,11,8,3,3,263,0.7272727272727273,0.7272727272727273,0.7272727272727273,0.011278195488721804
+PM10,OMS_2021,level,XGBoost_cierre,True,test,todas,0,Cumple guía OMS,1488,1457,1441,16,47,32,0.9890185312285518,0.9684139784946236,0.9786078098471986,0.3333333333333333
+PM10,OMS_2021,level,XGBoost_cierre,True,test,todas,1,Supera guía OMS,48,79,32,47,16,1441,0.4050632911392405,0.6666666666666666,0.5039370078740157,0.031586021505376344
+PM10,OMS_2021,level,XGBoost_cierre,True,test,centenario,0,Cumple guía OMS,531,524,521,3,10,7,0.9942748091603053,0.9811676082862524,0.9876777251184834,0.3
+PM10,OMS_2021,level,XGBoost_cierre,True,test,centenario,1,Supera guía OMS,10,17,7,10,3,521,0.4117647058823529,0.7,0.5185185185185185,0.018832391713747645
+PM10,OMS_2021,level,XGBoost_cierre,True,test,cordoba,0,Cumple guía OMS,494,482,476,6,18,10,0.9875518672199171,0.9635627530364372,0.9754098360655737,0.375
+PM10,OMS_2021,level,XGBoost_cierre,True,test,cordoba,1,Supera guía OMS,16,28,10,18,6,476,0.35714285714285715,0.625,0.45454545454545453,0.03643724696356275
+PM10,OMS_2021,level,XGBoost_cierre,True,test,la_boca,0,Cumple guía OMS,463,451,444,7,19,15,0.9844789356984479,0.958963282937365,0.9715536105032823,0.3181818181818182
+PM10,OMS_2021,level,XGBoost_cierre,True,test,la_boca,1,Supera guía OMS,22,34,15,19,7,444,0.4411764705882353,0.6818181818181818,0.5357142857142857,0.04103671706263499
